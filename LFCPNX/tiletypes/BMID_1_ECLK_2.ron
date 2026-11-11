@@ -1,5 +1,15 @@
 (
   pips: {
+    "G:JECLKOUT1_ECLKCASMUX_CORE_ECLKCASMUX3": [
+      (
+        from_wire: "N1:JECLKCAS1M1_ECLKCASMUX_CORE_ECLKCASMUX3",
+        bits: [(frame:101,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "N1:JECLKSYNCM1_ECLKCASMUX_CORE_ECLKCASMUX3",
+        bits: [(frame:101,bit:0,invert:false,),],
+      ),
+    ],
     "G:JVPFN10_BMID_CORE_BMIDMUX": [
       (
         from_wire: "G:JECLKDIV1_BMID_CORE_BMIDMUX",

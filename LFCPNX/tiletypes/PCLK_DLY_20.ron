@@ -1,0 +1,13 @@
+(
+  pips: {
+    "W1:JCLKOUT_DLLDEL_CORE_I0": [
+      (
+        from_wire: "W1:JCLKIN_DLLDEL_CORE_I0",
+        bits: [(frame:11,bit:11,invert:false,),],
+      ),
+    ],
+  },
+  words: {},
+  enums: {},
+  conns: {},
+)
