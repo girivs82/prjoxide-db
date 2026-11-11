@@ -1,1 +1,28 @@
-{"regions": {}}
+{
+    "regions": {
+        "EBR_WID0": {
+            "abits": 17,
+            "addr": 536870912
+        },
+        "EBR_WID1": {
+            "abits": 17,
+            "addr": 537001984
+        },
+        "PLL_LLC": {
+            "abits": 7,
+            "addr": 235274240
+        },
+        "PLL_LRC": {
+            "abits": 7,
+            "addr": 235143168
+        },
+        "PLL_ULC": {
+            "abits": 7,
+            "addr": 234881024
+        },
+        "PLL_URC": {
+            "abits": 7,
+            "addr": 235012096
+        }
+    }
+}
