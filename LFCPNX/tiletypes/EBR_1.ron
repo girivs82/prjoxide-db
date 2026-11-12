@@ -378,9 +378,19 @@
     ),
   },
   conns: {
+    "N1:JF0": [
+      (
+        from_wire: "N1W1:JDOA4_EBR_CORE",
+      ),
+    ],
     "N1:JF0_CIBTEST": [
       (
         from_wire: "N1W1:JDOA4_EBR_CORE",
+      ),
+    ],
+    "N1:JF1": [
+      (
+        from_wire: "N1W1:JDOA5_EBR_CORE",
       ),
     ],
     "N1:JF1_CIBTEST": [
@@ -388,9 +398,19 @@
         from_wire: "N1W1:JDOA5_EBR_CORE",
       ),
     ],
+    "N1:JF2": [
+      (
+        from_wire: "N1W1:JDOA6_EBR_CORE",
+      ),
+    ],
     "N1:JF2_CIBTEST": [
       (
         from_wire: "N1W1:JDOA6_EBR_CORE",
+      ),
+    ],
+    "N1:JF3": [
+      (
+        from_wire: "N1W1:JDOA7_EBR_CORE",
       ),
     ],
     "N1:JF3_CIBTEST": [
@@ -398,9 +418,19 @@
         from_wire: "N1W1:JDOA7_EBR_CORE",
       ),
     ],
+    "N1:JF4": [
+      (
+        from_wire: "N1W1:JDOA8_EBR_CORE",
+      ),
+    ],
     "N1:JF4_CIBTEST": [
       (
         from_wire: "N1W1:JDOA8_EBR_CORE",
+      ),
+    ],
+    "N1:JF5": [
+      (
+        from_wire: "N1W1:JDOA9_EBR_CORE",
       ),
     ],
     "N1:JF5_CIBTEST": [
@@ -408,9 +438,19 @@
         from_wire: "N1W1:JDOA9_EBR_CORE",
       ),
     ],
+    "N1:JF6": [
+      (
+        from_wire: "N1W1:JDOA10_EBR_CORE",
+      ),
+    ],
     "N1:JF6_CIBTEST": [
       (
         from_wire: "N1W1:JDOA10_EBR_CORE",
+      ),
+    ],
+    "N1:JF7": [
+      (
+        from_wire: "N1W1:JDOA11_EBR_CORE",
       ),
     ],
     "N1:JF7_CIBTEST": [
@@ -418,9 +458,19 @@
         from_wire: "N1W1:JDOA11_EBR_CORE",
       ),
     ],
+    "N1:JQ0": [
+      (
+        from_wire: "N1W1:JDOB4_EBR_CORE",
+      ),
+    ],
     "N1:JQ0_CIBTEST": [
       (
         from_wire: "N1W1:JDOB4_EBR_CORE",
+      ),
+    ],
+    "N1:JQ1": [
+      (
+        from_wire: "N1W1:JDOB5_EBR_CORE",
       ),
     ],
     "N1:JQ1_CIBTEST": [
@@ -428,9 +478,19 @@
         from_wire: "N1W1:JDOB5_EBR_CORE",
       ),
     ],
+    "N1:JQ2": [
+      (
+        from_wire: "N1W1:JDOB6_EBR_CORE",
+      ),
+    ],
     "N1:JQ2_CIBTEST": [
       (
         from_wire: "N1W1:JDOB6_EBR_CORE",
+      ),
+    ],
+    "N1:JQ3": [
+      (
+        from_wire: "N1W1:JDOB7_EBR_CORE",
       ),
     ],
     "N1:JQ3_CIBTEST": [
@@ -438,9 +498,19 @@
         from_wire: "N1W1:JDOB7_EBR_CORE",
       ),
     ],
+    "N1:JQ4": [
+      (
+        from_wire: "N1W1:JDOB8_EBR_CORE",
+      ),
+    ],
     "N1:JQ4_CIBTEST": [
       (
         from_wire: "N1W1:JDOB8_EBR_CORE",
+      ),
+    ],
+    "N1:JQ5": [
+      (
+        from_wire: "N1W1:JDOB9_EBR_CORE",
       ),
     ],
     "N1:JQ5_CIBTEST": [
@@ -448,9 +518,19 @@
         from_wire: "N1W1:JDOB9_EBR_CORE",
       ),
     ],
+    "N1:JQ6": [
+      (
+        from_wire: "N1W1:JDOB10_EBR_CORE",
+      ),
+    ],
     "N1:JQ6_CIBTEST": [
       (
         from_wire: "N1W1:JDOB10_EBR_CORE",
+      ),
+    ],
+    "N1:JQ7": [
+      (
+        from_wire: "N1W1:JDOB11_EBR_CORE",
       ),
     ],
     "N1:JQ7_CIBTEST": [
@@ -458,9 +538,19 @@
         from_wire: "N1W1:JDOB11_EBR_CORE",
       ),
     ],
+    "N1E1:JF0": [
+      (
+        from_wire: "N1W1:JDOA12_EBR_CORE",
+      ),
+    ],
     "N1E1:JF0_CIBTEST": [
       (
         from_wire: "N1W1:JDOA12_EBR_CORE",
+      ),
+    ],
+    "N1E1:JF1": [
+      (
+        from_wire: "N1W1:JDOA13_EBR_CORE",
       ),
     ],
     "N1E1:JF1_CIBTEST": [
@@ -468,9 +558,19 @@
         from_wire: "N1W1:JDOA13_EBR_CORE",
       ),
     ],
+    "N1E1:JF2": [
+      (
+        from_wire: "N1W1:JDOA14_EBR_CORE",
+      ),
+    ],
     "N1E1:JF2_CIBTEST": [
       (
         from_wire: "N1W1:JDOA14_EBR_CORE",
+      ),
+    ],
+    "N1E1:JF3": [
+      (
+        from_wire: "N1W1:JDOA15_EBR_CORE",
       ),
     ],
     "N1E1:JF3_CIBTEST": [
@@ -478,9 +578,19 @@
         from_wire: "N1W1:JDOA15_EBR_CORE",
       ),
     ],
+    "N1E1:JF4": [
+      (
+        from_wire: "N1W1:JDOA16_EBR_CORE",
+      ),
+    ],
     "N1E1:JF4_CIBTEST": [
       (
         from_wire: "N1W1:JDOA16_EBR_CORE",
+      ),
+    ],
+    "N1E1:JF5": [
+      (
+        from_wire: "N1W1:JDOA17_EBR_CORE",
       ),
     ],
     "N1E1:JF5_CIBTEST": [
@@ -488,9 +598,19 @@
         from_wire: "N1W1:JDOA17_EBR_CORE",
       ),
     ],
+    "N1E1:JQ0": [
+      (
+        from_wire: "N1W1:JDOB12_EBR_CORE",
+      ),
+    ],
     "N1E1:JQ0_CIBTEST": [
       (
         from_wire: "N1W1:JDOB12_EBR_CORE",
+      ),
+    ],
+    "N1E1:JQ1": [
+      (
+        from_wire: "N1W1:JDOB13_EBR_CORE",
       ),
     ],
     "N1E1:JQ1_CIBTEST": [
@@ -498,9 +618,19 @@
         from_wire: "N1W1:JDOB13_EBR_CORE",
       ),
     ],
+    "N1E1:JQ2": [
+      (
+        from_wire: "N1W1:JDOB14_EBR_CORE",
+      ),
+    ],
     "N1E1:JQ2_CIBTEST": [
       (
         from_wire: "N1W1:JDOB14_EBR_CORE",
+      ),
+    ],
+    "N1E1:JQ3": [
+      (
+        from_wire: "N1W1:JDOB15_EBR_CORE",
       ),
     ],
     "N1E1:JQ3_CIBTEST": [
@@ -508,9 +638,19 @@
         from_wire: "N1W1:JDOB15_EBR_CORE",
       ),
     ],
+    "N1E1:JQ4": [
+      (
+        from_wire: "N1W1:JDOB16_EBR_CORE",
+      ),
+    ],
     "N1E1:JQ4_CIBTEST": [
       (
         from_wire: "N1W1:JDOB16_EBR_CORE",
+      ),
+    ],
+    "N1E1:JQ5": [
+      (
+        from_wire: "N1W1:JDOB17_EBR_CORE",
       ),
     ],
     "N1E1:JQ5_CIBTEST": [
@@ -888,9 +1028,44 @@
         from_wire: "N1:JCIBMUXOUTC2",
       ),
     ],
+    "N1W1:JDWS0_EBR_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTA1",
+      ),
+    ],
+    "N1W1:JDWS1_EBR_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTA5",
+      ),
+    ],
+    "N1W1:JDWS2_EBR_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC6",
+      ),
+    ],
+    "N1W1:JDWS3_EBR_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTB5",
+      ),
+    ],
+    "N1W1:JDWS4_EBR_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC0",
+      ),
+    ],
+    "N1W1:JF0": [
+      (
+        from_wire: "N1W1:JONEERR_EBR_CORE",
+      ),
+    ],
     "N1W1:JF0_CIBTEST": [
       (
         from_wire: "N1W1:JONEERR_EBR_CORE",
+      ),
+    ],
+    "N1W1:JF1": [
+      (
+        from_wire: "N1W1:JTWOERR_EBR_CORE",
       ),
     ],
     "N1W1:JF1_CIBTEST": [
@@ -898,9 +1073,19 @@
         from_wire: "N1W1:JTWOERR_EBR_CORE",
       ),
     ],
+    "N1W1:JF4": [
+      (
+        from_wire: "N1W1:JDOA0_EBR_CORE",
+      ),
+    ],
     "N1W1:JF4_CIBTEST": [
       (
         from_wire: "N1W1:JDOA0_EBR_CORE",
+      ),
+    ],
+    "N1W1:JF5": [
+      (
+        from_wire: "N1W1:JDOA1_EBR_CORE",
       ),
     ],
     "N1W1:JF5_CIBTEST": [
@@ -908,9 +1093,19 @@
         from_wire: "N1W1:JDOA1_EBR_CORE",
       ),
     ],
+    "N1W1:JF6": [
+      (
+        from_wire: "N1W1:JDOA2_EBR_CORE",
+      ),
+    ],
     "N1W1:JF6_CIBTEST": [
       (
         from_wire: "N1W1:JDOA2_EBR_CORE",
+      ),
+    ],
+    "N1W1:JF7": [
+      (
+        from_wire: "N1W1:JDOA3_EBR_CORE",
       ),
     ],
     "N1W1:JF7_CIBTEST": [
@@ -918,9 +1113,19 @@
         from_wire: "N1W1:JDOA3_EBR_CORE",
       ),
     ],
+    "N1W1:JQ0": [
+      (
+        from_wire: "N1W1:JEMPTYF_EBR_CORE",
+      ),
+    ],
     "N1W1:JQ0_CIBTEST": [
       (
         from_wire: "N1W1:JEMPTYF_EBR_CORE",
+      ),
+    ],
+    "N1W1:JQ1": [
+      (
+        from_wire: "N1W1:JFULLF_EBR_CORE",
       ),
     ],
     "N1W1:JQ1_CIBTEST": [
@@ -928,9 +1133,19 @@
         from_wire: "N1W1:JFULLF_EBR_CORE",
       ),
     ],
+    "N1W1:JQ2": [
+      (
+        from_wire: "N1W1:JAEMPTY_EBR_CORE",
+      ),
+    ],
     "N1W1:JQ2_CIBTEST": [
       (
         from_wire: "N1W1:JAEMPTY_EBR_CORE",
+      ),
+    ],
+    "N1W1:JQ3": [
+      (
+        from_wire: "N1W1:JAFULL_EBR_CORE",
       ),
     ],
     "N1W1:JQ3_CIBTEST": [
@@ -938,9 +1153,19 @@
         from_wire: "N1W1:JAFULL_EBR_CORE",
       ),
     ],
+    "N1W1:JQ4": [
+      (
+        from_wire: "N1W1:JDOB0_EBR_CORE",
+      ),
+    ],
     "N1W1:JQ4_CIBTEST": [
       (
         from_wire: "N1W1:JDOB0_EBR_CORE",
+      ),
+    ],
+    "N1W1:JQ5": [
+      (
+        from_wire: "N1W1:JDOB1_EBR_CORE",
       ),
     ],
     "N1W1:JQ5_CIBTEST": [
@@ -948,9 +1173,19 @@
         from_wire: "N1W1:JDOB1_EBR_CORE",
       ),
     ],
+    "N1W1:JQ6": [
+      (
+        from_wire: "N1W1:JDOB2_EBR_CORE",
+      ),
+    ],
     "N1W1:JQ6_CIBTEST": [
       (
         from_wire: "N1W1:JDOB2_EBR_CORE",
+      ),
+    ],
+    "N1W1:JQ7": [
+      (
+        from_wire: "N1W1:JDOB3_EBR_CORE",
       ),
     ],
     "N1W1:JQ7_CIBTEST": [
