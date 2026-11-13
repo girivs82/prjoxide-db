@@ -2,56 +2,56 @@
     "pip_classes": {
         "abcd -> a_lut": {
             "base": [
-                68,
-                83
+                63,
+                79
             ]
         },
         "abcd -> b_lut": {
             "base": [
-                55,
-                71
+                51,
+                68
             ]
         },
         "abcd -> c_drmux": {
             "base": [
-                18,
-                26
+                14,
+                22
             ]
         },
         "abcd -> c_lut": {
             "base": [
-                60,
-                77
+                58,
+                76
             ]
         },
         "abcd -> cibmuxi": {
             "base": [
-                6,
-                21
+                9,
+                31
             ]
         },
         "abcd -> d_dimux": {
             "base": [
-                12,
-                24
+                14,
+                21
             ]
         },
         "abcd -> d_drmux": {
             "base": [
-                17,
-                28
+                12,
+                20
             ]
         },
         "acc54 -> f": {
             "base": [
-                47,
-                83
+                45,
+                79
             ]
         },
         "acc54 -> q": {
             "base": [
-                49,
-                95
+                48,
+                92
             ]
         },
         "acc54_internal": {
@@ -62,74 +62,74 @@
         },
         "acc54_routethru": {
             "base": [
-                92,
-                132
+                90,
+                130
             ]
         },
         "ce -> ce_dff": {
             "base": [
-                20,
-                3
+                13,
+                1
             ]
         },
         "ce -> ebr": {
             "base": [
-                37,
-                93
+                44,
+                104
             ]
         },
         "ce -> iologic": {
             "base": [
-                40,
-                49
+                35,
+                43
             ]
         },
         "ce -> lram": {
             "base": [
-                72,
-                97
+                77,
+                108
             ]
         },
         "ce -> mult9": {
             "base": [
-                51,
-                105
+                62,
+                121
             ]
         },
         "ce -> preadd9": {
             "base": [
-                53,
-                105
+                63,
+                118
             ]
         },
         "ce -> siologic": {
             "base": [
-                58,
-                81
+                69,
+                97
             ]
         },
         "cibmuxi -> cibmuxo": {
             "base": [
-                6,
-                21
+                9,
+                31
             ]
         },
         "cibmuxo -> acc54": {
             "base": [
-                195,
-                274
+                192,
+                260
             ]
         },
         "cibmuxo -> dcc": {
             "base": [
-                130,
-                197
+                137,
+                190
             ]
         },
         "cibmuxo -> ebr": {
             "base": [
-                144,
-                223
+                140,
+                209
             ]
         },
         "cibmuxo -> io18": {
@@ -140,56 +140,56 @@
         },
         "cibmuxo -> io33": {
             "base": [
-                201,
-                257
+                192,
+                241
             ]
         },
         "cibmuxo -> iologic": {
             "base": [
-                66,
-                105
+                54,
+                83
             ]
         },
         "cibmuxo -> lram": {
             "base": [
-                155,
-                218
+                99,
+                150
             ]
         },
         "cibmuxo -> mult18": {
             "base": [
-                108,
-                169
+                105,
+                152
             ]
         },
         "cibmuxo -> mult18x36": {
             "base": [
-                161,
-                220
+                165,
+                206
             ]
         },
         "cibmuxo -> mult9": {
             "base": [
-                196,
-                275
+                193,
+                261
             ]
         },
         "cibmuxo -> pll": {
             "base": [
-                141,
-                190
+                153,
+                200
             ]
         },
         "cibmuxo -> preadd9": {
             "base": [
-                200,
-                279
+                197,
+                265
             ]
         },
         "cibmuxo -> siologic": {
             "base": [
-                115,
-                159
+                126,
+                158
             ]
         },
         "clk -> acc54": {
@@ -207,12 +207,12 @@
         "clk -> ebr": {
             "base": [
                 50,
-                82
+                83
             ]
         },
         "clk -> iologic": {
             "base": [
-                44,
+                45,
                 78
             ]
         },
@@ -224,8 +224,8 @@
         },
         "clk -> pll": {
             "base": [
-                140,
-                144
+                141,
+                145
             ]
         },
         "clk -> preadd9": {
@@ -242,386 +242,422 @@
         },
         "clk -> siologic": {
             "base": [
-                44,
-                77
+                45,
+                79
             ]
         },
         "dcc -> jhpfe_cmux": {
             "base": [
-                134,
-                144
+                146,
+                157
             ]
         },
         "dcc -> jhpfw_cmux": {
             "base": [
-                109,
-                117
+                115,
+                125
             ]
         },
         "dcc -> jjclkll_cmux": {
+            "base": [
+                3,
+                7
+            ]
+        },
+        "dcc -> jjclklr_cmux": {
+            "base": [
+                3,
+                4
+            ]
+        },
+        "dcc -> jjclkul_cmux": {
             "base": [
                 5,
                 9
             ]
         },
-        "dcc -> jjclklr_cmux": {
-            "base": [
-                4,
-                6
-            ]
-        },
-        "dcc -> jjclkul_cmux": {
-            "base": [
-                7,
-                11
-            ]
-        },
         "dcc -> jjclkur_cmux": {
             "base": [
-                7,
-                10
+                5,
+                7
             ]
         },
         "dcc -> jvpfn_cmux": {
             "base": [
-                168,
-                174
+                166,
+                172
             ]
         },
         "dcc_internal": {
             "base": [
-                28,
-                19
+                30,
+                21
             ]
         },
         "e11:span6e -> span6w": {
             "base": [
-                109,
-                131
+                125,
+                151
             ]
         },
         "e1:f -> span2w": {
             "base": [
-                28,
-                53
+                32,
+                59
             ]
         },
         "e1:q -> span2w": {
             "base": [
-                29,
-                47
+                32,
+                51
             ]
         },
         "e1:span1w -> abcd": {
             "base": [
-                4,
-                4
+                5,
+                2
             ]
         },
         "e1:span2e -> abcd": {
             "base": [
-                19,
-                18
+                15,
+                20
             ]
         },
         "e1:span2e -> ce": {
             "base": [
-                45,
-                70
+                32,
+                50
             ]
         },
         "e1:span2e -> lsr": {
             "base": [
-                54,
-                63
+                58,
+                69
             ]
         },
         "e1:span2e -> span0h": {
             "base": [
-                15,
-                19
+                18,
+                27
             ]
         },
         "e1:span2e -> span0v": {
             "base": [
-                14,
-                24
+                8,
+                22
             ]
         },
         "e1:span2e -> span2w": {
             "base": [
-                57,
-                80
+                40,
+                67
             ]
         },
         "e1:span2s -> span2w": {
             "base": [
-                125,
-                159
+                123,
+                156
             ]
         },
         "e1:span2v -> span2w": {
             "base": [
-                110,
-                140
+                115,
+                144
             ]
         },
         "e1:span2w -> abcd": {
             "base": [
-                31,
-                35
+                29,
+                32
             ]
         },
         "e1:span2w -> ce": {
             "base": [
-                6,
-                19
+                4,
+                17
             ]
         },
         "e1:span2w -> lsr": {
             "base": [
-                12,
-                24
+                9,
+                20
             ]
         },
         "e1:span2w -> m": {
             "base": [
-                50,
-                49
+                40,
+                35
             ]
         },
         "e1:span2w -> span0h": {
             "base": [
-                26,
-                28
+                27,
+                29
             ]
         },
         "e1:span2w -> span0v": {
             "base": [
-                36,
-                41
+                30,
+                34
             ]
         },
         "e1:span6e -> span2e": {
             "base": [
-                12,
-                14
+                22,
+                29
             ]
         },
         "e1:span6e -> span2w": {
             "base": [
-                47,
-                47
+                49,
+                51
             ]
         },
         "e1:span6e -> span6w": {
             "base": [
                 88,
-                93
+                94
             ]
         },
         "e1:span6s -> span2w": {
             "base": [
-                50,
-                74
+                60,
+                86
             ]
         },
         "e1:span6v -> span2w": {
             "base": [
-                63,
-                88
+                55,
+                83
             ]
         },
         "e1:span6w -> span2e": {
             "base": [
-                12,
-                5
+                18,
+                13
             ]
         },
         "e1:span6w -> span2w": {
             "base": [
-                13,
-                8
+                21,
+                19
             ]
         },
         "e2:span1w -> span2w": {
             "base": [
-                50,
-                64
+                60,
+                77
             ]
         },
         "e2:span2e -> abcd": {
             "base": [
-                66,
-                83
+                61,
+                72
             ]
         },
         "e2:span2e -> ce": {
             "base": [
-                88,
-                75
+                99,
+                89
             ]
         },
         "e2:span2e -> lsr": {
             "base": [
-                92,
-                90
+                105,
+                105
+            ]
+        },
+        "e2:span2e -> m": {
+            "base": [
+                48,
+                49
             ]
         },
         "e2:span2e -> span0h": {
             "base": [
                 21,
-                30
+                19
             ]
         },
         "e2:span2e -> span0v": {
             "base": [
-                20,
-                27
+                71,
+                86
             ]
         },
         "e2:span2w -> span2w": {
             "base": [
-                121,
-                151
+                122,
+                153
             ]
         },
         "e2:span6e -> span1w": {
             "base": [
-                20,
-                18
+                34,
+                45
             ]
         },
         "e2:span6w -> span1w": {
             "base": [
-                1,
-                21
+                4,
+                12
             ]
         },
         "e2:span6w -> span2e": {
             "base": [
-                68,
-                81
+                65,
+                77
             ]
         },
         "e3:f -> span6w": {
             "base": [
-                108,
-                141
+                114,
+                148
             ]
         },
         "e3:q -> span6w": {
             "base": [
-                101,
-                127
+                105,
+                132
             ]
         },
         "e3:span2e -> span2w": {
             "base": [
-                49,
-                13
+                6,
+                49
             ]
         },
         "e3:span2e -> span6w": {
             "base": [
-                85,
-                106
+                170,
+                203
             ]
         },
         "e3:span6e -> span2e": {
             "base": [
-                12,
-                0
+                42,
+                57
             ]
         },
         "e3:span6e -> span2w": {
             "base": [
-                65,
-                61
+                56,
+                65
             ]
         },
         "e3:span6s -> span6w": {
             "base": [
-                128,
-                161
+                129,
+                160
             ]
         },
         "e3:span6v -> span6w": {
             "base": [
                 130,
-                160
+                164
             ]
         },
         "e3:span6w -> span1w": {
             "base": [
-                102,
-                118
+                95,
+                111
             ]
         },
         "e3:span6w -> span2w": {
             "base": [
-                35,
-                46
+                28,
+                36
             ]
         },
         "e4:span1w -> span6w": {
             "base": [
-                101,
-                131
+                105,
+                135
             ]
         },
         "e4:span2w -> span6w": {
             "base": [
-                187,
-                224
+                186,
+                221
+            ]
+        },
+        "e4:span6e -> span1w": {
+            "base": [
+                49,
+                52
             ]
         },
         "e4:span6w -> span2w": {
             "base": [
-                53,
-                55
+                51,
+                53
             ]
         },
         "e5:span2e -> span6w": {
             "base": [
-                169,
-                199
+                195,
+                235
             ]
         },
         "e5:span6e -> span2e": {
             "base": [
-                72,
-                73
+                45,
+                46
+            ]
+        },
+        "e5:span6e -> span2w": {
+            "base": [
+                33,
+                43
             ]
         },
         "e6:span6w -> span6w": {
             "base": [
-                120,
-                136
+                121,
+                137
             ]
         },
         "e7:span6e -> span2e": {
             "base": [
-                97,
-                107
+                68,
+                79
+            ]
+        },
+        "e7:span6e -> span2w": {
+            "base": [
+                31,
+                25
+            ]
+        },
+        "e7:span6e -> span6w": {
+            "base": [
+                17,
+                12
             ]
         },
         "e8:span6e -> span1w": {
             "base": [
-                61,
-                70
+                104,
+                124
+            ]
+        },
+        "e9:span6e -> span2w": {
+            "base": [
+                73,
+                89
             ]
         },
         "ebr -> f": {
             "base": [
-                88,
-                126
+                85,
+                121
             ]
         },
         "ebr -> q": {
             "base": [
-                86,
-                131
+                84,
+                129
             ]
         },
         "f -> a": {
@@ -657,25 +693,25 @@
         "f -> span0h": {
             "base": [
                 1,
-                1
+                2
             ]
         },
         "f -> span0v": {
             "base": [
                 0,
-                1
+                0
             ]
         },
         "f -> span1s": {
             "base": [
-                88,
-                142
+                84,
+                138
             ]
         },
         "f -> span1w": {
             "base": [
-                79,
-                124
+                78,
+                122
             ]
         },
         "f_lut -> di_dff": {
@@ -686,19 +722,19 @@
         },
         "f_lut -> f": {
             "base": [
-                72,
-                103
+                76,
+                105
             ]
         },
         "hpbx -> ce": {
             "base": [
-                30,
-                39
+                37,
+                44
             ]
         },
         "hpbx -> clk": {
             "base": [
-                60,
+                63,
                 45
             ]
         },
@@ -710,8 +746,8 @@
         },
         "hpbx -> lsr": {
             "base": [
-                31,
-                38
+                37,
+                41
             ]
         },
         "hpbx -> span1s": {
@@ -722,44 +758,44 @@
         },
         "hpbx -> span1w": {
             "base": [
-                66,
-                88
+                67,
+                86
             ]
         },
         "hprx -> vpsx": {
             "base": [
-                432,
-                469
+                421,
+                457
             ]
         },
         "hprx_cmux -> hprx_g": {
             "base": [
-                432,
-                469
+                421,
+                457
             ]
         },
         "hprx_g -> hprx": {
             "base": [
-                432,
-                469
+                421,
+                457
             ]
         },
         "io18 -> iologic": {
             "base": [
-                37,
-                32
+                36,
+                30
             ]
         },
         "io33 -> f": {
             "base": [
-                73,
-                99
+                61,
+                80
             ]
         },
         "io33 -> q": {
             "base": [
-                66,
-                103
+                58,
+                88
             ]
         },
         "io33 -> siologic": {
@@ -770,26 +806,26 @@
         },
         "iologic -> f": {
             "base": [
-                117,
-                231
+                120,
+                238
             ]
         },
         "iologic -> io18": {
             "base": [
-                667,
-                668
+                679,
+                677
             ]
         },
         "iologic -> q": {
             "base": [
-                102,
-                146
+                105,
+                147
             ]
         },
         "iologic_internal": {
             "base": [
-                18,
-                29
+                17,
+                26
             ]
         },
         "jeclkdiv0 -> jvpf_mid": {
@@ -806,98 +842,98 @@
         },
         "jhpfe_cmux -> hprx_cmux": {
             "base": [
-                134,
-                144
+                146,
+                157
             ]
         },
         "jhpfw_cmux -> hprx_cmux": {
             "base": [
-                109,
-                117
+                115,
+                125
             ]
         },
         "jjclkll_cmux -> hprx_cmux": {
+            "base": [
+                3,
+                7
+            ]
+        },
+        "jjclklr_cmux -> hprx_cmux": {
+            "base": [
+                3,
+                4
+            ]
+        },
+        "jjclkul_cmux -> hprx_cmux": {
             "base": [
                 5,
                 9
             ]
         },
-        "jjclklr_cmux -> hprx_cmux": {
-            "base": [
-                4,
-                6
-            ]
-        },
-        "jjclkul_cmux -> hprx_cmux": {
-            "base": [
-                7,
-                11
-            ]
-        },
         "jjclkur_cmux -> hprx_cmux": {
             "base": [
-                7,
-                10
+                5,
+                7
             ]
         },
         "jllclkop -> jhpf_mid": {
             "base": [
-                23,
-                13
+                31,
+                22
             ]
         },
         "jllclkop -> jvpf_mid": {
             "base": [
-                16,
-                10
+                19,
+                14
             ]
         },
         "jllclkop_mid_entry": {
             "base": [
-                7,
-                3
+                12,
+                8
             ]
         },
         "jllclkos -> jvpf_mid": {
+            "base": [
+                5,
+                4
+            ]
+        },
+        "jllclkos2 -> jvpf_mid": {
             "base": [
                 6,
                 5
             ]
         },
-        "jllclkos2 -> jvpf_mid": {
-            "base": [
-                7,
-                6
-            ]
-        },
         "jllclkos2_mid_entry": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jllclkos3 -> jvpf_mid": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jllclkos3_mid_entry": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jllclkos4 -> jvpf_mid": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jllclkos4_mid_entry": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jllclkos5 -> jvpf_mid": {
@@ -914,8 +950,8 @@
         },
         "jllclkos_mid_entry": {
             "base": [
-                6,
-                5
+                5,
+                4
             ]
         },
         "jlrclkop -> jvpf_mid": {
@@ -944,86 +980,110 @@
         },
         "jlrclkos3 -> jvpf_mid": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jlrclkos3_mid_entry": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jlrclkos4 -> jvpf_mid": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jlrclkos4_mid_entry": {
             "base": [
-                7,
-                6
+                6,
+                5
             ]
         },
         "jlrclkos5 -> jvpf_mid": {
             "base": [
-                6,
-                5
+                5,
+                4
             ]
         },
         "jlrclkos5_mid_entry": {
             "base": [
-                6,
-                5
+                5,
+                4
+            ]
+        },
+        "jpclkt10 -> jhpf_mid": {
+            "base": [
+                93,
+                103
+            ]
+        },
+        "jpclkt10_mid_entry": {
+            "base": [
+                93,
+                103
             ]
         },
         "jpclkt11 -> jhpf_mid": {
             "base": [
-                35,
-                33
+                27,
+                24
             ]
         },
         "jpclkt11_mid_entry": {
             "base": [
-                35,
-                33
+                27,
+                24
             ]
         },
         "jpclkt12 -> jhpf_mid": {
             "base": [
-                30,
-                26
+                22,
+                16
             ]
         },
         "jpclkt12_mid_entry": {
             "base": [
-                30,
-                26
+                22,
+                16
+            ]
+        },
+        "jpclkt20 -> jhpf_mid": {
+            "base": [
+                106,
+                118
+            ]
+        },
+        "jpclkt20_mid_entry": {
+            "base": [
+                106,
+                118
             ]
         },
         "jpclkt21 -> jhpf_mid": {
             "base": [
-                31,
-                27
+                23,
+                18
             ]
         },
         "jpclkt21_mid_entry": {
             "base": [
-                31,
-                27
+                23,
+                18
             ]
         },
         "jpclkt22 -> jhpf_mid": {
             "base": [
-                33,
-                30
+                25,
+                21
             ]
         },
         "jpclkt22_mid_entry": {
             "base": [
-                33,
-                30
+                25,
+                21
             ]
         },
         "jpclkt33 -> jvpf_mid": {
@@ -1052,122 +1112,122 @@
         },
         "jpclkt43 -> jvpf_mid": {
             "base": [
-                32,
+                31,
                 38
             ]
         },
         "jpclkt43_mid_entry": {
             "base": [
-                32,
+                31,
                 38
             ]
         },
         "jpclkt51 -> jvpf_mid": {
             "base": [
-                33,
+                32,
                 39
             ]
         },
         "jpclkt51_mid_entry": {
             "base": [
-                33,
+                32,
                 39
             ]
         },
         "jpclkt53 -> jvpf_mid": {
             "base": [
-                32,
-                38
+                31,
+                37
             ]
         },
         "jpclkt53_mid_entry": {
             "base": [
-                32,
-                38
+                31,
+                37
             ]
         },
         "jpclkt60 -> jhpf_mid": {
             "base": [
-                88,
-                100
+                78,
+                91
             ]
         },
         "jpclkt60_mid_entry": {
             "base": [
-                88,
-                100
+                78,
+                91
             ]
         },
         "jpclkt61 -> jhpf_mid": {
             "base": [
-                25,
-                24
+                17,
+                14
             ]
         },
         "jpclkt61_mid_entry": {
             "base": [
-                25,
-                24
+                17,
+                14
             ]
         },
         "jpclkt62 -> jhpf_mid": {
             "base": [
-                21,
-                21
+                13,
+                12
             ]
         },
         "jpclkt62_mid_entry": {
             "base": [
-                21,
-                21
+                13,
+                12
             ]
         },
         "jpclkt70 -> jhpf_mid": {
             "base": [
-                86,
-                98
+                77,
+                89
             ]
         },
         "jpclkt70_mid_entry": {
             "base": [
-                86,
-                98
+                77,
+                89
             ]
         },
         "jpclkt71 -> jhpf_mid": {
             "base": [
-                22,
-                22
+                14,
+                12
             ]
         },
         "jpclkt71_mid_entry": {
             "base": [
-                22,
-                22
+                14,
+                12
             ]
         },
         "jpclkt72 -> jhpf_mid": {
             "base": [
-                25,
-                22
+                17,
+                13
             ]
         },
         "jpclkt72_mid_entry": {
             "base": [
-                25,
-                22
+                17,
+                13
             ]
         },
         "julclkop -> jhpf_mid": {
             "base": [
-                19,
-                14
+                28,
+                23
             ]
         },
         "julclkop_mid_entry": {
             "base": [
-                19,
-                14
+                28,
+                23
             ]
         },
         "julclkos -> jhpf_mid": {
@@ -1178,50 +1238,50 @@
         },
         "julclkos2 -> jhpf_mid": {
             "base": [
-                19,
-                12
+                27,
+                20
             ]
         },
         "julclkos2_mid_entry": {
             "base": [
-                19,
-                12
+                27,
+                20
             ]
         },
         "julclkos3 -> jhpf_mid": {
             "base": [
-                17,
-                18
+                25,
+                26
             ]
         },
         "julclkos3_mid_entry": {
             "base": [
-                17,
-                18
+                25,
+                26
             ]
         },
         "julclkos4 -> jhpf_mid": {
             "base": [
-                19,
-                14
+                28,
+                23
             ]
         },
         "julclkos4_mid_entry": {
             "base": [
-                19,
-                14
+                28,
+                23
             ]
         },
         "julclkos5 -> jhpf_mid": {
             "base": [
-                23,
-                13
+                31,
+                23
             ]
         },
         "julclkos5_mid_entry": {
             "base": [
-                23,
-                13
+                31,
+                23
             ]
         },
         "julclkos_mid_entry": {
@@ -1232,140 +1292,140 @@
         },
         "jurclkop -> jhpf_mid": {
             "base": [
-                12,
-                11
+                20,
+                20
             ]
         },
         "jurclkop_mid_entry": {
             "base": [
-                12,
-                11
+                20,
+                20
             ]
         },
         "jurclkos -> jhpf_mid": {
             "base": [
-                10,
-                9
+                18,
+                19
             ]
         },
         "jurclkos2 -> jhpf_mid": {
             "base": [
-                9,
-                9
+                17,
+                19
             ]
         },
         "jurclkos2_mid_entry": {
             "base": [
-                9,
-                9
+                17,
+                19
             ]
         },
         "jurclkos3 -> jhpf_mid": {
             "base": [
-                16,
-                13
+                23,
+                21
             ]
         },
         "jurclkos3_mid_entry": {
             "base": [
-                16,
-                13
+                23,
+                21
             ]
         },
         "jurclkos4 -> jhpf_mid": {
             "base": [
-                13,
-                12
+                21,
+                21
             ]
         },
         "jurclkos4_mid_entry": {
             "base": [
-                13,
-                12
+                21,
+                21
             ]
         },
         "jurclkos5 -> jhpf_mid": {
             "base": [
-                13,
-                12
+                21,
+                21
             ]
         },
         "jurclkos5_mid_entry": {
             "base": [
-                13,
-                12
+                21,
+                21
             ]
         },
         "jurclkos_mid_entry": {
             "base": [
-                10,
-                9
+                18,
+                19
             ]
         },
         "jvpfn_cmux -> hprx_cmux": {
             "base": [
-                168,
-                174
+                166,
+                172
             ]
         },
         "lram -> f": {
             "base": [
-                53,
-                105
+                103,
+                147
             ]
         },
         "lram -> q": {
             "base": [
-                56,
-                120
+                105,
+                160
             ]
         },
         "lsr -> ebr": {
             "base": [
-                26,
-                88
+                40,
+                108
             ]
         },
         "lsr -> iologic": {
             "base": [
-                24,
-                30
+                21,
+                29
             ]
         },
         "lsr -> lram": {
             "base": [
-                80,
-                113
+                74,
+                105
             ]
         },
         "lsr -> lsr_dff": {
             "base": [
-                18,
-                2
+                12,
+                3
             ]
         },
         "lsr -> mult9": {
             "base": [
-                24,
-                76
+                38,
+                95
             ]
         },
         "lsr -> pll": {
             "base": [
-                117,
-                118
+                122,
+                121
             ]
         },
         "lsr -> preadd9": {
             "base": [
-                11,
-                64
+                28,
+                87
             ]
         },
         "lsr -> siologic": {
             "base": [
-                40,
-                60
+                53,
+                78
             ]
         },
         "lutram_internal": {
@@ -1376,14 +1436,14 @@
         },
         "m -> m_dimux": {
             "base": [
-                11,
-                14
+                9,
+                10
             ]
         },
         "mid -> dcc": {
             "base": [
-                377,
-                431
+                410,
+                469
             ]
         },
         "mult18 -> mult18x36": {
@@ -1434,58 +1494,64 @@
                 0
             ]
         },
+        "n11:span6v -> span6s": {
+            "base": [
+                117,
+                142
+            ]
+        },
         "n1:f -> span2s": {
             "base": [
-                10,
-                34
+                15,
+                42
             ]
         },
         "n1:q -> span2s": {
             "base": [
-                22,
-                43
+                26,
+                49
             ]
         },
         "n1:span1s -> abcd": {
             "base": [
-                0,
+                1,
                 0
             ]
         },
         "n1:span1s -> clk": {
             "base": [
-                11,
-                80
+                8,
+                83
             ]
         },
         "n1:span2e -> span2s": {
             "base": [
-                81,
-                103
+                83,
+                107
             ]
         },
         "n1:span2s -> abcd": {
             "base": [
-                44,
-                55
+                41,
+                51
             ]
         },
         "n1:span2s -> ce": {
             "base": [
-                28,
-                52
+                26,
+                49
             ]
         },
         "n1:span2s -> clk": {
             "base": [
-                41,
-                88
+                38,
+                83
             ]
         },
         "n1:span2s -> lsr": {
             "base": [
-                34,
-                56
+                30,
+                50
             ]
         },
         "n1:span2s -> span0h": {
@@ -1496,620 +1562,770 @@
         },
         "n1:span2s -> span0v": {
             "base": [
-                48,
-                61
+                42,
+                53
             ]
         },
         "n1:span2v -> abcd": {
             "base": [
-                51,
-                54
+                35,
+                35
             ]
         },
         "n1:span2v -> ce": {
             "base": [
-                8,
-                11
+                6,
+                9
             ]
         },
         "n1:span2v -> lsr": {
             "base": [
-                4,
-                19
+                3,
+                17
             ]
         },
         "n1:span2v -> span0h": {
             "base": [
-                43,
-                42
+                40,
+                45
             ]
         },
         "n1:span2v -> span0v": {
             "base": [
-                4,
-                5
+                31,
+                35
             ]
         },
         "n1:span2v -> span2s": {
             "base": [
-                26,
-                19
+                60,
+                67
             ]
         },
         "n1:span2w -> span2s": {
             "base": [
-                91,
-                115
+                94,
+                119
             ]
         },
         "n1:span6e -> span2s": {
             "base": [
-                35,
-                42
+                36,
+                43
             ]
         },
         "n1:span6s -> span2s": {
             "base": [
-                70,
-                92
+                80,
+                106
             ]
         },
         "n1:span6s -> span2v": {
             "base": [
-                71,
-                92
+                66,
+                84
             ]
         },
         "n1:span6v -> span2s": {
             "base": [
-                37,
-                26
+                32,
+                55
+            ]
+        },
+        "n1:span6v -> span2v": {
+            "base": [
+                13,
+                3
             ]
         },
         "n1:span6v -> span6s": {
             "base": [
-                3,
-                9
+                12,
+                2
             ]
         },
         "n1:span6w -> span2s": {
             "base": [
                 54,
-                61
+                62
             ]
         },
         "n1e1:span1s -> span2w": {
             "base": [
-                54,
-                69
+                65,
+                81
             ]
         },
         "n1e1:span1w -> span2s": {
             "base": [
-                35,
+                34,
                 52
             ]
         },
         "n1e1:span2e -> span2s": {
             "base": [
-                42,
-                65
+                49,
+                75
             ]
         },
         "n1e1:span2s -> span2w": {
+            "base": [
+                118,
+                150
+            ]
+        },
+        "n1e1:span2v -> span2w": {
+            "base": [
+                149,
+                180
+            ]
+        },
+        "n1e1:span2w -> span2s": {
+            "base": [
+                81,
+                107
+            ]
+        },
+        "n1e1:span6e -> span2s": {
+            "base": [
+                19,
+                31
+            ]
+        },
+        "n1e1:span6v -> span2w": {
+            "base": [
+                40,
+                51
+            ]
+        },
+        "n1e2:span2e -> span2s": {
+            "base": [
+                91,
+                126
+            ]
+        },
+        "n1e2:span6e -> span2s": {
+            "base": [
+                21,
+                15
+            ]
+        },
+        "n1e2:span6w -> span2s": {
+            "base": [
+                56,
+                67
+            ]
+        },
+        "n1e3:span1s -> span6w": {
+            "base": [
+                119,
+                156
+            ]
+        },
+        "n1e3:span6e -> span2s": {
+            "base": [
+                38,
+                57
+            ]
+        },
+        "n1e3:span6v -> span6w": {
+            "base": [
+                57,
+                64
+            ]
+        },
+        "n1e3:span6w -> span2s": {
+            "base": [
+                40,
+                49
+            ]
+        },
+        "n1e4:span6e -> span2s": {
+            "base": [
+                23,
+                15
+            ]
+        },
+        "n1e5:span6e -> span2s": {
+            "base": [
+                8,
+                13
+            ]
+        },
+        "n1e8:span6e -> span2s": {
+            "base": [
+                60,
+                74
+            ]
+        },
+        "n1w1:span1s -> span2e": {
+            "base": [
+                65,
+                82
+            ]
+        },
+        "n1w1:span1w -> span2s": {
+            "base": [
+                46,
+                67
+            ]
+        },
+        "n1w1:span2e -> span2s": {
+            "base": [
+                83,
+                110
+            ]
+        },
+        "n1w1:span2s -> span2e": {
             "base": [
                 120,
                 154
             ]
         },
-        "n1e1:span2v -> span2w": {
-            "base": [
-                138,
-                163
-            ]
-        },
-        "n1e1:span2w -> span2s": {
-            "base": [
-                83,
-                109
-            ]
-        },
-        "n1e1:span6e -> span2s": {
-            "base": [
-                7,
-                3
-            ]
-        },
-        "n1e1:span6v -> span2w": {
-            "base": [
-                42,
-                42
-            ]
-        },
-        "n1e2:span2e -> span2s": {
-            "base": [
-                77,
-                113
-            ]
-        },
-        "n1e2:span6e -> span2s": {
-            "base": [
-                41,
-                40
-            ]
-        },
-        "n1e2:span6w -> span2s": {
-            "base": [
-                61,
-                76
-            ]
-        },
-        "n1e3:span1s -> span6w": {
-            "base": [
-                106,
-                142
-            ]
-        },
-        "n1e3:span6e -> span2s": {
-            "base": [
-                78,
-                107
-            ]
-        },
-        "n1e3:span6v -> span6w": {
-            "base": [
-                90,
-                102
-            ]
-        },
-        "n1e3:span6w -> span2s": {
-            "base": [
-                48,
-                58
-            ]
-        },
-        "n1e5:span6e -> span2s": {
-            "base": [
-                15,
-                1
-            ]
-        },
-        "n1e8:span6e -> span2s": {
-            "base": [
-                48,
-                56
-            ]
-        },
-        "n1w1:span1s -> span2e": {
-            "base": [
-                60,
-                78
-            ]
-        },
-        "n1w1:span1w -> span2s": {
-            "base": [
-                40,
-                58
-            ]
-        },
-        "n1w1:span2e -> span2s": {
-            "base": [
-                81,
-                105
-            ]
-        },
-        "n1w1:span2s -> span2e": {
-            "base": [
-                123,
-                160
-            ]
-        },
         "n1w1:span2v -> span2e": {
             "base": [
-                126,
-                140
+                110,
+                135
             ]
         },
         "n1w1:span2w -> span2s": {
             "base": [
-                53,
-                82
+                51,
+                77
             ]
         },
         "n1w1:span6v -> span2e": {
             "base": [
-                31,
-                37
+                37,
+                48
             ]
         },
         "n1w2:span2w -> span2s": {
             "base": [
-                37,
-                55
+                41,
+                62
             ]
         },
         "n1w2:span6e -> span2s": {
             "base": [
-                34,
-                34
+                44,
+                45
             ]
         },
         "n1w2:span6w -> span2s": {
             "base": [
-                15,
-                42
+                21,
+                53
             ]
         },
         "n1w3:span1s -> span6e": {
             "base": [
-                112,
-                143
+                114,
+                144
             ]
         },
         "n1w3:span6e -> span2s": {
             "base": [
-                49,
-                57
+                50,
+                60
+            ]
+        },
+        "n1w3:span6v -> span6e": {
+            "base": [
+                103,
+                124
             ]
         },
         "n1w3:span6w -> span2s": {
             "base": [
-                38,
-                61
+                36,
+                58
             ]
         },
         "n1w8:span6w -> span2s": {
             "base": [
-                10,
-                18
+                12,
+                22
             ]
         },
         "n2:span1s -> span2s": {
             "base": [
-                55,
-                72
+                67,
+                87
             ]
         },
         "n2:span2s -> span2s": {
             "base": [
-                100,
-                131
+                101,
+                132
+            ]
+        },
+        "n2:span2v -> abcd": {
+            "base": [
+                24,
+                45
+            ]
+        },
+        "n2:span2v -> span0h": {
+            "base": [
+                96,
+                130
+            ]
+        },
+        "n2:span2v -> span0v": {
+            "base": [
+                56,
+                75
             ]
         },
         "n2:span6s -> span2v": {
             "base": [
                 63,
-                92
+                89
             ]
         },
         "n2:span6v -> span1s": {
             "base": [
                 31,
-                21
+                16
             ]
         },
         "n2e1:span2v -> span2w": {
             "base": [
-                96,
-                134
+                30,
+                46
             ]
         },
         "n2e1:span6s -> span2w": {
             "base": [
-                99,
-                118
+                102,
+                123
+            ]
+        },
+        "n2e1:span6v -> span2w": {
+            "base": [
+                65,
+                88
             ]
         },
         "n2e3:span6s -> span6w": {
             "base": [
-                81,
-                86
+                85,
+                85
             ]
         },
         "n2e3:span6v -> span6w": {
             "base": [
-                155,
-                160
+                94,
+                96
             ]
         },
         "n2w1:span2v -> span2e": {
             "base": [
-                136,
-                153
+                96,
+                116
             ]
         },
         "n2w1:span6s -> span2e": {
             "base": [
-                10,
-                10
+                11,
+                16
             ]
         },
         "n2w1:span6v -> span2e": {
             "base": [
-                14,
-                34
+                23,
+                44
             ]
         },
         "n2w3:span6s -> span6e": {
             "base": [
-                236,
-                251
+                222,
+                239
+            ]
+        },
+        "n2w3:span6v -> span6e": {
+            "base": [
+                68,
+                77
             ]
         },
         "n3:f -> span6s": {
             "base": [
-                114,
-                151
+                112,
+                147
             ]
         },
         "n3:q -> span6s": {
             "base": [
-                123,
-                152
+                118,
+                145
+            ]
+        },
+        "n3:span2v -> span2s": {
+            "base": [
+                24,
+                33
             ]
         },
         "n3:span2v -> span6s": {
             "base": [
-                95,
-                101
+                94,
+                99
             ]
         },
         "n3:span6e -> span6s": {
             "base": [
-                116,
-                130
+                107,
+                119
             ]
         },
         "n3:span6s -> span1s": {
             "base": [
-                104,
-                148
+                110,
+                154
             ]
         },
         "n3:span6s -> span2s": {
             "base": [
-                116,
-                151
+                110,
+                141
             ]
         },
         "n3:span6v -> span2s": {
             "base": [
-                56,
-                68
+                35,
+                51
             ]
         },
         "n3:span6v -> span2v": {
             "base": [
-                10,
-                6
+                3,
+                0
+            ]
+        },
+        "n3:span6v -> span6s": {
+            "base": [
+                31,
+                20
             ]
         },
         "n3:span6w -> span6s": {
             "base": [
-                117,
-                132
+                112,
+                127
             ]
         },
         "n3e1:span1w -> span6s": {
             "base": [
-                157,
-                160
+                156,
+                164
             ]
         },
         "n3e1:span6e -> span6s": {
             "base": [
-                66,
+                82,
                 91
             ]
         },
         "n3e1:span6s -> span2w": {
             "base": [
-                51,
-                72
+                66,
+                89
+            ]
+        },
+        "n3e1:span6v -> span2w": {
+            "base": [
+                2,
+                8
             ]
         },
         "n3e2:span6e -> span6s": {
             "base": [
-                66,
-                59
+                78,
+                79
             ]
         },
         "n3e2:span6w -> span6s": {
             "base": [
-                13,
-                25
+                4,
+                4
             ]
         },
         "n3e3:span6e -> span6s": {
             "base": [
-                52,
-                47
+                63,
+                68
             ]
         },
         "n3e3:span6s -> span6w": {
             "base": [
-                137,
-                173
+                151,
+                186
             ]
         },
         "n3e3:span6v -> span6w": {
             "base": [
-                34,
-                41
+                31,
+                32
             ]
         },
         "n3e3:span6w -> span6s": {
             "base": [
-                142,
-                158
+                137,
+                155
             ]
         },
         "n3e4:span6e -> span6s": {
             "base": [
-                143,
-                157
+                101,
+                120
             ]
         },
         "n3e5:span6e -> span6s": {
             "base": [
-                85,
-                93
+                107,
+                125
+            ]
+        },
+        "n3e6:span6e -> span6s": {
+            "base": [
+                114,
+                109
             ]
         },
         "n3e8:span6e -> span6s": {
             "base": [
-                100,
-                124
+                111,
+                137
             ]
         },
         "n3w1:span1w -> span6s": {
             "base": [
-                136,
-                159
+                130,
+                152
             ]
         },
         "n3w1:span6s -> span2e": {
             "base": [
-                53,
-                76
+                59,
+                82
+            ]
+        },
+        "n3w1:span6v -> span2e": {
+            "base": [
+                32,
+                31
             ]
         },
         "n3w2:span6e -> span6s": {
             "base": [
-                48,
-                61
+                80,
+                107
             ]
         },
         "n3w3:span6e -> span6s": {
             "base": [
-                132,
-                147
+                122,
+                136
             ]
         },
         "n3w3:span6s -> span6e": {
             "base": [
-                121,
-                155
+                127,
+                164
             ]
         },
         "n3w3:span6v -> span6e": {
             "base": [
-                6,
-                11
+                78,
+                83
             ]
         },
         "n3w4:span6w -> span6s": {
             "base": [
-                114,
-                151
+                109,
+                145
             ]
         },
         "n3w5:span6w -> span6s": {
             "base": [
-                142,
-                214
+                127,
+                194
             ]
         },
         "n3w8:span6w -> span6s": {
             "base": [
-                84,
-                81
+                86,
+                83
             ]
         },
         "n4:span1s -> span6s": {
             "base": [
-                136,
-                158
+                134,
+                153
             ]
         },
         "n4:span2s -> span6s": {
             "base": [
-                193,
-                231
+                184,
+                222
             ]
         },
         "n4:span6s -> span2s": {
             "base": [
-                44,
-                69
+                57,
+                85
             ]
         },
         "n4:span6v -> span1s": {
             "base": [
-                70,
-                73
+                50,
+                42
+            ]
+        },
+        "n4e1:span6v -> span2w": {
+            "base": [
+                4,
+                2
+            ]
+        },
+        "n4e3:span6v -> span6w": {
+            "base": [
+                28,
+                48
+            ]
+        },
+        "n4w1:span6v -> span2e": {
+            "base": [
+                76,
+                89
+            ]
+        },
+        "n4w3:span6v -> span6e": {
+            "base": [
+                60,
+                69
             ]
         },
         "n5:span2v -> span6s": {
             "base": [
-                217,
-                257
+                171,
+                188
+            ]
+        },
+        "n5:span6v -> span2s": {
+            "base": [
+                27,
+                28
             ]
         },
         "n5:span6v -> span2v": {
             "base": [
-                14,
-                21
+                26,
+                37
             ]
         },
         "n5:span6v -> span6s": {
             "base": [
-                27,
-                19
+                25,
+                18
+            ]
+        },
+        "n5e1:span6v -> span2w": {
+            "base": [
+                52,
+                65
             ]
         },
         "n5e3:span6v -> span6w": {
             "base": [
-                125,
-                155
+                29,
+                12
             ]
         },
         "n5w1:span6v -> span2e": {
             "base": [
-                105,
-                122
+                7,
+                5
+            ]
+        },
+        "n5w3:span6v -> span6e": {
+            "base": [
+                108,
+                120
             ]
         },
         "n6:span6s -> span6s": {
             "base": [
-                136,
-                173
+                133,
+                170
+            ]
+        },
+        "n6:span6v -> span1s": {
+            "base": [
+                21,
+                34
+            ]
+        },
+        "n6e1:span6v -> span2w": {
+            "base": [
+                123,
+                148
+            ]
+        },
+        "n6e3:span6v -> span6w": {
+            "base": [
+                16,
+                17
+            ]
+        },
+        "n6w1:span6v -> span2e": {
+            "base": [
+                6,
+                5
             ]
         },
         "n7:span6v -> span2v": {
             "base": [
-                50,
-                40
+                46,
+                47
             ]
         },
         "n8:span6v -> span1s": {
             "base": [
-                6,
-                40
+                88,
+                104
             ]
         },
         "n8e1:span6v -> span2w": {
             "base": [
-                48,
-                43
+                69,
+                80
             ]
         },
         "n8e3:span6v -> span6w": {
             "base": [
-                186,
-                205
+                198,
+                225
             ]
         },
         "n8w1:span6v -> span2e": {
             "base": [
-                61,
-                99
+                48,
+                55
             ]
         },
         "n8w3:span6v -> span6e": {
             "base": [
-                24,
-                46
+                103,
+                106
+            ]
+        },
+        "n9:span6v -> span2s": {
+            "base": [
+                35,
+                37
             ]
         },
         "ofx -> di_dff": {
@@ -2120,8 +2336,8 @@
         },
         "ofx -> f": {
             "base": [
-                68,
-                100
+                72,
+                102
             ]
         },
         "preadd9 -> mult9": {
@@ -2144,62 +2360,62 @@
         },
         "q -> span0h": {
             "base": [
-                1,
-                1
+                0,
+                0
             ]
         },
         "q -> span0v": {
             "base": [
-                1,
-                0
+                0,
+                1
             ]
         },
         "q -> span1s": {
             "base": [
-                94,
-                140
+                88,
+                133
             ]
         },
         "q -> span1w": {
             "base": [
-                84,
-                121
+                82,
+                117
             ]
         },
         "q_dff -> q": {
             "base": [
-                57,
-                92
+                61,
+                96
             ]
         },
         "reg18 -> acc54": {
             "base": [
-                19,
-                17
+                18,
+                18
             ]
         },
         "reg18_routethru": {
             "base": [
-                101,
-                127
+                102,
+                126
             ]
         },
         "s11:span6s -> span6v": {
             "base": [
-                81,
-                96
+                99,
+                115
             ]
         },
         "s1:f -> span2v": {
             "base": [
-                24,
-                47
+                22,
+                46
             ]
         },
         "s1:q -> span2v": {
             "base": [
-                18,
-                38
+                15,
+                34
             ]
         },
         "s1:span1s -> a": {
@@ -2210,314 +2426,344 @@
         },
         "s1:span1s -> abcd": {
             "base": [
-                1,
-                2
+                4,
+                3
             ]
         },
         "s1:span1s -> clk": {
             "base": [
-                41,
-                41
+                30,
+                31
             ]
         },
         "s1:span2e -> span2v": {
             "base": [
-                104,
-                130
+                98,
+                123
             ]
         },
         "s1:span2s -> abcd": {
             "base": [
-                15,
-                11
+                20,
+                19
             ]
         },
         "s1:span2s -> ce": {
             "base": [
-                48,
-                35
+                30,
+                15
             ]
         },
         "s1:span2s -> lsr": {
             "base": [
-                9,
-                4
+                5,
+                13
             ]
         },
         "s1:span2s -> span0h": {
             "base": [
-                20,
-                30
+                21,
+                32
             ]
         },
         "s1:span2s -> span0v": {
             "base": [
-                77,
-                97
+                61,
+                76
             ]
         },
         "s1:span2s -> span2v": {
             "base": [
-                44,
-                48
+                39,
+                39
             ]
         },
         "s1:span2v -> abcd": {
             "base": [
-                30,
-                36
+                35,
+                44
             ]
         },
         "s1:span2v -> ce": {
             "base": [
-                11,
-                31
+                22,
+                45
             ]
         },
         "s1:span2v -> clk": {
             "base": [
-                34,
-                76
+                43,
+                88
             ]
         },
         "s1:span2v -> lsr": {
             "base": [
-                15,
-                31
+                24,
+                44
             ]
         },
         "s1:span2v -> span0h": {
-            "base": [
-                18,
-                23
-            ]
-        },
-        "s1:span2v -> span0v": {
             "base": [
                 28,
                 36
             ]
         },
+        "s1:span2v -> span0v": {
+            "base": [
+                31,
+                41
+            ]
+        },
         "s1:span2w -> span2v": {
             "base": [
-                94,
-                122
+                82,
+                106
             ]
         },
         "s1:span6e -> span2v": {
             "base": [
-                38,
-                46
+                31,
+                36
             ]
         },
         "s1:span6s -> span2v": {
             "base": [
-                26,
-                25
+                22,
+                17
             ]
         },
         "s1:span6s -> span6v": {
             "base": [
-                108,
-                105
+                116,
+                111
             ]
         },
         "s1:span6v -> span2s": {
             "base": [
-                87,
-                118
+                4,
+                0
+            ]
+        },
+        "s1:span6v -> span2v": {
+            "base": [
+                37,
+                41
             ]
         },
         "s1:span6w -> span2v": {
             "base": [
-                78,
-                91
+                62,
+                73
             ]
         },
         "s1e1:span1s -> span2w": {
             "base": [
-                58,
-                75
+                67,
+                84
             ]
         },
         "s1e1:span1w -> span2v": {
             "base": [
-                53,
-                76
+                47,
+                67
             ]
         },
         "s1e1:span2e -> span2v": {
             "base": [
-                1,
-                1
+                5,
+                12
+            ]
+        },
+        "s1e1:span2s -> span2w": {
+            "base": [
+                31,
+                44
             ]
         },
         "s1e1:span2v -> span2w": {
             "base": [
-                110,
-                140
+                118,
+                151
             ]
         },
         "s1e1:span2w -> span2v": {
             "base": [
-                99,
-                128
+                88,
+                114
             ]
         },
         "s1e1:span6e -> span2v": {
             "base": [
-                28,
-                41
+                37,
+                51
             ]
         },
         "s1e2:span2e -> span2v": {
             "base": [
-                19,
-                29
+                23,
+                25
             ]
         },
         "s1e2:span6e -> span2v": {
             "base": [
-                15,
-                24
+                6,
+                0
             ]
         },
         "s1e2:span6w -> span2v": {
             "base": [
-                5,
-                4
+                1,
+                8
             ]
         },
         "s1e3:span1s -> span6w": {
             "base": [
-                107,
-                138
+                119,
+                150
+            ]
+        },
+        "s1e3:span6e -> span2v": {
+            "base": [
+                11,
+                22
             ]
         },
         "s1e3:span6s -> span6w": {
             "base": [
-                43,
-                30
+                54,
+                46
             ]
         },
         "s1e3:span6w -> span2v": {
             "base": [
-                66,
-                79
+                59,
+                66
+            ]
+        },
+        "s1e4:span6e -> span2v": {
+            "base": [
+                1,
+                0
             ]
         },
         "s1e5:span6e -> span2v": {
             "base": [
-                2,
-                2
+                24,
+                36
+            ]
+        },
+        "s1e8:span6e -> span2v": {
+            "base": [
+                46,
+                49
             ]
         },
         "s1w1:span1s -> span2e": {
             "base": [
-                56,
-                78
+                60,
+                80
             ]
         },
         "s1w1:span1w -> span2v": {
             "base": [
-                52,
-                70
+                47,
+                63
             ]
         },
         "s1w1:span2e -> span2v": {
             "base": [
-                94,
-                122
+                90,
+                116
             ]
         },
         "s1w1:span2s -> span2e": {
             "base": [
-                49,
-                55
+                52,
+                53
             ]
         },
         "s1w1:span2v -> span2e": {
             "base": [
-                111,
-                145
+                114,
+                150
             ]
         },
         "s1w1:span2w -> span2v": {
             "base": [
-                44,
-                73
+                43,
+                70
             ]
         },
         "s1w1:span6w -> span2v": {
             "base": [
-                69,
-                74
+                54,
+                58
             ]
         },
         "s1w2:span2w -> span2v": {
             "base": [
-                108,
-                160
+                112,
+                163
             ]
         },
         "s1w2:span6e -> span2v": {
             "base": [
-                112,
-                139
+                74,
+                95
             ]
         },
         "s1w2:span6w -> span2v": {
             "base": [
-                16,
-                25
+                22,
+                31
             ]
         },
         "s1w3:span1s -> span6e": {
             "base": [
-                111,
-                141
+                115,
+                146
             ]
         },
         "s1w3:span6e -> span2v": {
             "base": [
-                86,
-                103
+                79,
+                93
             ]
         },
         "s1w3:span6s -> span6e": {
             "base": [
-                93,
-                95
+                98,
+                100
             ]
         },
         "s1w5:span6w -> span2v": {
             "base": [
-                53,
-                74
+                43,
+                60
             ]
         },
         "s2:span1s -> span2v": {
             "base": [
                 53,
-                68
+                65
             ]
         },
         "s2:span2s -> abcd": {
             "base": [
-                55,
-                62
+                52,
+                59
             ]
         },
         "s2:span2s -> span0h": {
             "base": [
-                8,
-                13
+                7,
+                11
             ]
         },
         "s2:span2s -> span0v": {
             "base": [
-                20,
-                25
+                28,
+                39
             ]
         },
         "s2:span2v -> span2v": {
@@ -2534,368 +2780,374 @@
         },
         "s2:span6v -> span1s": {
             "base": [
-                106,
-                163
+                90,
+                123
             ]
         },
         "s2:span6v -> span2s": {
             "base": [
-                47,
-                66
+                40,
+                63
             ]
         },
         "s2e1:span2s -> span2w": {
             "base": [
-                44,
-                47
+                56,
+                59
             ]
         },
         "s2e1:span6v -> span2w": {
             "base": [
                 33,
-                30
+                44
             ]
         },
         "s2e3:span6v -> span6w": {
             "base": [
-                38,
-                53
+                74,
+                99
             ]
         },
         "s2w1:span2s -> span2e": {
             "base": [
                 26,
-                32
+                31
             ]
         },
         "s2w1:span6v -> span2e": {
             "base": [
-                10,
-                23
+                43,
+                56
             ]
         },
         "s2w3:span6s -> span6e": {
             "base": [
-                100,
-                113
+                99,
+                107
             ]
         },
         "s2w3:span6v -> span6e": {
             "base": [
-                106,
-                99
+                93,
+                105
             ]
         },
         "s3:f -> span6v": {
             "base": [
-                124,
-                165
+                137,
+                181
             ]
         },
         "s3:q -> span6v": {
             "base": [
-                96,
-                122
+                102,
+                127
             ]
         },
         "s3:span2s -> span6v": {
             "base": [
-                127,
+                132,
                 153
             ]
         },
         "s3:span6e -> span6v": {
             "base": [
-                107,
-                125
+                116,
+                132
             ]
         },
         "s3:span6s -> span2s": {
             "base": [
                 5,
-                16
+                2
             ]
         },
         "s3:span6s -> span2v": {
             "base": [
-                13,
-                2
+                17,
+                10
             ]
         },
         "s3:span6s -> span6v": {
             "base": [
-                80,
-                60
+                100,
+                79
             ]
         },
         "s3:span6v -> span1s": {
             "base": [
-                136,
-                186
+                123,
+                176
             ]
         },
         "s3:span6v -> span2v": {
             "base": [
-                5,
-                13
+                35,
+                52
             ]
         },
         "s3:span6w -> span6v": {
             "base": [
-                130,
-                148
+                139,
+                155
             ]
         },
         "s3e1:span1w -> span6v": {
             "base": [
-                109,
-                132
+                121,
+                144
             ]
         },
         "s3e1:span6e -> span6v": {
             "base": [
-                72,
-                95
+                101,
+                121
             ]
         },
         "s3e1:span6v -> span2w": {
             "base": [
-                84,
-                104
+                80,
+                105
             ]
         },
         "s3e2:span6e -> span6v": {
             "base": [
-                56,
-                54
+                71,
+                83
             ]
         },
         "s3e2:span6w -> span6v": {
             "base": [
-                88,
-                108
+                64,
+                77
             ]
         },
         "s3e3:span6e -> span6v": {
             "base": [
-                105,
-                137
+                99,
+                120
             ]
         },
         "s3e3:span6v -> span6w": {
             "base": [
-                138,
-                174
+                123,
+                159
             ]
         },
         "s3e3:span6w -> span6v": {
             "base": [
-                115,
-                128
+                112,
+                122
             ]
         },
         "s3e4:span6e -> span6v": {
             "base": [
-                53,
-                61
+                5,
+                1
             ]
         },
         "s3e5:span6e -> span6v": {
             "base": [
-                89,
-                101
+                76,
+                90
+            ]
+        },
+        "s3e6:span6e -> span6v": {
+            "base": [
+                30,
+                36
             ]
         },
         "s3e8:span6e -> span6v": {
             "base": [
-                27,
-                43
+                52,
+                68
             ]
         },
         "s3w1:span1w -> span6v": {
             "base": [
-                119,
-                148
+                129,
+                158
             ]
         },
         "s3w1:span6v -> span2e": {
             "base": [
-                89,
-                116
+                74,
+                103
             ]
         },
         "s3w1:span6w -> span6v": {
             "base": [
-                65,
-                96
+                73,
+                102
             ]
         },
         "s3w2:span6e -> span6v": {
             "base": [
-                30,
-                42
+                59,
+                65
             ]
         },
         "s3w2:span6w -> span6v": {
             "base": [
-                65,
-                94
+                72,
+                97
             ]
         },
         "s3w3:span6e -> span6v": {
-            "base": [
-                116,
-                134
-            ]
-        },
-        "s3w3:span6s -> span6e": {
             "base": [
                 125,
                 142
             ]
         },
+        "s3w3:span6s -> span6e": {
+            "base": [
+                81,
+                84
+            ]
+        },
         "s3w3:span6v -> span6e": {
             "base": [
-                157,
-                191
+                154,
+                187
             ]
         },
         "s3w4:span6w -> span6v": {
             "base": [
-                74,
+                78,
                 89
             ]
         },
         "s3w5:span6w -> span6v": {
             "base": [
-                115,
-                132
+                132,
+                149
             ]
         },
         "s3w8:span6w -> span6v": {
             "base": [
-                32,
+                24,
                 23
             ]
         },
         "s4:span1s -> span6v": {
             "base": [
-                120,
-                136
+                143,
+                157
             ]
         },
         "s4:span2v -> span6v": {
             "base": [
-                191,
-                229
+                201,
+                239
             ]
         },
         "s4:span6s -> span1s": {
             "base": [
-                93,
-                106
+                91,
+                103
             ]
         },
         "s4:span6v -> span2v": {
             "base": [
-                75,
-                98
+                61,
+                85
             ]
         },
         "s4e3:span6s -> span6w": {
             "base": [
-                86,
-                88
+                90,
+                89
             ]
         },
         "s4w1:span6s -> span2e": {
             "base": [
-                35,
-                34
+                34,
+                31
             ]
         },
         "s4w3:span6s -> span6e": {
             "base": [
-                143,
-                140
+                157,
+                156
             ]
         },
         "s5:span2s -> span6v": {
             "base": [
-                3,
-                1
+                28,
+                28
             ]
         },
         "s5:span6s -> span2s": {
             "base": [
-                5,
-                26
+                2,
+                16
             ]
         },
         "s5:span6s -> span2v": {
             "base": [
-                17,
-                19
+                16,
+                15
             ]
         },
         "s5e3:span6s -> span6w": {
             "base": [
-                58,
-                94
+                69,
+                110
             ]
         },
         "s5w3:span6s -> span6e": {
             "base": [
-                139,
-                148
+                145,
+                155
             ]
         },
         "s6:span6v -> span6v": {
             "base": [
-                133,
-                169
+                129,
+                164
             ]
         },
         "s7:span6s -> span2s": {
             "base": [
-                6,
-                28
+                1,
+                19
             ]
         },
         "s7:span6s -> span2v": {
             "base": [
-                39,
-                32
+                37,
+                28
             ]
         },
         "s7:span6s -> span6v": {
             "base": [
-                66,
-                77
+                73,
+                79
             ]
         },
         "s8:span6s -> span1s": {
             "base": [
-                61,
-                74
+                64,
+                78
             ]
         },
         "s8w1:span6s -> span2e": {
             "base": [
-                278,
-                329
+                260,
+                298
             ]
         },
         "s8w3:span6s -> span6e": {
             "base": [
-                69,
-                82
+                63,
+                72
             ]
         },
         "siologic -> f": {
             "base": [
                 42,
-                98
+                99
             ]
         },
         "siologic -> io33": {
@@ -2906,8 +3158,8 @@
         },
         "siologic -> q": {
             "base": [
-                45,
-                113
+                46,
+                115
             ]
         },
         "slice_internal": {
@@ -2918,44 +3170,44 @@
         },
         "span0h -> abcd": {
             "base": [
-                85,
-                98
+                81,
+                93
             ]
         },
         "span0h -> ce": {
             "base": [
-                58,
-                84
+                56,
+                81
             ]
         },
         "span0h -> lsr": {
             "base": [
-                72,
-                100
+                69,
+                94
             ]
         },
         "span0v -> abcd": {
             "base": [
-                72,
-                82
+                75,
+                87
             ]
         },
         "span0v -> ce": {
             "base": [
-                52,
-                75
+                57,
+                81
             ]
         },
         "span0v -> clk": {
             "base": [
-                73,
-                113
+                76,
+                117
             ]
         },
         "span0v -> m": {
             "base": [
-                85,
-                97
+                82,
+                93
             ]
         },
         "span1s -> abcd": {
@@ -2966,104 +3218,104 @@
         },
         "span1s -> m": {
             "base": [
-                0,
-                2
+                3,
+                9
             ]
         },
         "span1s -> span2s": {
             "base": [
-                37,
-                47
+                47,
+                59
             ]
         },
         "span1s -> span2v": {
             "base": [
-                71,
-                96
+                72,
+                95
             ]
         },
         "span1w -> abcd": {
             "base": [
                 1,
-                1
+                2
             ]
         },
         "span1w -> m": {
             "base": [
-                7,
+                1,
                 7
             ]
         },
         "span1w -> span2e": {
             "base": [
-                57,
-                71
+                59,
+                75
             ]
         },
         "span1w -> span2w": {
             "base": [
-                54,
-                68
+                61,
+                78
             ]
         },
         "span2e -> abcd": {
             "base": [
                 22,
-                23
+                24
             ]
         },
         "span2e -> ce": {
             "base": [
-                3,
-                14
+                5,
+                18
             ]
         },
         "span2e -> lsr": {
             "base": [
                 10,
-                18
+                19
             ]
         },
         "span2e -> m": {
             "base": [
-                46,
-                43
+                39,
+                32
             ]
         },
         "span2e -> span0h": {
             "base": [
-                19,
-                18
+                23,
+                24
             ]
         },
         "span2e -> span0v": {
             "base": [
-                30,
-                33
+                27,
+                31
             ]
         },
         "span2s -> abcd": {
             "base": [
-                44,
-                56
+                41,
+                52
             ]
         },
         "span2s -> ce": {
             "base": [
-                47,
-                70
+                43,
+                65
             ]
         },
         "span2s -> clk": {
             "base": [
-                59,
-                99
+                55,
+                94
             ]
         },
         "span2s -> lsr": {
             "base": [
-                41,
-                67
+                38,
+                61
             ]
         },
         "span2s -> span0h": {
@@ -3074,98 +3326,104 @@
         },
         "span2s -> span0v": {
             "base": [
-                47,
-                60
+                40,
+                51
             ]
         },
         "span2v -> abcd": {
             "base": [
-                22,
-                28
+                27,
+                35
             ]
         },
         "span2v -> ce": {
-            "base": [
-                17,
-                34
-            ]
-        },
-        "span2v -> clk": {
-            "base": [
-                30,
-                66
-            ]
-        },
-        "span2v -> lsr": {
             "base": [
                 25,
                 46
             ]
         },
+        "span2v -> clk": {
+            "base": [
+                38,
+                78
+            ]
+        },
+        "span2v -> lsr": {
+            "base": [
+                34,
+                58
+            ]
+        },
         "span2v -> span0h": {
             "base": [
-                18,
-                23
+                27,
+                36
             ]
         },
         "span2v -> span0v": {
             "base": [
-                27,
-                37
+                31,
+                42
             ]
         },
         "span2w -> abcd": {
             "base": [
-                27,
-                31
+                24,
+                28
             ]
         },
         "span2w -> ce": {
             "base": [
-                7,
-                21
+                6,
+                19
             ]
         },
         "span2w -> lsr": {
             "base": [
-                16,
-                31
+                10,
+                24
             ]
         },
         "span2w -> m": {
             "base": [
-                53,
-                52
+                42,
+                37
             ]
         },
         "span2w -> span0h": {
             "base": [
-                21,
-                24
+                22,
+                25
             ]
         },
         "span2w -> span0v": {
             "base": [
-                33,
-                40
+                27,
+                32
             ]
         },
         "span6e -> span1w": {
             "base": [
-                126,
-                136
+                104,
+                123
             ]
         },
         "span6s -> span1s": {
             "base": [
-                85,
-                96
+                91,
+                105
+            ]
+        },
+        "span6v -> span1s": {
+            "base": [
+                82,
+                101
             ]
         },
         "span6w -> span1w": {
             "base": [
-                100,
-                115
+                92,
+                104
             ]
         },
         "tile_carry": {
@@ -3182,20 +3440,20 @@
         },
         "vpsx -> hpbx": {
             "base": [
-                432,
-                469
+                421,
+                457
             ]
         },
         "w11:span6w -> span6e": {
             "base": [
-                132,
-                157
+                143,
+                173
             ]
         },
         "w1:f -> span2e": {
             "base": [
-                28,
-                55
+                29,
+                56
             ]
         },
         "w1:q -> span2e": {
@@ -3206,289 +3464,289 @@
         },
         "w1:span1w -> abcd": {
             "base": [
-                2,
-                4
+                3,
+                3
             ]
         },
         "w1:span2e -> abcd": {
             "base": [
                 24,
-                24
+                25
             ]
         },
         "w1:span2e -> ce": {
             "base": [
-                5,
-                15
+                6,
+                18
             ]
         },
         "w1:span2e -> lsr": {
             "base": [
                 12,
-                24
+                25
             ]
         },
         "w1:span2e -> m": {
             "base": [
-                48,
-                44
+                42,
+                35
             ]
         },
         "w1:span2e -> span0h": {
             "base": [
-                21,
-                19
+                24,
+                25
             ]
         },
         "w1:span2e -> span0v": {
             "base": [
-                31,
-                34
+                28,
+                31
             ]
         },
         "w1:span2s -> span2e": {
             "base": [
-                126,
-                162
+                123,
+                156
             ]
         },
         "w1:span2v -> span2e": {
             "base": [
-                109,
-                143
+                114,
+                149
             ]
         },
         "w1:span2w -> abcd": {
             "base": [
-                1,
-                3
+                3,
+                5
             ]
         },
         "w1:span2w -> ce": {
             "base": [
-                25,
-                15
+                22,
+                12
             ]
         },
         "w1:span2w -> lsr": {
             "base": [
-                4,
-                5
+                1,
+                8
             ]
         },
         "w1:span2w -> span0h": {
             "base": [
-                9,
-                25
+                16,
+                35
             ]
         },
         "w1:span2w -> span0v": {
             "base": [
-                22,
-                23
+                12,
+                11
             ]
         },
         "w1:span2w -> span2e": {
             "base": [
-                62,
-                96
+                83,
+                117
             ]
         },
         "w1:span6e -> span2e": {
             "base": [
-                36,
-                60
+                31,
+                43
             ]
         },
         "w1:span6e -> span2w": {
             "base": [
-                48,
-                52
+                49,
+                55
             ]
         },
         "w1:span6s -> span2e": {
             "base": [
-                57,
-                84
+                63,
+                91
             ]
         },
         "w1:span6v -> span2e": {
             "base": [
-                88,
-                114
+                74,
+                104
             ]
         },
         "w1:span6w -> span2e": {
             "base": [
-                74,
-                73
+                86,
+                86
             ]
         },
         "w1:span6w -> span2w": {
             "base": [
-                34,
-                32
+                33,
+                33
             ]
         },
         "w1:span6w -> span6e": {
             "base": [
-                58,
-                78
+                64,
+                83
             ]
         },
         "w2:span1w -> span2e": {
             "base": [
-                60,
-                82
+                62,
+                85
             ]
         },
         "w2:span2e -> span2e": {
             "base": [
-                123,
-                154
+                124,
+                155
             ]
         },
         "w2:span2w -> abcd": {
             "base": [
-                5,
-                2
+                9,
+                5
             ]
         },
         "w2:span2w -> ce": {
             "base": [
-                3,
-                22
+                4,
+                28
             ]
         },
         "w2:span2w -> span0v": {
             "base": [
-                37,
-                40
+                43,
+                51
             ]
         },
         "w2:span6e -> span1w": {
             "base": [
-                75,
-                97
+                71,
+                87
             ]
         },
         "w2:span6e -> span2w": {
             "base": [
-                43,
-                45
+                44,
+                48
             ]
         },
         "w2:span6w -> span1w": {
             "base": [
-                91,
-                106
+                84,
+                96
             ]
         },
         "w3:f -> span6e": {
             "base": [
                 108,
-                145
+                147
             ]
         },
         "w3:q -> span6e": {
             "base": [
                 113,
-                140
+                142
             ]
         },
         "w3:span2w -> span2e": {
             "base": [
-                140,
-                157
+                138,
+                152
             ]
         },
         "w3:span2w -> span6e": {
             "base": [
-                143,
-                173
+                139,
+                170
             ]
         },
         "w3:span6e -> span1w": {
             "base": [
-                95,
-                115
+                92,
+                110
             ]
         },
         "w3:span6e -> span2e": {
             "base": [
-                28,
-                35
+                38,
+                42
             ]
         },
         "w3:span6s -> span6e": {
             "base": [
-                112,
-                147
+                121,
+                157
             ]
         },
         "w3:span6v -> span6e": {
             "base": [
-                129,
-                162
+                123,
+                160
             ]
         },
         "w3:span6w -> span2e": {
             "base": [
-                38,
-                38
+                36,
+                37
             ]
         },
         "w3:span6w -> span2w": {
             "base": [
-                56,
-                53
+                60,
+                59
             ]
         },
         "w4:span1w -> span6e": {
             "base": [
-                107,
-                134
+                108,
+                137
             ]
         },
         "w4:span2e -> span6e": {
             "base": [
-                184,
-                221
+                187,
+                225
             ]
         },
         "w4:span6e -> span2e": {
             "base": [
-                42,
-                48
+                40,
+                44
             ]
         },
         "w4:span6w -> span1w": {
             "base": [
-                60,
-                68
+                57,
+                64
             ]
         },
         "w5:span2w -> span6e": {
             "base": [
-                183,
-                213
+                196,
+                227
             ]
         },
         "w5:span6w -> span2e": {
             "base": [
-                30,
-                30
+                25,
+                25
             ]
         },
         "w5:span6w -> span2w": {
             "base": [
-                48,
-                59
+                54,
+                68
             ]
         },
         "w5:span6w -> span6e": {
             "base": [
-                108,
+                107,
                 121
             ]
         },
@@ -3500,32 +3758,32 @@
         },
         "w6:span6w -> span1w": {
             "base": [
-                102,
-                112
+                97,
+                106
             ]
         },
         "w7:span6w -> span2e": {
             "base": [
-                27,
-                34
+                23,
+                29
             ]
         },
         "w7:span6w -> span2w": {
             "base": [
-                7,
-                6
+                17,
+                18
             ]
         },
         "w7:span6w -> span6e": {
             "base": [
-                80,
-                89
+                79,
+                87
             ]
         },
         "w9:span6w -> span6e": {
             "base": [
-                113,
-                133
+                114,
+                134
             ]
         }
     }
