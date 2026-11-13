@@ -141,14 +141,29 @@
         from_wire: "W1:JDOB19_LRAM_CORE",
       ),
     ],
+    "S1W1:JF3_CIBTEST": [
+      (
+        from_wire: "W1:JDOB20_LRAM_CORE",
+      ),
+    ],
     "S1W1:JQ2_CIBTEST": [
       (
         from_wire: "W1:JDOB18_LRAM_CORE",
       ),
     ],
+    "S1W1:JQ3_CIBTEST": [
+      (
+        from_wire: "W1:JDOB17_LRAM_CORE",
+      ),
+    ],
     "S1W1:JQ6_CIBTEST": [
       (
         from_wire: "W1:JDOB16_LRAM_CORE",
+      ),
+    ],
+    "S1W1:JQ7_CIBTEST": [
+      (
+        from_wire: "W1:JDOB15_LRAM_CORE",
       ),
     ],
     "S2W1:JF0_CIBTEST": [
@@ -926,9 +941,19 @@
         from_wire: "S4W1:JCIBMUXOUTC5",
       ),
     ],
+    "W1:JF0_CIBTEST": [
+      (
+        from_wire: "W1:JDOB31_LRAM_CORE",
+      ),
+    ],
     "W1:JF6_CIBTEST": [
       (
         from_wire: "W1:JDOB23_LRAM_CORE",
+      ),
+    ],
+    "W1:JF7_CIBTEST": [
+      (
+        from_wire: "W1:JDOB22_LRAM_CORE",
       ),
     ],
     "W1:JOCEA_LRAM_CORE": [
@@ -944,6 +969,11 @@
     "W1:JQ0_CIBTEST": [
       (
         from_wire: "W1:JDOB30_LRAM_CORE",
+      ),
+    ],
+    "W1:JQ1_CIBTEST": [
+      (
+        from_wire: "W1:JDOB29_LRAM_CORE",
       ),
     ],
     "W1:JQ2_CIBTEST": [
