@@ -53,6 +53,15 @@
         "ENABLED": [(frame:18,bit:0,invert:false,),],
       },
     ),
+    "IOLOGICA.IDDRXN.DDRMODE": (
+      options: {
+        "IDDR71": [(frame:67,bit:0,invert:false,),(frame:68,bit:0,invert:false,),],
+        "IDDRX2": [(frame:67,bit:0,invert:false,),],
+        "IDDRX4": [(frame:66,bit:0,invert:false,),],
+        "IDDRX5": [(frame:66,bit:0,invert:false,),(frame:68,bit:0,invert:false,),],
+        "NONE": [],
+      },
+    ),
     "IOLOGICA.INMUX": (
       options: {
         "BYPASS": [],
@@ -106,6 +115,7 @@
     "IOLOGICA.MODE": (
       options: {
         "IDDRX1_ODDRX1": [(frame:68,bit:0,invert:false,),],
+        "IDDRXN": [],
         "IREG_OREG": [],
         "MIDDRXN_MODDRXN": [(frame:13,bit:0,invert:false,),],
         "NONE": [],
