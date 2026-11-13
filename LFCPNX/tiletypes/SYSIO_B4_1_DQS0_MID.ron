@@ -87,18 +87,20 @@
     ),
     "IOLOGICB.MIDDRXN.DDRMODE": (
       options: {
-        "MIDDRX2": [(frame:68,bit:0,invert:false,),],
-        "MIDDRX4": [(frame:67,bit:0,invert:false,),],
+        "MIDDRX2": [(frame:66,bit:0,invert:false,),(frame:68,bit:0,invert:false,),],
+        "MIDDRX4": [(frame:66,bit:0,invert:false,),(frame:67,bit:0,invert:false,),],
+        "NONE": [],
       },
     ),
     "IOLOGICB.MODDRXN.DDRMODE": (
       options: {
-        "MODDRX2_DQSW": [(frame:39,bit:0,invert:false,),(frame:42,bit:0,invert:false,),],
-        "MODDRX2_DQSW270": [(frame:42,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
-        "MODDRX4_DQSW": [(frame:23,bit:0,invert:false,),(frame:39,bit:0,invert:false,),(frame:42,bit:0,invert:false,),],
-        "MODDRX4_DQSW270": [(frame:23,bit:0,invert:false,),(frame:42,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
-        "MOSHX2": [(frame:22,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
-        "MOSHX4": [(frame:22,bit:0,invert:false,),(frame:24,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "MODDRX2_DQSW": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:39,bit:0,invert:false,),(frame:42,bit:0,invert:false,),],
+        "MODDRX2_DQSW270": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:42,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "MODDRX4_DQSW": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:23,bit:0,invert:false,),(frame:39,bit:0,invert:false,),(frame:42,bit:0,invert:false,),],
+        "MODDRX4_DQSW270": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:23,bit:0,invert:false,),(frame:42,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "MOSHX2": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:22,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "MOSHX4": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:22,bit:0,invert:false,),(frame:24,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "NONE": [],
       },
     ),
     "IOLOGICB.MODE": (
@@ -110,12 +112,20 @@
         "ODDRXN": [],
       },
     ),
+    "IOLOGICB.MTDDRXN.DDRMODE": (
+      options: {
+        "MTSHX2": [(frame:19,bit:0,invert:false,),],
+        "MTSHX4": [(frame:19,bit:0,invert:false,),],
+        "NONE": [],
+      },
+    ),
     "IOLOGICB.ODDRXN.DDRMODE": (
       options: {
-        "ODDR71": [(frame:24,bit:0,invert:false,),],
-        "ODDRX2": [],
-        "ODDRX4": [(frame:23,bit:0,invert:false,),],
-        "ODDRX5": [(frame:23,bit:0,invert:false,),(frame:24,bit:0,invert:false,),],
+        "NONE": [],
+        "ODDR71": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:24,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "ODDRX2": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:64,bit:0,invert:false,),],
+        "ODDRX4": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:23,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
+        "ODDRX5": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:23,bit:0,invert:false,),(frame:24,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
       },
     ),
     "IOLOGICB.OUTMUX": (
