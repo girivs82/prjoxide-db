@@ -236,6 +236,16 @@
         from_wire: "S1E4:JCIBMUXOUTB0",
       ),
     ],
+    "S1E1:JADA1_LRAM_CORE": [
+      (
+        from_wire: "S1E2:JCIBMUXOUTA4",
+      ),
+    ],
+    "S1E1:JADA2_LRAM_CORE": [
+      (
+        from_wire: "S1E2:JCIBMUXOUTA3",
+      ),
+    ],
     "S1E1:JADA3_LRAM_CORE": [
       (
         from_wire: "S1E2:JCIBMUXOUTC1",
@@ -529,6 +539,11 @@
     "S1E1:JDIA3_LRAM_CORE": [
       (
         from_wire: "S1:JCIBMUXOUTD6",
+      ),
+    ],
+    "S1E1:JDIA4_LRAM_CORE": [
+      (
+        from_wire: "S1E1:JCIBMUXOUTA1",
       ),
     ],
     "S1E1:JDIA5_LRAM_CORE": [

@@ -321,9 +321,19 @@
         from_wire: "S1E2:JCE1",
       ),
     ],
+    "S1:JCEB_LRAM_CORE": [
+      (
+        from_wire: "S1E3:JCE0",
+      ),
+    ],
     "S1:JCSA_LRAM_CORE": [
       (
         from_wire: "S1E4:JCIBMUXOUTB3",
+      ),
+    ],
+    "S1:JCSB_LRAM_CORE": [
+      (
+        from_wire: "S1E4:JCIBMUXOUTA2",
       ),
     ],
     "S1:JDIA0_LRAM_CORE": [
@@ -689,6 +699,11 @@
     "S1:JOCEA_LRAM_CORE": [
       (
         from_wire: "S1E3:JCE1",
+      ),
+    ],
+    "S1:JOCEB_LRAM_CORE": [
+      (
+        from_wire: "S1E4:JCE0",
       ),
     ],
     "S1:JQ1_CIBTEST": [

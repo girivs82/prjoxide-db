@@ -1016,6 +1016,11 @@
         from_wire: "W1:JLSR1",
       ),
     ],
+    "W1:JWEA_LRAM_CORE": [
+      (
+        from_wire: "S2W1:JCIBMUXOUTA7",
+      ),
+    ],
     "W1:JWEB_LRAM_CORE": [
       (
         from_wire: "S2W1:JCIBMUXOUTC1",
