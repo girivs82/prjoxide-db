@@ -344,6 +344,12 @@
         "NONE": [(frame:76,bit:0,invert:true,),],
       },
     ),
+    "PIOA.PCLK_ECLK": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:14,bit:0,invert:false,),],
+      },
+    ),
     "PIOA.SEIO18.BASE_TYPE": (
       options: {
         "BIDIR_HSTL15_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
