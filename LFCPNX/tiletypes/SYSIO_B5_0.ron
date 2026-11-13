@@ -501,9 +501,14 @@
     "PIOA.SEIO18.VREF": (
       options: {
         "OFF": [],
-        "VREF1_DRIVER": [(frame:17,bit:1,invert:false,),],
         "VREF1_LOAD": [(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:79,bit:0,invert:false,),],
         "VREF2_LOAD": [(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:80,bit:0,invert:false,),],
+      },
+    ),
+    "PIOA.SEIO18.VREF1_DRIVER": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),],
       },
     ),
     "PIOA.TMUX": (
