@@ -1,5 +1,24 @@
 (
-  pips: {},
+  pips: {
+    "JECLKOUT_I217": [
+      (
+        from_wire: "JECLKIN0_I217",
+        bits: [],
+      ),
+      (
+        from_wire: "JECLKIN1_I217",
+        bits: [(frame:21,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JECLKIN2_I217",
+        bits: [(frame:20,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JECLKIN3_I217",
+        bits: [(frame:20,bit:0,invert:false,),(frame:21,bit:0,invert:false,),],
+      ),
+    ],
+  },
   words: {},
   enums: {
     "PIOA.DIFFIO18.BASE_TYPE": (
