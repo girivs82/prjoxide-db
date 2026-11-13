@@ -222,6 +222,12 @@
         "ENABLED": [],
       },
     ),
+    "SIOLOGICB.IDDRX1_ODDRX1.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:7,bit:0,invert:false,),],
+      },
+    ),
     "SIOLOGICB.IDDRX1_ODDRX1.TRISTATE": (
       options: {
         "DISABLED": [],
@@ -238,6 +244,12 @@
       options: {
         "RESET": [],
         "SET": [(frame:11,bit:6,invert:false,),],
+      },
+    ),
+    "SIOLOGICB.IREG_OREG.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:8,bit:0,invert:false,),],
       },
     ),
     "SIOLOGICB.IREG_OREG.TRISTATE": (

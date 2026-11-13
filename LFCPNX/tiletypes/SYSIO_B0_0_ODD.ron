@@ -432,6 +432,12 @@
         "SET": [(frame:43,bit:0,invert:false,),],
       },
     ),
+    "SIOLOGICA.IREG_OREG.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:51,bit:0,invert:false,),],
+      },
+    ),
     "SIOLOGICA.IREG_OREG.TRISTATE": (
       options: {
         "DISABLED": [],
@@ -540,6 +546,12 @@
       options: {
         "RESET": [],
         "SET": [(frame:100,bit:0,invert:false,),],
+      },
+    ),
+    "SIOLOGICB.IREG_OREG.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:7,bit:0,invert:false,),],
       },
     ),
     "SIOLOGICB.IREG_OREG.TRISTATE": (

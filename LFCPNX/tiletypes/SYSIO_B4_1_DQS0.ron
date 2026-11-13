@@ -91,6 +91,12 @@
         "ENABLED": [],
       },
     ),
+    "IOLOGICB.IDDRX1_ODDRX1.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:21,bit:0,invert:false,),],
+      },
+    ),
     "IOLOGICB.IDDRX1_ODDRX1.TRISTATE": (
       options: {
         "DISABLED": [],
@@ -116,6 +122,12 @@
       options: {
         "RESET": [],
         "SET": [(frame:15,bit:0,invert:false,),],
+      },
+    ),
+    "IOLOGICB.IREG_OREG.OUTPUT": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:21,bit:1,invert:false,),],
       },
     ),
     "IOLOGICB.IREG_OREG.TRISTATE": (
