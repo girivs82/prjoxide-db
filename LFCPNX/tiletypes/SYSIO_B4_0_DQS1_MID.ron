@@ -376,8 +376,8 @@
     ),
     "PIOA.SEIO18.DRIVE_1V0": (
       options: {
-        "2": [(frame:10,bit:1,invert:true,),(frame:12,bit:1,invert:true,),],
-        "4": [(frame:10,bit:1,invert:false,),(frame:12,bit:1,invert:false,),],
+        "2": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:true,),],
+        "4": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
       },
     ),
     "PIOA.SEIO18.DRIVE_1V2": (

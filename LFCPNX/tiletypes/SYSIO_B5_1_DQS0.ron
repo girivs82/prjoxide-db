@@ -382,8 +382,8 @@
     ),
     "PIOB.SEIO18.DRIVE_1V0": (
       options: {
-        "2": [(frame:90,bit:0,invert:true,),(frame:92,bit:0,invert:true,),],
-        "4": [(frame:90,bit:0,invert:false,),(frame:92,bit:0,invert:false,),],
+        "2": [(frame:89,bit:0,invert:true,),(frame:90,bit:0,invert:true,),(frame:91,bit:0,invert:false,),(frame:92,bit:0,invert:true,),(frame:93,bit:0,invert:false,),],
+        "4": [(frame:89,bit:0,invert:true,),(frame:90,bit:0,invert:false,),(frame:91,bit:0,invert:false,),(frame:92,bit:0,invert:false,),(frame:93,bit:0,invert:false,),],
       },
     ),
     "PIOB.SEIO18.DRIVE_1V2": (
