@@ -20,6 +20,19 @@
     ],
   },
   words: {
+    "DQSBUF.S_READ": (
+      bits: [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [(frame:54,bit:1,invert:false,),],
+        [(frame:53,bit:1,invert:false,),],
+      ],
+    ),
     "IOLOGICB.DELAY.DEL_VALUE": (
       bits: [
         [(frame:44,bit:0,invert:false,),],
@@ -34,6 +47,49 @@
     ),
   },
   enums: {
+    "DQSBUF.MODX": (
+      options: {
+        "MDDRX2": [(frame:52,bit:1,invert:false,),],
+        "MDDRX4": [(frame:51,bit:1,invert:false,),(frame:52,bit:1,invert:false,),],
+        "NOT_USED": [],
+      },
+    ),
+    "DQSBUF.RSTMUX": (
+      options: {
+        "INV": [],
+        "RST": [(frame:44,bit:1,invert:false,),],
+      },
+    ),
+    "DQSBUF.RX_CENTERED": (
+      options: {
+        "DISABLED": [(frame:45,bit:1,invert:false,),],
+        "ENABLED": [],
+      },
+    ),
+    "DQSBUF.SIGN_READ": (
+      options: {
+        "COMPLEMENT": [(frame:46,bit:1,invert:false,),],
+        "POSITIVE": [],
+      },
+    ),
+    "DQSBUF.SIGN_WRITE": (
+      options: {
+        "COMPLEMENT": [(frame:47,bit:1,invert:false,),],
+        "POSITIVE": [],
+      },
+    ),
+    "DQSBUF.UPDATE_QU": (
+      options: {
+        "UP1_AHEAD_OF_UP0": [],
+        "UP1_AND_UP0_SAME": [(frame:48,bit:1,invert:false,),],
+      },
+    ),
+    "DQSBUF.WRITE_ENABLE": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:49,bit:1,invert:false,),],
+      },
+    ),
     "IOLOGICB.CEINMUX": (
       options: {
         "1": [(frame:7,bit:0,invert:false,),],
