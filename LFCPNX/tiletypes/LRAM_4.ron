@@ -326,6 +326,11 @@
         from_wire: "S1E3:JCE0",
       ),
     ],
+    "S1:JCLK_LRAM_CORE": [
+      (
+        from_wire: "S1E2:JCLK1",
+      ),
+    ],
     "S1:JCSA_LRAM_CORE": [
       (
         from_wire: "S1E4:JCIBMUXOUTB3",

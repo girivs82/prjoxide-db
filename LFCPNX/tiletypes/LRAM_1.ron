@@ -611,6 +611,11 @@
         from_wire: "S7W1:JCE0",
       ),
     ],
+    "W1:JCLK_LRAM_CORE": [
+      (
+        from_wire: "S7W1:JCLK1",
+      ),
+    ],
     "W1:JCSA_LRAM_CORE": [
       (
         from_wire: "S2W1:JCIBMUXOUTD3",
