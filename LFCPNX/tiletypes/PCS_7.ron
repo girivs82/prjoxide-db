@@ -1,0 +1,47 @@
+(
+  pips: {},
+  words: {
+  },
+  enums: {
+    "LANE_EN": (
+      options: {
+        "DISABLED": [
+        ],
+        "ENABLED": [
+        (
+          frame: 0,
+          bit: 0,
+          invert: false,
+        ),
+        ],
+      },
+    ),
+    "LANE_USED": (
+      options: {
+        "DISABLED": [
+        ],
+        "ENABLED": [
+        (
+          frame: 22,
+          bit: 0,
+          invert: false,
+        ),
+        ],
+      },
+    ),
+    "MODESEL": (
+      options: {
+        "PCS": [
+        ],
+        "PCS10GE": [
+        (
+          frame: 28,
+          bit: 0,
+          invert: false,
+        ),
+        ],
+      },
+    ),
+  },
+  conns: {},
+)

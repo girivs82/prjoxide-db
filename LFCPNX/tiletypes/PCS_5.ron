@@ -1,0 +1,21 @@
+(
+  pips: {},
+  words: {
+  },
+  enums: {
+    "LANE_USED": (
+      options: {
+        "DISABLED": [
+        ],
+        "ENABLED": [
+        (
+          frame: 22,
+          bit: 0,
+          invert: false,
+        ),
+        ],
+      },
+    ),
+  },
+  conns: {},
+)

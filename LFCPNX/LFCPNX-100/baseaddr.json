@@ -36,6 +36,38 @@
             "abits": 17,
             "addr": 774111232
         },
+        "PCS_LANE0": {
+            "abits": 9,
+            "addr": 239206400
+        },
+        "PCS_LANE1": {
+            "abits": 9,
+            "addr": 239337472
+        },
+        "PCS_LANE2": {
+            "abits": 9,
+            "addr": 239468544
+        },
+        "PCS_LANE3": {
+            "abits": 9,
+            "addr": 239599616
+        },
+        "PCS_LANE4": {
+            "abits": 9,
+            "addr": 239730688
+        },
+        "PCS_LANE5": {
+            "abits": 9,
+            "addr": 239861760
+        },
+        "PCS_LANE6": {
+            "abits": 9,
+            "addr": 239992832
+        },
+        "PCS_LANE7": {
+            "abits": 9,
+            "addr": 240123904
+        },
         "PLL_LLC": {
             "abits": 7,
             "addr": 235274240
