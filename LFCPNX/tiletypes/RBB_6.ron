@@ -94,5 +94,10 @@
       bit: 4,
       invert: false,
     ),
+    (
+      frame: 15,
+      bit: 2,
+      invert: false,
+    ),
   ],
 )
