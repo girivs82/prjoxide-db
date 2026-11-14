@@ -136,6 +136,16 @@
     ),
   },
   conns: {
+    "N1W1:JQ6_CIBTEST": [
+      (
+        from_wire: "W1:JOEB_LRAM_CORE",
+      ),
+    ],
+    "N1W1:JQ7_CIBTEST": [
+      (
+        from_wire: "W1:JOEA_LRAM_CORE",
+      ),
+    ],
     "S1W1:JF2_CIBTEST": [
       (
         from_wire: "W1:JDOB19_LRAM_CORE",
@@ -419,6 +429,11 @@
     "S7W1:JQ5_CIBTEST": [
       (
         from_wire: "W1:JERRDECB0_LRAM_CORE",
+      ),
+    ],
+    "S7W1:JQ7_CIBTEST": [
+      (
+        from_wire: "W1:JERRDET_LRAM_CORE",
       ),
     ],
     "W1:JADA0_LRAM_CORE": [
@@ -946,9 +961,19 @@
         from_wire: "S4W1:JCIBMUXOUTC5",
       ),
     ],
+    "W1:JDPS_LRAM_CORE": [
+      (
+        from_wire: "S2W1:JCIBMUXOUTC2",
+      ),
+    ],
     "W1:JF0_CIBTEST": [
       (
         from_wire: "W1:JDOB31_LRAM_CORE",
+      ),
+    ],
+    "W1:JF1_CIBTEST": [
+      (
+        from_wire: "W1:JLRAMREADY_LRAM_CORE",
       ),
     ],
     "W1:JF6_CIBTEST": [
@@ -959,6 +984,16 @@
     "W1:JF7_CIBTEST": [
       (
         from_wire: "W1:JDOB22_LRAM_CORE",
+      ),
+    ],
+    "W1:JIGN_LRAM_CORE": [
+      (
+        from_wire: "N1W1:JCIBMUXOUTC1",
+      ),
+    ],
+    "W1:JINITN_LRAM_CORE": [
+      (
+        from_wire: "N1W1:JCIBMUXOUTC2",
       ),
     ],
     "W1:JOCEA_LRAM_CORE": [
@@ -1019,6 +1054,21 @@
     "W1:JRSTB_LRAM_CORE": [
       (
         from_wire: "W1:JLSR1",
+      ),
+    ],
+    "W1:JSCANRST_LRAM_CORE": [
+      (
+        from_wire: "S2W1:JLSR0",
+      ),
+    ],
+    "W1:JSTDBYN_LRAM_CORE": [
+      (
+        from_wire: "N1W1:JCIBMUXOUTC3",
+      ),
+    ],
+    "W1:JTBISTN_LRAM_CORE": [
+      (
+        from_wire: "N1W1:JCIBMUXOUTC4",
       ),
     ],
     "W1:JWEA_LRAM_CORE": [
