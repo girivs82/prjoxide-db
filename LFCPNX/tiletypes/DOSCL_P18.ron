@@ -1,0 +1,38 @@
+(
+  pips: {},
+  words: {},
+  enums: {
+    "DDRDLL.ENA_OSC": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:3,bit:0,invert:false,),],
+      },
+    ),
+    "DDRDLL.ENA_ROUNDOFF": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:4,bit:0,invert:false,),],
+      },
+    ),
+    "DDRDLL.FORCE_MAX_DELAY": (
+      options: {
+        "CODE_OR_LOCK_FROM_DLL_LOOP": [],
+        "FORCE_LOCK_AND_CODE": [(frame:5,bit:0,invert:false,),],
+      },
+    ),
+    "DDRDLL.GSR": (
+      options: {
+        "DISABLED": [(frame:1,bit:0,invert:false,),],
+        "ENABLED": [],
+      },
+      desc: "DDRDLL GSR mask",
+    ),
+    "DDRDLL.RSTMUX": (
+      options: {
+        "INV": [],
+        "RST": [(frame:6,bit:0,invert:false,),],
+      },
+    ),
+  },
+  conns: {},
+)

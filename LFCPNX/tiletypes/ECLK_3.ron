@@ -197,5 +197,26 @@
   },
   words: {},
   enums: {},
-  conns: {},
+  conns: {
+    "N1:JTESTINP0_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBR": [
+      (
+        from_wire: "N1:JCIBMUXOUTB7",
+      ),
+    ],
+    "N1:JTESTINP1_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBR": [
+      (
+        from_wire: "N1:JCIBMUXOUTB6",
+      ),
+    ],
+    "N1:JTESTINP2_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBR": [
+      (
+        from_wire: "N1:JCIBMUXOUTB4",
+      ),
+    ],
+    "N1:JTESTINP3_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBR": [
+      (
+        from_wire: "N1:JCIBMUXOUTB5",
+      ),
+    ],
+  },
 )
