@@ -1,5 +1,28 @@
 (
-  pips: {},
+  pips: {
+    "JCLKOUT_I0": [
+      (
+        from_wire: "JECLK0_I0",
+        bits: [(frame:9,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JECLK1_I0",
+        bits: [(frame:9,bit:0,invert:false,),(frame:11,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JECLK2_I0",
+        bits: [(frame:9,bit:0,invert:false,),(frame:10,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JECLK3_I0",
+        bits: [(frame:9,bit:0,invert:false,),(frame:10,bit:0,invert:false,),(frame:11,bit:0,invert:false,),],
+      ),
+      (
+        from_wire: "JPCLK_I0",
+        bits: [(frame:11,bit:0,invert:false,),],
+      ),
+    ],
+  },
   words: {},
   enums: {
     "DDRDLL.ENA_OSC": (

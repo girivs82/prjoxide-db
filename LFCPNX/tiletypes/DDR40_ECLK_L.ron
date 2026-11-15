@@ -9,6 +9,34 @@
       },
       desc: "bank 5 VREF generator (IVREF_CORE, from DQSBUF_IVREF) in use: the internal input reference of the LVSTL inputs, its level set by the fabric through IVREFI[6:0]",
     ),
+    "ECLKDDRL.ECLK0": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:101,bit:1,invert:false,),],
+      },
+      desc: "set when edge clock 0 feeds the CLKIN mux of the left DDRDLL (DDRDLL_CORE_R68C1, DOSCL_P18 JCLKOUT_I0 <- JECLK0_I0), from the ECLKSYNC of bank 4 or bank 5 alike. From Radiant-built designs with the DDRDLL and the ECLKSYNC pinned",
+    ),
+    "ECLKDDRL.ECLK1": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:102,bit:1,invert:false,),],
+      },
+      desc: "set when edge clock 1 feeds the CLKIN mux of the left DDRDLL (DDRDLL_CORE_R68C1, DOSCL_P18 JCLKOUT_I0 <- JECLK1_I0), from the ECLKSYNC of bank 4 or bank 5 alike. From Radiant-built designs with the DDRDLL and the ECLKSYNC pinned",
+    ),
+    "ECLKDDRL.ECLK2": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:103,bit:1,invert:false,),],
+      },
+      desc: "set when edge clock 2 feeds the CLKIN mux of the left DDRDLL (DDRDLL_CORE_R68C1, DOSCL_P18 JCLKOUT_I0 <- JECLK2_I0), from the ECLKSYNC of bank 4 or bank 5 alike. From Radiant-built designs with the DDRDLL and the ECLKSYNC pinned",
+    ),
+    "ECLKDDRL.ECLK3": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:104,bit:1,invert:false,),],
+      },
+      desc: "set when edge clock 3 feeds the CLKIN mux of the left DDRDLL (DDRDLL_CORE_R68C1, DOSCL_P18 JCLKOUT_I0 <- JECLK3_I0), from the ECLKSYNC of bank 4 or bank 5 alike. From Radiant-built designs with the DDRDLL and the ECLKSYNC pinned",
+    ),
   },
   conns: {
     "JIVREFI0_IVREF_CORE": [
