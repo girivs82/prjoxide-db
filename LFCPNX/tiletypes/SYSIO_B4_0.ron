@@ -429,8 +429,15 @@
       },
       desc: "drive strength for 1.2 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
+    "PIOA.SEIO18.DRIVE_1V35": (
+      options: {
+        "10": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
+      },
+      desc: "drive strength for 1.35 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
+    ),
     "PIOA.SEIO18.DRIVE_1V5": (
       options: {
+        "10": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
         "2": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:true,),],
         "4": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
