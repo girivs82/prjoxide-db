@@ -1,0 +1,6 @@
+{
+  "offset_mv": 0,
+  "step_mv": 5,
+  "verified": false,
+  "source": "step from Lattice's DQSBUF_IVREF primitive description (IVREFI step 5 mV); the 0 mV base is assumed, not yet measured"
+}
