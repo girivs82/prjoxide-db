@@ -573,6 +573,13 @@
         "VREF2_LOAD": [(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:80,bit:0,invert:false,),],
       },
     ),
+    "PIOA.SEIO18.VREF_LVSTL": (
+      options: {
+        "OFF": [],
+        "VREF_INT": [(frame:17,bit:1,invert:false,),(frame:74,bit:0,invert:false,),(frame:78,bit:0,invert:false,),],
+      },
+      desc: "LVSTL_I input reference: VREF_INT = the internal reference (VREF=VREF_INT)",
+    ),
     "PIOA.TMUX": (
       options: {
         "INV": [(frame:3,bit:1,invert:false,),],

@@ -596,6 +596,13 @@
         "VREF2_LOAD": [(frame:80,bit:0,invert:false,),(frame:82,bit:0,invert:false,),(frame:86,bit:0,invert:false,),],
       },
     ),
+    "PIOB.SEIO18.VREF_LVSTL": (
+      options: {
+        "OFF": [],
+        "VREF_INT": [(frame:74,bit:0,invert:false,),(frame:82,bit:0,invert:false,),(frame:86,bit:0,invert:false,),],
+      },
+      desc: "LVSTL_I input reference: VREF_INT = the internal reference (VREF=VREF_INT)",
+    ),
     "PIOB.TMUX": (
       options: {
         "INV": [(frame:102,bit:0,invert:false,),],
