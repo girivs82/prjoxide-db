@@ -199,7 +199,7 @@
         "OFF": [],
         "ON": [(frame:63,bit:0,invert:false,),],
       },
-      desc: "output gearing clocked by the DQSBUF of the DQS group (DQSW or DQSW270: ODDRX4DQ, ODDRX4DQS), set with MODDRXN.DDRMODE MODDRX*_DQSW*; the structural MODDRXN builds of 070 (no DQSBUF connected) do not set it. From Radiant-built PHY designs in bank 3 (X4 gearing)",
+      desc: "output gearing clocked by the DQSBUF of the DQS group (DQSW or DQSW270: ODDRX4DQ, ODDRX4DQS), set with MODDRXN.DDRMODE MODDRX*_DQSW*; the structural MODDRXN builds of 070 (no DQSBUF connected) do not set it. From Radiant-built PHY designs, X4 and X2 gearing",
     ),
     "IOLOGICB.MODE": (
       options: {

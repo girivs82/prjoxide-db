@@ -39,7 +39,7 @@
         "DDRDLL": [(frame:45,bit:1,invert:false,),],
         "OFF": [],
       },
-      desc: "DLLCODE input of the DQSBUF of the group driven by a DDRDLL CODE output (set when DLLCODE comes from the DDRDLL, clear when it is tied to 0; from Radiant-built PHY designs)",
+      desc: "DLLCODE input of the DQSBUF of the group: set when it comes from the CODE output of the right-side DDRDLL (DDRDLL_CORE_R72C158), on banks 3, 4 and 5 alike. Clear both when it comes from the left-side DDRDLL (DDRDLL_CORE_R68C1) and when it is tied to 0; no bit tells those two apart. From Radiant-built PHY designs with the DDRDLL placed on either side",
     ),
     "DQSBUF.ENABLE_FIFO": (
       options: {
@@ -240,7 +240,7 @@
         "OFF": [],
         "ON": [(frame:62,bit:0,invert:false,),],
       },
-      desc: "output gearing clocked by the DQSBUF of the DQS group (DQSW or DQSW270: ODDRX4DQ, ODDRX4DQS), set with MODDRXN.DDRMODE MODDRX*_DQSW*; the structural MODDRXN builds of 070 (no DQSBUF connected) do not set it. From Radiant-built PHY designs (X4 gearing)",
+      desc: "output gearing clocked by the DQSBUF of the DQS group (DQSW or DQSW270: ODDRX4DQ, ODDRX4DQS), set with MODDRXN.DDRMODE MODDRX*_DQSW*; the structural MODDRXN builds of 070 (no DQSBUF connected) do not set it. From Radiant-built PHY designs, X4 and X2 gearing",
     ),
     "IOLOGICA.MODE": (
       options: {
