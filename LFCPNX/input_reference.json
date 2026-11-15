@@ -1,6 +1,6 @@
 {
-  "offset_mv": 0,
-  "step_mv": 5,
-  "verified": false,
-  "source": "step from Lattice's DQSBUF_IVREF primitive description (IVREFI step 5 mV); the 0 mV base is assumed, not yet measured"
+  "offset_mv": 12.6,
+  "step_mv": 4.108,
+  "verified": true,
+  "source": "measured on a Versa LFCPNX-100 (bank 3, VCCIO 1.1 V, LVSTL_I, VREF_INT): the code at which an input's reading flips, against the pad level read by the on-chip ADC (converter B, 1.8 V external reference), with an LPDDR4 driving Read DQ Calibration patterns at 18 levels from 347 to 524 mV (FPGA termination 40-120 ohm, two pull-up calibrations); least-squares fit, worst residual 4.1 mV; the low level (about 0 mV) flips at codes 0-1. Codes above 127 x step are out of range. This is the input's switching threshold, so it includes the input buffer's offset."
 }
