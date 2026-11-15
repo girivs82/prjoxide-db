@@ -1,0 +1,50 @@
+(
+  pips: {},
+  words: {},
+  enums: {
+    "BANK5.IVREF": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:31,bit:1,invert:false,),(frame:32,bit:1,invert:false,),],
+      },
+      desc: "bank 5 VREF generator (IVREF_CORE, from DQSBUF_IVREF) in use: the internal input reference of the LVSTL inputs, its level set by the fabric through IVREFI[6:0]",
+    ),
+  },
+  conns: {
+    "JIVREFI0_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC0",
+      ),
+    ],
+    "JIVREFI1_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC1",
+      ),
+    ],
+    "JIVREFI2_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC2",
+      ),
+    ],
+    "JIVREFI3_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC3",
+      ),
+    ],
+    "JIVREFI4_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC4",
+      ),
+    ],
+    "JIVREFI5_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC5",
+      ),
+    ],
+    "JIVREFI6_IVREF_CORE": [
+      (
+        from_wire: "N1:JCIBMUXOUTC6",
+      ),
+    ],
+  },
+)

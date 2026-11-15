@@ -54,6 +54,13 @@
     ),
   },
   enums: {
+    "DQSBUF.DQSI": (
+      options: {
+        "OFF": [],
+        "PAD": [(frame:52,bit:1,invert:false,),],
+      },
+      desc: "set in every design whose DQSBUF takes DQSI from the DQS pad of the group, the only source Radiant allows (a fabric source is refused), so it is not separable from that connection; from Radiant-built PHY designs",
+    ),
     "IOLOGICA.CEINMUX": (
       options: {
         "1": [(frame:7,bit:0,invert:false,),],

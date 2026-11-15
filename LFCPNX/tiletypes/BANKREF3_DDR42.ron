@@ -9,6 +9,13 @@
       },
       desc: "use DIFF IO in bank 3",
     ),
+    "BANK3.IVREF": (
+      options: {
+        "OFF": [],
+        "ON": [(frame:5,bit:8,invert:false,),(frame:6,bit:8,invert:false,),],
+      },
+      desc: "bank 3 VREF generator (IVREF_CORE, from DQSBUF_IVREF) in use: the internal input reference of the LVSTL inputs, its level set by the fabric through IVREFI[6:0]",
+    ),
     "BANK3.LVDS_IO": (
       options: {
         "OFF": [],
@@ -46,5 +53,41 @@
       desc: "use SLVS IO in bank 3",
     ),
   },
-  conns: {},
+  conns: {
+    "JIVREFI0_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC0",
+      ),
+    ],
+    "JIVREFI1_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC1",
+      ),
+    ],
+    "JIVREFI2_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC2",
+      ),
+    ],
+    "JIVREFI3_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC3",
+      ),
+    ],
+    "JIVREFI4_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC4",
+      ),
+    ],
+    "JIVREFI5_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC5",
+      ),
+    ],
+    "JIVREFI6_IVREF_CORE": [
+      (
+        from_wire: "W1:JCIBMUXOUTC6",
+      ),
+    ],
+  },
 )
