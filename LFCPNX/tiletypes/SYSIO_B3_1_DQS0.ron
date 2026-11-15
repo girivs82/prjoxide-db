@@ -764,72 +764,72 @@
     ],
     "N1W5:JPAUSE_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E5:JCIBMUXOUTD2",
+        from_wire: "N1E3:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JRDCLKSEL0_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E4:JCIBMUXOUTD1",
+        from_wire: "N1E5:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JRDCLKSEL1_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E4:JCIBMUXOUTD2",
+        from_wire: "N1E4:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JRDCLKSEL2_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E4:JCIBMUXOUTC7",
+        from_wire: "N1E4:JCIBMUXOUTD4",
       ),
     ],
     "N1W5:JRDCLKSEL3_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E4:JCIBMUXOUTD7",
+        from_wire: "N1E4:JCIBMUXOUTB4",
       ),
     ],
     "N1W5:JRDDIR_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCIBMUXOUTD2",
+        from_wire: "N1W3:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JRDLOADN_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCIBMUXOUTC7",
+        from_wire: "N1W2:JCIBMUXOUTB4",
       ),
     ],
     "N1W5:JREAD0_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E1:JCIBMUXOUTD1",
+        from_wire: "N1:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JREAD1_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E1:JCIBMUXOUTD2",
+        from_wire: "N1E1:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JREAD2_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E1:JCIBMUXOUTC7",
+        from_wire: "N1E2:JCIBMUXOUTB4",
       ),
     ],
     "N1W5:JREAD3_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E1:JCIBMUXOUTD7",
+        from_wire: "N1E2:JCIBMUXOUTD4",
       ),
     ],
     "N1W5:JREADMOVE_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCIBMUXOUTD1",
+        from_wire: "N1W2:JCIBMUXOUTD4",
       ),
     ],
     "N1W5:JRSTSMCNT_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCIBMUXOUTB4",
+        from_wire: "N1E6:JCIBMUXOUTB4",
       ),
     ],
     "N1W5:JRST_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JLSR1",
+        from_wire: "N1W2:JLSR1",
       ),
     ],
     "N1W5:JSCLK_DQSBUFA_CORE_I_DQS_TOP": [
@@ -839,37 +839,37 @@
     ],
     "N1W5:JSELCLK_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E5:JCIBMUXOUTC7",
+        from_wire: "N1E2:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JWRDIR_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E3:JCIBMUXOUTD1",
+        from_wire: "N1E7:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JWRLOAD_N_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E3:JCIBMUXOUTD2",
+        from_wire: "N1E6:JCIBMUXOUTD4",
       ),
     ],
     "N1W5:JWRLVDIR_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E5:JCIBMUXOUTD7",
+        from_wire: "N1W2:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JWRLVLOAD_N_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E3:JCIBMUXOUTD7",
+        from_wire: "N1W1:JCIBMUXOUTD7",
       ),
     ],
     "N1W5:JWRLVMOVE_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E3:JCIBMUXOUTC7",
+        from_wire: "N1:JCIBMUXOUTD4",
       ),
     ],
     "N1W5:JWRMOVE_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCIBMUXOUTD7",
+        from_wire: "N1E6:JCIBMUXOUTD7",
       ),
     ],
   },
