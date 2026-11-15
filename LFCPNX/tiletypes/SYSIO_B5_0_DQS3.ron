@@ -18,6 +18,24 @@
         bits: [(frame:20,bit:0,invert:false,),(frame:21,bit:0,invert:false,),],
       ),
     ],
+    "N1W8:JECLKOUT_I_DQS_TOP_ECLK_ROUTING_MUX": [
+      (
+        from_wire: "N1W8:JECLK0_I_DQS_TOP_ECLK_ROUTING_MUX",
+        bits: [],
+      ),
+      (
+        from_wire: "N1W8:JECLK1_I_DQS_TOP_ECLK_ROUTING_MUX",
+        bits: [(frame:52,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "N1W8:JECLK2_I_DQS_TOP_ECLK_ROUTING_MUX",
+        bits: [(frame:51,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "N1W8:JECLK3_I_DQS_TOP_ECLK_ROUTING_MUX",
+        bits: [(frame:51,bit:1,invert:false,),(frame:52,bit:1,invert:false,),],
+      ),
+    ],
   },
   words: {
     "DQSBUF.RD_PNTR": (
@@ -54,13 +72,6 @@
     ),
   },
   enums: {
-    "DQSBUF.DQSI": (
-      options: {
-        "OFF": [],
-        "PAD": [(frame:52,bit:1,invert:false,),],
-      },
-      desc: "set in every design whose DQSBUF takes DQSI from the DQS pad of the group, the only source Radiant allows (a fabric source is refused), so it is not separable from that connection; from Radiant-built PHY designs",
-    ),
     "IOLOGICA.CEINMUX": (
       options: {
         "1": [(frame:7,bit:0,invert:false,),],
