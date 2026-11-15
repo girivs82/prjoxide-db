@@ -1,0 +1,19 @@
+{
+  "comment": "Metastability resolution of storage elements built in the fabric, for sizing the wait after a decision between asynchronous events (arbiters, async step latches). Hand-maintained from board measurements, not generated from Radiant timing data, so regenerating cells_*.json and interconnect_*.json leaves it alone. MTBF after a wait t is exp(t / tau) / (t0_ps * f1 * f2), with tau = tau_ps * pvt_margin. tau_ps is in the units of the fast-corner (M) delay tables: a wait built from LUTs and routing scales with them, so checking the fast-corner wait against it holds across corners to first order. pvt_margin covers what that leaves out (tau worsening faster than gate delay at low supply and cold), which these measurements did not reach.",
+  "elements": {
+    "lut4_feedback_latch": {
+      "description": "A set/reset latch in one 4-input LUT whose output feeds back into one of its own inputs, routed through general routing",
+      "tau_ps": 30.0,
+      "pvt_margin": 3.0,
+      "t0_ps": 1000.0,
+      "kind": "upper_bound",
+      "measured": {
+        "device": "LFCPNX-100-9 (Versa board), room temperature, nominal core supply",
+        "date": "2026-11-15",
+        "method": "Race test: a self-timed source and sink, stopped and restarted by a 125 MHz clocked checker after random 16-1039 clock runs (about 200 thousand stops a second), so the run request falls at random against each block's ready. The sink counts values that are not the successor of the previous one (partial steps). Waits after the latch were cut short on purpose.",
+        "results": "About 6.9 million stops per build. Wait 0.45 ns (fast-corner model): 2 partial steps. Waits 1.1, 1.5, 2.1, 2.8 and 3.0 ns: none. The failure chance per stop is at most 1 at zero wait, so tau <= 0.45 ns / ln(6.9e6 / 2) = 30 ps in fast-corner model units (tau_ps). t0_ps is not measured; 1 ns is a conservative assumption.",
+        "comparison": "The same latch built from three LUTs in a loop gave about 500 partial steps a second at a 3.2 ns wait (tau roughly 0.7-1 ns): keep the loop inside one LUT."
+      }
+    }
+  }
+}
