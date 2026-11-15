@@ -368,6 +368,16 @@
         from_wire: "W1:JCE0",
       ),
     ],
+    "W1:JRSVDH_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTC0",
+      ),
+    ],
+    "W1:JRSVDL_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTC1",
+      ),
+    ],
     "W1:JSOC_ADC_CORE_ADC0": [
       (
         from_wire: "W1:JCIBMUXOUTA5",
