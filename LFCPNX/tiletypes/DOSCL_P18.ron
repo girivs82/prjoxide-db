@@ -65,7 +65,28 @@
       desc: "LVSTL class (VCCIO 1.1 V) used in any HP bank",
     ),
   },
-  conns: {},
+  conns: {
+    "JECLK0_I0": [
+      (
+        from_wire: "G:JCLKOUT_ECLKDDRL_0",
+      ),
+    ],
+    "JECLK1_I0": [
+      (
+        from_wire: "G:JCLKOUT_ECLKDDRL_1",
+      ),
+    ],
+    "JECLK2_I0": [
+      (
+        from_wire: "G:JCLKOUT_ECLKDDRL_2",
+      ),
+    ],
+    "JECLK3_I0": [
+      (
+        from_wire: "G:JCLKOUT_ECLKDDRL_3",
+      ),
+    ],
+  },
   always_on: [
     (
       frame: 6,

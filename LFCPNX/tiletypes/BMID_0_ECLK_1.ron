@@ -848,6 +848,26 @@
     ),
   },
   conns: {
+    "G:JECLKDIV4_BMID_CORE_BMIDMUX": [
+      (
+        from_wire: "N1:JDIVOUT_ECLKDIV_CORE_ECLKDIVB4_0",
+      ),
+    ],
+    "G:JECLKDIV5_BMID_CORE_BMIDMUX": [
+      (
+        from_wire: "N1:JDIVOUT_ECLKDIV_CORE_ECLKDIVB4_1",
+      ),
+    ],
+    "G:JECLKDIV6_BMID_CORE_BMIDMUX": [
+      (
+        from_wire: "N1:JDIVOUT_ECLKDIV_CORE_ECLKDIVB4_2",
+      ),
+    ],
+    "G:JECLKDIV7_BMID_CORE_BMIDMUX": [
+      (
+        from_wire: "N1:JDIVOUT_ECLKDIV_CORE_ECLKDIVB4_3",
+      ),
+    ],
     "G:JPCLKCIBB0_BMID_CORE_BMIDMUX": [
       (
         from_wire: "N1W2:JCIBMUXOUTD7",
@@ -1990,6 +2010,146 @@
     "N1:JCLKO_DCC_DCC9": [
       (
         from_wire: "N1:JCLKI_DCC_DCC9",
+      ),
+    ],
+    "N1:JDIVRST_ECLKDIV_CORE_ECLKDIVB4_0": [
+      (
+        from_wire: "N1E2:JLSR0",
+      ),
+    ],
+    "N1:JDIVRST_ECLKDIV_CORE_ECLKDIVB4_1": [
+      (
+        from_wire: "N1E2:JLSR1",
+      ),
+    ],
+    "N1:JDIVRST_ECLKDIV_CORE_ECLKDIVB4_2": [
+      (
+        from_wire: "N1E1:JLSR0",
+      ),
+    ],
+    "N1:JDIVRST_ECLKDIV_CORE_ECLKDIVB4_3": [
+      (
+        from_wire: "N1E1:JLSR1",
+      ),
+    ],
+    "N1:JECLKIN_ECLKDIV_CORE_ECLKDIVB4_0": [
+      (
+        from_wire: "G:JECLKOUT0_ECLKCASMUX_CORE_ECLKCASMUX4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKDIV_CORE_ECLKDIVB4_1": [
+      (
+        from_wire: "G:JECLKOUT1_ECLKCASMUX_CORE_ECLKCASMUX4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKDIV_CORE_ECLKDIVB4_2": [
+      (
+        from_wire: "G:JECLKOUT2_ECLKCASMUX_CORE_ECLKCASMUX4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKDIV_CORE_ECLKDIVB4_3": [
+      (
+        from_wire: "G:JECLKOUT3_ECLKCASMUX_CORE_ECLKCASMUX4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_0": [
+      (
+        from_wire: "G:JMUXIN0_ECLKBANK_CORE_ECLKBANK4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_1": [
+      (
+        from_wire: "G:JMUXIN1_ECLKBANK_CORE_ECLKBANK4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_2": [
+      (
+        from_wire: "G:JMUXIN2_ECLKBANK_CORE_ECLKBANK4",
+      ),
+    ],
+    "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_3": [
+      (
+        from_wire: "G:JMUXIN3_ECLKBANK_CORE_ECLKBANK4",
+      ),
+    ],
+    "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_0": [
+      (
+        from_wire: "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_0",
+      ),
+    ],
+    "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_1": [
+      (
+        from_wire: "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_1",
+      ),
+    ],
+    "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_2": [
+      (
+        from_wire: "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_2",
+      ),
+    ],
+    "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_3": [
+      (
+        from_wire: "N1:JECLKIN_ECLKSYNC_CORE_ECLKSYNC4_3",
+      ),
+    ],
+    "N1:JECLKSYNCM0_ECLKCASMUX_CORE_ECLKCASMUX4": [
+      (
+        from_wire: "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_0",
+      ),
+    ],
+    "N1:JECLKSYNCM1_ECLKCASMUX_CORE_ECLKCASMUX4": [
+      (
+        from_wire: "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_1",
+      ),
+    ],
+    "N1:JECLKSYNCM2_ECLKCASMUX_CORE_ECLKCASMUX4": [
+      (
+        from_wire: "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_2",
+      ),
+    ],
+    "N1:JECLKSYNCM3_ECLKCASMUX_CORE_ECLKCASMUX4": [
+      (
+        from_wire: "N1:JECLKOUT_ECLKSYNC_CORE_ECLKSYNC4_3",
+      ),
+    ],
+    "N1:JSLIP_ECLKDIV_CORE_ECLKDIVB4_0": [
+      (
+        from_wire: "N1E2:JCIBMUXOUTC6",
+      ),
+    ],
+    "N1:JSLIP_ECLKDIV_CORE_ECLKDIVB4_1": [
+      (
+        from_wire: "N1E2:JCIBMUXOUTC7",
+      ),
+    ],
+    "N1:JSLIP_ECLKDIV_CORE_ECLKDIVB4_2": [
+      (
+        from_wire: "N1E2:JCIBMUXOUTD0",
+      ),
+    ],
+    "N1:JSLIP_ECLKDIV_CORE_ECLKDIVB4_3": [
+      (
+        from_wire: "N1E2:JCIBMUXOUTD1",
+      ),
+    ],
+    "N1:JSTOP_ECLKSYNC_CORE_ECLKSYNC4_0": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTB2",
+      ),
+    ],
+    "N1:JSTOP_ECLKSYNC_CORE_ECLKSYNC4_1": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTD3",
+      ),
+    ],
+    "N1:JSTOP_ECLKSYNC_CORE_ECLKSYNC4_2": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTB1",
+      ),
+    ],
+    "N1:JSTOP_ECLKSYNC_CORE_ECLKSYNC4_3": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTB6",
       ),
     ],
   },
