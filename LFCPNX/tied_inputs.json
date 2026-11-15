@@ -1,0 +1,18 @@
+{
+ "_comment": "Fabric inputs of hard blocks that the user primitive does not expose and that Radiant ties to a constant. Top-level keys are prjoxide site/bel types (e.g. ADC_CORE); each maps pin name -> {value: 0|1, plus free-form evidence fields}. Keys starting with '_' are comments. A design must drive these pins to the given value: an unconnected CIB input reads 1. ADC_CORE: left unconnected, the ADC converts at mid-scale.",
+ "ADC_CORE": {
+  "RSVDH": {
+   "value": 0,
+   "pin_wire": "W1:JRSVDH_ADC_CORE_ADC0",
+   "tile": "ADC (CIB_R68C159)",
+   "driven_from": "S1W1:JCIBMUXOUTC0 (R69C158)"
+  },
+  "RSVDL": {
+   "value": 0,
+   "pin_wire": "W1:JRSVDL_ADC_CORE_ADC0",
+   "tile": "ADC (CIB_R68C159)",
+   "driven_from": "S1W1:JCIBMUXOUTC1 (R69C158)"
+  }
+ },
+ "_evidence_ADC_CORE": "Radiant's backannotated netlist ties both to GND_net (one constant LUT output) in all 24 designs of timing/fuzzers/LFCPNX/15-adc-pins; there both wires carry that one net and no other ADC input. Which of the two wires is RSVDH and which RSVDL cannot be told apart in Radiant's designs (same net); the assignment follows LIFCL's ADC tile type. Confirmed on a Versa board: tying both wires low gives Radiant's readings."
+}
