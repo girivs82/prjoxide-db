@@ -1,0 +1,367 @@
+(
+  pips: {},
+  words: {
+    "ADC.CLK_DIV": (
+      bits: [
+        [(frame:8,bit:2,invert:false,),],
+        [(frame:5,bit:2,invert:false,),],
+        [(frame:4,bit:2,invert:false,),],
+        [(frame:3,bit:2,invert:false,),],
+        [(frame:1,bit:2,invert:false,),],
+        [(frame:0,bit:2,invert:false,),],
+        [(frame:15,bit:3,invert:false,),],
+        [(frame:13,bit:3,invert:false,),],
+      ],
+    ),
+  },
+  enums: {
+    "ADC.ADC_ENP": (
+      options: {
+        "DISABLED": [(frame:5,bit:0,invert:true,),],
+        "ENABLED": [(frame:5,bit:0,invert:false,),],
+      },
+    ),
+    "ADC.CTLCOMPSW1": (
+      options: {
+        "DISABLED": [(frame:4,bit:0,invert:true,),],
+        "ENABLED": [(frame:4,bit:0,invert:false,),],
+      },
+    ),
+    "ADC.CTLCOMPSW2": (
+      options: {
+        "DISABLED": [(frame:3,bit:0,invert:true,),],
+        "ENABLED": [(frame:3,bit:0,invert:false,),],
+      },
+    ),
+    "ADC.CTLCOMPSW3": (
+      options: {
+        "DISABLED": [(frame:0,bit:0,invert:true,),],
+        "ENABLED": [(frame:0,bit:0,invert:false,),],
+      },
+    ),
+    "ADC.DF": (
+      options: {
+        "STRAIGHT_BINARY": [(frame:12,bit:1,invert:true,),],
+        "TWOS_COMPLEMENT": [(frame:12,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.EN_COMP1": (
+      options: {
+        "DISABLED": [(frame:11,bit:1,invert:true,),],
+        "ENABLED": [(frame:11,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.EN_COMP2": (
+      options: {
+        "DISABLED": [(frame:10,bit:1,invert:true,),],
+        "ENABLED": [(frame:10,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.EN_COMP3": (
+      options: {
+        "DISABLED": [(frame:7,bit:1,invert:true,),],
+        "ENABLED": [(frame:7,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.OMA": (
+      options: {
+        "BIPOLAR": [(frame:15,bit:1,invert:true,),],
+        "UNIPOLAR": [(frame:15,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.OMB": (
+      options: {
+        "BIPOLAR": [(frame:14,bit:1,invert:true,),],
+        "UNIPOLAR": [(frame:14,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.REFBUFAEN": (
+      options: {
+        "DISABLED": [(frame:6,bit:1,invert:true,),],
+        "ENABLED": [(frame:6,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.REFBUFBEN": (
+      options: {
+        "DISABLED": [(frame:5,bit:1,invert:true,),],
+        "ENABLED": [(frame:5,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.SLEEP": (
+      options: {
+        "DISABLED": [(frame:3,bit:1,invert:true,),],
+        "ENABLED": [(frame:3,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.VREFACFG": (
+      options: {
+        "1P0_TO_1P2": [(frame:1,bit:1,invert:true,),(frame:2,bit:1,invert:true,),],
+        "1P2_TO_1P4": [(frame:1,bit:1,invert:true,),(frame:2,bit:1,invert:false,),],
+        "1P4_TO_1P6": [(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:true,),],
+        "1P6_TO_1P8": [(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),],
+      },
+    ),
+    "ADC.VREFASEL": (
+      options: {
+        "EXTERNAL": [(frame:14,bit:2,invert:true,),],
+        "INTERNAL": [(frame:14,bit:2,invert:false,),],
+      },
+    ),
+    "ADC.VREFBCFG": (
+      options: {
+        "1P0_TO_1P2": [(frame:12,bit:2,invert:true,),(frame:13,bit:2,invert:true,),],
+        "1P2_TO_1P4": [(frame:12,bit:2,invert:true,),(frame:13,bit:2,invert:false,),],
+        "1P4_TO_1P6": [(frame:12,bit:2,invert:false,),(frame:13,bit:2,invert:true,),],
+        "1P6_TO_1P8": [(frame:12,bit:2,invert:false,),(frame:13,bit:2,invert:false,),],
+      },
+    ),
+    "ADC.VREFBSEL": (
+      options: {
+        "EXTERNAL": [(frame:10,bit:2,invert:true,),],
+        "INTERNAL": [(frame:10,bit:2,invert:false,),],
+      },
+    ),
+  },
+  conns: {
+    "S1W1:JF0_CIBTEST": [
+      (
+        from_wire: "W1:JDA7_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JF1_CIBTEST": [
+      (
+        from_wire: "W1:JDA8_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JF2_CIBTEST": [
+      (
+        from_wire: "W1:JDA9_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JF3_CIBTEST": [
+      (
+        from_wire: "W1:JDA10_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JF4_CIBTEST": [
+      (
+        from_wire: "W1:JDA11_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JF7_CIBTEST": [
+      (
+        from_wire: "W1:JEOC_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ0_CIBTEST": [
+      (
+        from_wire: "W1:JDB7_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ1_CIBTEST": [
+      (
+        from_wire: "W1:JDB8_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ2_CIBTEST": [
+      (
+        from_wire: "W1:JDB9_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ3_CIBTEST": [
+      (
+        from_wire: "W1:JDB10_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ4_CIBTEST": [
+      (
+        from_wire: "W1:JDB11_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ5_CIBTEST": [
+      (
+        from_wire: "W1:JDB0_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ6_CIBTEST": [
+      (
+        from_wire: "W1:JDB1_ADC_CORE_ADC0",
+      ),
+    ],
+    "S1W1:JQ7_CIBTEST": [
+      (
+        from_wire: "W1:JDB2_ADC_CORE_ADC0",
+      ),
+    ],
+    "S2W1:JF0_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP1O_ADC_CORE_ADC0",
+      ),
+    ],
+    "S2W1:JF1_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP2O_ADC_CORE_ADC0",
+      ),
+    ],
+    "S2W1:JF2_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP3O_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JADCEN_ADC_CORE_ADC0": [
+      (
+        from_wire: "W1:JCIBMUXOUTA0",
+      ),
+    ],
+    "W1:JCAL_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTB0",
+      ),
+    ],
+    "W1:JCHAEN_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTB5",
+      ),
+    ],
+    "W1:JCHASEL0_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA0",
+      ),
+    ],
+    "W1:JCHASEL1_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA1",
+      ),
+    ],
+    "W1:JCHASEL2_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA2",
+      ),
+    ],
+    "W1:JCHASEL3_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA3",
+      ),
+    ],
+    "W1:JCHBEN_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTB4",
+      ),
+    ],
+    "W1:JCHBSEL0_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA4",
+      ),
+    ],
+    "W1:JCHBSEL1_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA5",
+      ),
+    ],
+    "W1:JCHBSEL2_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA6",
+      ),
+    ],
+    "W1:JCONVSTOP_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTB3",
+      ),
+    ],
+    "W1:JF0_CIBTEST": [
+      (
+        from_wire: "W1:JDA0_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF1_CIBTEST": [
+      (
+        from_wire: "W1:JDA1_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF2_CIBTEST": [
+      (
+        from_wire: "W1:JDA2_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF3_CIBTEST": [
+      (
+        from_wire: "W1:JDA3_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF4_CIBTEST": [
+      (
+        from_wire: "W1:JDA4_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF5_CIBTEST": [
+      (
+        from_wire: "W1:JDA5_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF6_CIBTEST": [
+      (
+        from_wire: "W1:JDA6_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JF7_CIBTEST": [
+      (
+        from_wire: "W1:JCALRDY_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ0_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP1OL_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ1_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP2OL_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ2_CIBTEST": [
+      (
+        from_wire: "W1:JCOMP3OL_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ3_CIBTEST": [
+      (
+        from_wire: "W1:JDB3_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ4_CIBTEST": [
+      (
+        from_wire: "W1:JDB4_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ5_CIBTEST": [
+      (
+        from_wire: "W1:JDB5_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ6_CIBTEST": [
+      (
+        from_wire: "W1:JDB6_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JQ7_CIBTEST": [
+      (
+        from_wire: "W1:JCOG_ADC_CORE_ADC0",
+      ),
+    ],
+    "W1:JRESETN_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTC4",
+      ),
+    ],
+    "W1:JRSTN_ADC_CORE_ADC0": [
+      (
+        from_wire: "W1:JCE0",
+      ),
+    ],
+    "W1:JSOC_ADC_CORE_ADC0": [
+      (
+        from_wire: "W1:JCIBMUXOUTA5",
+      ),
+    ],
+  },
+)
