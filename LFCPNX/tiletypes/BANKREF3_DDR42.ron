@@ -16,6 +16,14 @@
       },
       desc: "use LVDS IO in bank 3",
     ),
+    "BANK3.LVSTL": (
+      options: {
+        "LVSTL_I": [(frame:1,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:14,bit:1,invert:false,),],
+        "LVSTL_II": [(frame:1,bit:1,invert:false,),(frame:14,bit:1,invert:false,),(frame:15,bit:1,invert:false,),],
+        "OFF": [],
+      },
+      desc: "LVSTL class (VCCIO 1.1 V) used in bank 3",
+    ),
     "BANK3.MIPI_DPHY_IO": (
       options: {
         "OFF": [],

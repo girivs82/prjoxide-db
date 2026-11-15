@@ -196,6 +196,7 @@
         "MTSHX4": [(frame:19,bit:0,invert:false,),],
         "NONE": [],
       },
+      desc: "identical bits, decoded as the last of each group: MTSHX4 = MTSHX2",
     ),
     "IOLOGICA.ODDRXN.DDRMODE": (
       options: {
@@ -273,6 +274,8 @@
         "BIDIR_HSTL15D_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
         "BIDIR_HSUL12D": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
         "BIDIR_LVDS": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
+        "BIDIR_LVSTLD_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:78,bit:0,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "BIDIR_LVSTLD_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:78,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
         "BIDIR_MIPI_DPHY": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:16,bit:0,invert:false,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:100,bit:0,invert:false,),],
         "BIDIR_SLVS": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:100,bit:0,invert:false,),],
         "BIDIR_SSTL135D_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
@@ -282,6 +285,8 @@
         "INPUT_HSTL15D_I": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
         "INPUT_HSUL12D": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
         "INPUT_LVDS": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
+        "INPUT_LVSTLD_I": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:78,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "INPUT_LVSTLD_II": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:78,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
         "INPUT_MIPI_DPHY": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:15,bit:1,invert:false,),(frame:16,bit:0,invert:false,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:100,bit:0,invert:false,),],
         "INPUT_SLVS": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),(frame:100,bit:0,invert:false,),],
         "INPUT_SSTL135D_I": [(frame:2,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:78,bit:0,invert:false,),],
@@ -293,6 +298,8 @@
         "OUTPUT_HSTL15D_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_HSUL12D": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_LVDS": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
+        "OUTPUT_LVSTLD_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:77,bit:0,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "OUTPUT_LVSTLD_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_MIPI_DPHY": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:16,bit:0,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SLVS": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SSTL135D_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
@@ -301,6 +308,7 @@
         "OUTPUT_SSTL15D_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:13,bit:1,invert:true,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SUBLVDSEH": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
       },
+      desc: "identical bits, decoded as the last of each group: BIDIR_HSUL12D = BIDIR_HSTL15D_I; BIDIR_SSTL15D_I = BIDIR_SSTL135D_I; BIDIR_SSTL15D_II = BIDIR_LVDS = BIDIR_SSTL135D_II; INPUT_LVSTLD_II = INPUT_LVSTLD_I; INPUT_SUBLVDS = INPUT_HSTL15D_I = INPUT_HSUL12D = INPUT_LVDS = INPUT_SSTL135D_I = INPUT_SSTL135D_II = INPUT_SSTL15D_I = INPUT_SSTL15D_II; OUTPUT_HSUL12D = OUTPUT_HSTL15D_I; OUTPUT_SSTL15D_I = OUTPUT_SSTL135D_I; OUTPUT_SSTL15D_II = OUTPUT_LVDS = OUTPUT_SLVS = OUTPUT_SSTL135D_II",
     ),
     "PIOA.DIFFIO18.DIFFDRIVE_LVDS": (
       options: {
@@ -358,6 +366,8 @@
         "BIDIR_LVCMOS12H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:75,bit:0,invert:false,),],
         "BIDIR_LVCMOS15H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
         "BIDIR_LVCMOS18H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
+        "BIDIR_LVSTL_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "BIDIR_LVSTL_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
         "BIDIR_SSTL135_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
         "BIDIR_SSTL135_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),],
         "BIDIR_SSTL15_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),],
@@ -369,6 +379,8 @@
         "INPUT_LVCMOS12H": [(frame:2,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:75,bit:0,invert:false,),],
         "INPUT_LVCMOS15H": [(frame:2,bit:1,invert:false,),],
         "INPUT_LVCMOS18H": [(frame:2,bit:1,invert:false,),],
+        "INPUT_LVSTL_I": [(frame:2,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "INPUT_LVSTL_II": [(frame:2,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
         "INPUT_SSTL135_I": [(frame:2,bit:1,invert:false,),],
         "INPUT_SSTL135_II": [(frame:2,bit:1,invert:false,),],
         "INPUT_SSTL15_I": [(frame:2,bit:1,invert:false,),],
@@ -380,11 +392,14 @@
         "OUTPUT_LVCMOS12H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_LVCMOS15H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_LVCMOS18H": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
+        "OUTPUT_LVSTL_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:77,bit:0,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "OUTPUT_LVSTL_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:60,bit:0,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SSTL135_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SSTL135_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SSTL15_I": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:13,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
         "OUTPUT_SSTL15_II": [(frame:0,bit:1,invert:false,),(frame:1,bit:1,invert:false,),(frame:2,bit:1,invert:false,),(frame:3,bit:1,invert:false,),(frame:17,bit:1,invert:false,),(frame:77,bit:0,invert:false,),],
       },
+      desc: "identical bits, decoded as the last of each group: BIDIR_LVCMOS18H = BIDIR_HSTL15_I = BIDIR_HSUL12 = BIDIR_LVCMOS15H; BIDIR_SSTL15_I = BIDIR_SSTL135_I; BIDIR_SSTL15_II = BIDIR_SSTL135_II; INPUT_LVSTL_II = INPUT_LVSTL_I; INPUT_SSTL15_II = INPUT_HSTL15_I = INPUT_HSUL12 = INPUT_LVCMOS10R = INPUT_LVCMOS15H = INPUT_LVCMOS18H = INPUT_SSTL135_I = INPUT_SSTL135_II = INPUT_SSTL15_I; OUTPUT_LVCMOS18H = OUTPUT_HSTL15_I = OUTPUT_HSUL12 = OUTPUT_LVCMOS10H = OUTPUT_LVCMOS12H = OUTPUT_LVCMOS15H; OUTPUT_SSTL15_I = OUTPUT_SSTL135_I; OUTPUT_SSTL15_II = OUTPUT_SSTL135_II",
     ),
     "PIOA.SEIO18.DFTDO2DI": (
       options: {
@@ -397,6 +412,7 @@
         "2": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:true,),],
         "4": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
       },
+      desc: "drive strength for 1.0 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.DRIVE_1V2": (
       options: {
@@ -404,6 +420,7 @@
         "4": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
+      desc: "drive strength for 1.2 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.DRIVE_1V5": (
       options: {
@@ -411,6 +428,7 @@
         "4": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
+      desc: "drive strength for 1.5 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.DRIVE_1V8": (
       options: {
@@ -420,6 +438,7 @@
         "50RS": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
+      desc: "drive strength for 1.8 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE. identical bits, decoded as the last of each group: 8 = 50RS",
     ),
     "PIOA.SEIO18.DRIVE_HSUL12": (
       options: {
@@ -427,6 +446,18 @@
         "6": [(frame:9,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
+      desc: "drive strength for HSUL12 IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+    ),
+    "PIOA.SEIO18.DRIVE_LVSTL": (
+      options: {
+        "10": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "12": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:88,bit:0,invert:true,),(frame:95,bit:0,invert:true,),],
+        "2": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "4": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "6": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+        "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
+      },
+      desc: "drive strength for LVSTL_I IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.ENADC_IN": (
       options: {
@@ -473,6 +504,27 @@
         "SLOW": [(frame:90,bit:0,invert:true,),(frame:91,bit:0,invert:true,),(frame:92,bit:0,invert:true,),],
       },
     ),
+    "PIOA.SEIO18.SLEWRATE_REF": (
+      options: {
+        "FAST": [(frame:90,bit:0,invert:false,),(frame:91,bit:0,invert:false,),(frame:92,bit:0,invert:false,),],
+        "MED": [(frame:90,bit:0,invert:false,),(frame:91,bit:0,invert:false,),(frame:92,bit:0,invert:true,),],
+        "SLOW": [(frame:90,bit:0,invert:true,),(frame:91,bit:0,invert:true,),(frame:92,bit:0,invert:true,),],
+      },
+    ),
+    "PIOA.SEIO18.TERMINATION_1V1": (
+      options: {
+        "120": [(frame:6,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
+        "150": [],
+        "40": [(frame:4,bit:1,invert:false,),(frame:5,bit:1,invert:false,),(frame:7,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
+        "48": [(frame:4,bit:1,invert:false,),(frame:7,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
+        "50": [],
+        "60": [(frame:4,bit:1,invert:false,),(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
+        "75": [],
+        "80": [(frame:4,bit:1,invert:false,),(frame:6,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
+        "OFF": [(frame:95,bit:0,invert:false,),],
+      },
+      desc: "on-die termination for 1.1 V (LVSTL_I) IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+    ),
     "PIOA.SEIO18.TERMINATION_1V2": (
       options: {
         "40": [(frame:8,bit:1,invert:false,),],
@@ -481,6 +533,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
+      desc: "on-die termination for 1.2 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.TERMINATION_1V35": (
       options: {
@@ -490,6 +543,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
+      desc: "on-die termination for 1.35 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.TERMINATION_1V5": (
       options: {
@@ -499,6 +553,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
+      desc: "on-die termination for 1.5 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.TERMINATION_1V8": (
       options: {
@@ -509,6 +564,7 @@
         "75": [(frame:4,bit:1,invert:false,),(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
+      desc: "on-die termination for 1.8 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
     ),
     "PIOA.SEIO18.UNDERDRIVE_1V8": (
       options: {
