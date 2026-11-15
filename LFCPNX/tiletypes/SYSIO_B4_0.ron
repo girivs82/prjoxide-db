@@ -419,7 +419,7 @@
         "2": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:true,),],
         "4": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
       },
-      desc: "drive strength for 1.0 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "drive strength for 1.0 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.DRIVE_1V2": (
       options: {
@@ -427,7 +427,7 @@
         "4": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
-      desc: "drive strength for 1.2 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "drive strength for 1.2 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.DRIVE_1V5": (
       options: {
@@ -435,7 +435,7 @@
         "4": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
-      desc: "drive strength for 1.5 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "drive strength for 1.5 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.DRIVE_1V8": (
       options: {
@@ -445,7 +445,7 @@
         "50RS": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:false,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
-      desc: "drive strength for 1.8 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE. identical bits, decoded as the last of each group: 8 = 50RS",
+      desc: "drive strength for 1.8 V IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO. identical bits, decoded as the last of each group: 8 = 50RS",
     ),
     "PIOA.SEIO18.DRIVE_HSUL12": (
       options: {
@@ -453,7 +453,7 @@
         "6": [(frame:9,bit:1,invert:false,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:13,bit:1,invert:true,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:true,),(frame:13,bit:1,invert:false,),],
       },
-      desc: "drive strength for HSUL12 IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "drive strength for HSUL12 IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.DRIVE_LVSTL": (
       options: {
@@ -464,7 +464,7 @@
         "6": [(frame:9,bit:1,invert:false,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:true,),(frame:12,bit:1,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
         "8": [(frame:9,bit:1,invert:true,),(frame:10,bit:1,invert:true,),(frame:11,bit:1,invert:false,),(frame:12,bit:1,invert:false,),(frame:88,bit:0,invert:false,),(frame:95,bit:0,invert:false,),],
       },
-      desc: "drive strength for LVSTL_I IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "drive strength for LVSTL_I IO types. DRIVE_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.ENADC_IN": (
       options: {
@@ -530,7 +530,7 @@
         "80": [(frame:4,bit:1,invert:false,),(frame:6,bit:1,invert:false,),(frame:95,bit:0,invert:false,),],
         "OFF": [(frame:95,bit:0,invert:false,),],
       },
-      desc: "on-die termination for 1.1 V (LVSTL_I) IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "on-die termination for 1.1 V (LVSTL_I) IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.TERMINATION_1V2": (
       options: {
@@ -540,7 +540,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
-      desc: "on-die termination for 1.2 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "on-die termination for 1.2 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.TERMINATION_1V35": (
       options: {
@@ -550,7 +550,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
-      desc: "on-die termination for 1.35 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "on-die termination for 1.35 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.TERMINATION_1V5": (
       options: {
@@ -560,7 +560,7 @@
         "75": [(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
-      desc: "on-die termination for 1.5 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "on-die termination for 1.5 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.TERMINATION_1V8": (
       options: {
@@ -571,7 +571,7 @@
         "75": [(frame:4,bit:1,invert:false,),(frame:5,bit:1,invert:false,),(frame:6,bit:1,invert:false,),],
         "OFF": [],
       },
-      desc: "on-die termination for 1.8 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the PIO's BASE_TYPE",
+      desc: "on-die termination for 1.8 V IO types. TERMINATION_<v> enums share bits; the decoder keeps only the one for the BASE_TYPE of the PIO",
     ),
     "PIOA.SEIO18.UNDERDRIVE_1V8": (
       options: {
