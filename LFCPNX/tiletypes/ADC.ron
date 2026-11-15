@@ -263,6 +263,16 @@
         from_wire: "S1W1:JCIBMUXOUTA6",
       ),
     ],
+    "W1:JCHBSEL3_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCIBMUXOUTA7",
+      ),
+    ],
+    "W1:JCLKFAB_ADC_CORE_ADC0": [
+      (
+        from_wire: "S1W1:JCLK0",
+      ),
+    ],
     "W1:JCONVSTOP_ADC_CORE_ADC0": [
       (
         from_wire: "S1W1:JCIBMUXOUTB3",
