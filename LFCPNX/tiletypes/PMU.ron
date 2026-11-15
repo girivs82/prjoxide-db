@@ -1,7 +1,22 @@
 (
   pips: {},
   words: {},
-  enums: {},
+  enums: {
+    "CHIP.SPEED": (
+      options: {
+        "FAST_1V0": [(frame:11,bit:0,invert:true,),],
+        "SLOW_1V0": [(frame:11,bit:0,invert:false,),],
+      },
+      desc: "Adjust back bias for high speed or low power",
+    ),
+    "SYSCONFIG.JTAG_PORT": (
+      options: {
+        "DISABLE": [(frame:38,bit:0,invert:true,),],
+        "ENABLE": [(frame:38,bit:0,invert:false,),],
+      },
+      desc: "status of JTAG port after configuration. ENABLE (F38B0, also always_on) is the default: every bitstream has it. WARNING: DISABLE clears F38B0 and locks JTAG out of the configured device; never set it unless that is intended",
+    ),
+  },
   conns: {},
   always_on: [
     (

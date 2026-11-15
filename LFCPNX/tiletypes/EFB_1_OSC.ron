@@ -1,0 +1,128 @@
+(
+  pips: {},
+  words: {
+    "OSC_CORE.HF_CLK_DIV": (
+      bits: [
+        [(frame:10,bit:1,invert:false,),],
+        [(frame:9,bit:1,invert:false,),],
+        [(frame:8,bit:1,invert:false,),],
+        [(frame:5,bit:1,invert:false,),],
+        [(frame:4,bit:1,invert:false,),],
+        [(frame:3,bit:1,invert:false,),],
+        [(frame:1,bit:1,invert:false,),],
+        [(frame:0,bit:1,invert:false,),],
+      ],
+      desc: "high frequency oscillator output divider",
+    ),
+    "OSC_CORE.HF_SED_SEC_DIV": (
+      bits: [
+        [(frame:22,bit:1,invert:false,),],
+        [(frame:21,bit:1,invert:false,),],
+        [(frame:18,bit:1,invert:false,),],
+        [(frame:17,bit:1,invert:false,),],
+        [(frame:16,bit:1,invert:false,),],
+        [(frame:14,bit:1,invert:false,),],
+        [(frame:13,bit:1,invert:false,),],
+        [(frame:12,bit:1,invert:false,),],
+      ],
+      desc: "high frequency oscillator SED secondary output divider",
+    ),
+  },
+  enums: {
+    "OSC_CORE.DEBUG_N": (
+      options: {
+        "DISABLED": [(frame:23,bit:1,invert:false,),],
+        "ENABLED": [],
+      },
+      desc: "enable debug mode",
+    ),
+    "OSC_CORE.DTR_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:105,bit:0,invert:false,),],
+      },
+    ),
+    "OSC_CORE.HFDIV_FABRIC_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:38,bit:1,invert:false,),],
+      },
+      desc: "enable HF divider from parameter",
+    ),
+    "OSC_CORE.HF_FABRIC_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:40,bit:1,invert:false,),],
+      },
+      desc: "enable HF oscillator trimming from input pins",
+    ),
+    "OSC_CORE.HF_OSC_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:41,bit:1,invert:false,),],
+      },
+      desc: "enable HF oscillator",
+    ),
+    "OSC_CORE.LF_FABRIC_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:56,bit:1,invert:false,),],
+      },
+      desc: "enable LF oscillator trimming from input pins",
+    ),
+    "OSC_CORE.LF_OUTPUT_EN": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:59,bit:1,invert:false,),],
+      },
+      desc: "enable LF oscillator output",
+    ),
+    "SYSCONFIG.MASTER_SPI_PORT": (
+      options: {
+        "DISABLE": [],
+        "DUAL": [(frame:20,bit:0,invert:false,),],
+        "QUAD": [(frame:20,bit:0,invert:false,),(frame:25,bit:0,invert:false,),],
+        "SERIAL": [(frame:20,bit:0,invert:false,),],
+      },
+      desc: "status of master SPI port after configuration",
+    ),
+    "SYSCONFIG.SLAVE_I2C_PORT": (
+      options: {
+        "DISABLE": [],
+        "ENABLE": [(frame:29,bit:0,invert:false,),],
+      },
+      desc: "status of slave I2C port after configuration",
+    ),
+    "SYSCONFIG.SLAVE_SPI_PORT": (
+      options: {
+        "DISABLE": [],
+        "DUAL": [(frame:21,bit:0,invert:false,),],
+        "QUAD": [(frame:21,bit:0,invert:false,),(frame:26,bit:0,invert:false,),],
+        "SERIAL": [(frame:21,bit:0,invert:false,),],
+      },
+      desc: "status of slave SPI port after configuration",
+    ),
+  },
+  conns: {
+    "G:JOSCHF_RMID_CORE_RMIDMUX": [
+      (
+        from_wire: "S1:JHFCLKOUT_OSC_CORE",
+      ),
+    ],
+    "G:JOSCLF_RMID_CORE_RMIDMUX": [
+      (
+        from_wire: "S1:JLFCLKOUT_OSC_CORE",
+      ),
+    ],
+    "S1:JHFOUTEN_OSC_CORE": [
+      (
+        from_wire: "S1W3:JCIBMUXOUTD3",
+      ),
+    ],
+    "S1:JHFSDSCEN_OSC_CORE": [
+      (
+        from_wire: "S1W3:JCIBMUXOUTC5",
+      ),
+    ],
+  },
+)
