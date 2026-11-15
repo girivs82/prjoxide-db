@@ -1,0 +1,932 @@
+{
+ "_comment": "Lattice DDR primitives on LFCPNX: where each is placed, what its ports connect to on the device, and the settings it implies. From the Radiant phy_ref decode (karythra rtl/radiant/lpddr4_phy_ref, Radiant 2026.1.1) and fuzzers 070, 151-156. Status: DRAFT, only the x4 modes the phy_ref design uses are checked.",
+ "primitives": {
+  "ODDRX4": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Q",
+    "role": "output"
+   },
+   "pins": {
+    "D0": {
+     "pin": "TXDATA0"
+    },
+    "D1": {
+     "pin": "TXDATA1"
+    },
+    "D2": {
+     "pin": "TXDATA2"
+    },
+    "D3": {
+     "pin": "TXDATA3"
+    },
+    "D4": {
+     "pin": "TXDATA4"
+    },
+    "D5": {
+     "pin": "TXDATA5"
+    },
+    "D6": {
+     "pin": "TXDATA6"
+    },
+    "D7": {
+     "pin": "TXDATA7"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "SCLK": {
+     "pin": "SCLKOUT",
+     "settings": [
+      "SCLKOUTMUX.SCLKOUT"
+     ]
+    },
+    "RST": {
+     "pin": "LSROUT",
+     "settings": [
+      "LSROUTMUX.LSROUT"
+     ]
+    }
+   },
+   "settings": [
+    "ODDRXN.DDRMODE.ODDRX4",
+    "IDDRX1_ODDRX1.OUTPUT.ENABLED",
+    "IREG_OREG.OUTPUT.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "ODDRX4DQ": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Q",
+    "role": "output"
+   },
+   "group_clocks": {
+    "DQSW270": "DQSW270"
+   },
+   "pins": {
+    "D0": {
+     "pin": "TXDATA0"
+    },
+    "D1": {
+     "pin": "TXDATA1"
+    },
+    "D2": {
+     "pin": "TXDATA2"
+    },
+    "D3": {
+     "pin": "TXDATA3"
+    },
+    "D4": {
+     "pin": "TXDATA4"
+    },
+    "D5": {
+     "pin": "TXDATA5"
+    },
+    "D6": {
+     "pin": "TXDATA6"
+    },
+    "D7": {
+     "pin": "TXDATA7"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "DQSW270": {
+     "pin": "DQSW270"
+    },
+    "SCLK": {
+     "pin": "SCLKOUT",
+     "settings": [
+      "SCLKOUTMUX.SCLKOUT"
+     ]
+    },
+    "RST": {
+     "pin": "LSROUT",
+     "settings": [
+      "LSROUTMUX.LSROUT"
+     ]
+    }
+   },
+   "settings": [
+    "MODE.MIDDRXN_MODDRXN",
+    "ODDRXN.DDRMODE.ODDRX4",
+    "MODDRXN.DDRMODE.MODDRX4_DQSW270",
+    "MODDRXN.DQSW_CLK.ON",
+    "IDDRX1_ODDRX1.OUTPUT.ENABLED",
+    "IREG_OREG.OUTPUT.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "ODDRX4DQS": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Q",
+    "role": "output"
+   },
+   "pins": {
+    "D0": {
+     "pin": "TXDATA0"
+    },
+    "D1": {
+     "pin": "TXDATA1"
+    },
+    "D2": {
+     "pin": "TXDATA2"
+    },
+    "D3": {
+     "pin": "TXDATA3"
+    },
+    "D4": {
+     "pin": "TXDATA4"
+    },
+    "D5": {
+     "pin": "TXDATA5"
+    },
+    "D6": {
+     "pin": "TXDATA6"
+    },
+    "D7": {
+     "pin": "TXDATA7"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "DQSW": {
+     "pin": "DQSW"
+    },
+    "SCLK": {
+     "pin": "SCLKOUT",
+     "settings": [
+      "SCLKOUTMUX.SCLKOUT"
+     ]
+    },
+    "RST": {
+     "pin": "LSROUT",
+     "settings": [
+      "LSROUTMUX.LSROUT"
+     ]
+    }
+   },
+   "settings": [
+    "MODE.MIDDRXN_MODDRXN",
+    "MODDRXN.DDRMODE.MODDRX4_DQSW",
+    "MODDRXN.DQSW_CLK.ON",
+    "IDDRX1_ODDRX1.OUTPUT.ENABLED",
+    "IREG_OREG.OUTPUT.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "TSHX4DQ": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Q",
+    "role": "tristate"
+   },
+   "pins": {
+    "T0": {
+     "pin": "TSDATA0"
+    },
+    "T1": {
+     "pin": "TSDATA1"
+    },
+    "T2": {
+     "pin": "TSDATA2"
+    },
+    "T3": {
+     "pin": "TSDATA3"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "DQSW270": {
+     "pin": "DQSW270"
+    },
+    "SCLK": {
+     "pin": "SCLKOUT",
+     "settings": [
+      "SCLKOUTMUX.SCLKOUT"
+     ]
+    },
+    "RST": {
+     "pin": "LSROUT",
+     "settings": [
+      "LSROUTMUX.LSROUT"
+     ]
+    }
+   },
+   "settings": [
+    "MODE.MIDDRXN_MODDRXN",
+    "MTDDRXN.DDRMODE.MTSHX4",
+    "IDDRX1_ODDRX1.OUTPUT.ENABLED",
+    "IREG_OREG.OUTPUT.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "TSHX4DQS": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Q",
+    "role": "tristate"
+   },
+   "pins": {
+    "T0": {
+     "pin": "TSDATA0"
+    },
+    "T1": {
+     "pin": "TSDATA1"
+    },
+    "T2": {
+     "pin": "TSDATA2"
+    },
+    "T3": {
+     "pin": "TSDATA3"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "DQSW": {
+     "pin": "DQSW"
+    },
+    "SCLK": {
+     "pin": "SCLKOUT",
+     "settings": [
+      "SCLKOUTMUX.SCLKOUT"
+     ]
+    },
+    "RST": {
+     "pin": "LSROUT",
+     "settings": [
+      "LSROUTMUX.LSROUT"
+     ]
+    }
+   },
+   "settings": [
+    "MODE.MIDDRXN_MODDRXN",
+    "MTDDRXN.DDRMODE.MTSHX4",
+    "IDDRX1_ODDRX1.OUTPUT.ENABLED",
+    "IREG_OREG.OUTPUT.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "IDDRX4DQ": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "D",
+    "role": "input"
+   },
+   "pins": {
+    "Q0": {
+     "pin": "RXDATA0"
+    },
+    "Q1": {
+     "pin": "RXDATA1"
+    },
+    "Q2": {
+     "pin": "RXDATA2"
+    },
+    "Q3": {
+     "pin": "RXDATA3"
+    },
+    "Q4": {
+     "pin": "RXDATA4"
+    },
+    "Q5": {
+     "pin": "RXDATA5"
+    },
+    "Q6": {
+     "pin": "RXDATA6"
+    },
+    "Q7": {
+     "pin": "RXDATA7"
+    },
+    "ECLK": {
+     "pin": "ECLK"
+    },
+    "DQSR90": {
+     "pin": "DQSR90"
+    },
+    "RDPNTR0": {
+     "pin": "RDPNTR0"
+    },
+    "RDPNTR1": {
+     "pin": "RDPNTR1"
+    },
+    "RDPNTR2": {
+     "pin": "RDPNTR2"
+    },
+    "WRPNTR0": {
+     "pin": "WRPNTR0"
+    },
+    "WRPNTR1": {
+     "pin": "WRPNTR1"
+    },
+    "WRPNTR2": {
+     "pin": "WRPNTR2"
+    },
+    "SCLK": {
+     "pin": "SCLKIN",
+     "settings": [
+      "SCLKINMUX.SCLKIN"
+     ]
+    },
+    "RST": {
+     "pin": "LSRIN",
+     "settings": [
+      "LSRINMUX.LSRIN"
+     ]
+    }
+   },
+   "settings": [
+    "MODE.MIDDRXN_MODDRXN",
+    "IDDRXN.DDRMODE.IDDRX4",
+    "MIDDRXN.DDRMODE.MIDDRX4"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "DELAYA": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "A",
+    "role": "input_delay"
+   },
+   "pins": {
+    "LOAD_N": {
+     "pin": "LOAD_N",
+     "settings": [
+      "LOAD_NMUX.LOAD_N"
+     ]
+    },
+    "MOVE": {
+     "pin": "MOVE",
+     "settings": [
+      "MOVEMUX.MOVE"
+     ]
+    },
+    "DIRECTION": {
+     "pin": "DIR",
+     "settings": [
+      "DIRMUX.DIR"
+     ]
+    },
+    "COARSE0": {
+     "pin": "CIBCRS0"
+    },
+    "COARSE1": {
+     "pin": "CIBCRS1"
+    },
+    "RANKSELECT": {
+     "pin": "RANKSELECT",
+     "settings": [
+      "RANKSELECTMUX.RANKSELECT"
+     ]
+    },
+    "RANKENABLE": {
+     "pin": "RANKENABLE",
+     "settings": [
+      "RANKENABLEMUX.RANKENABLE"
+     ]
+    },
+    "RANK0UPDATE": {
+     "pin": "RANK0UPDATE",
+     "settings": [
+      "RANK0UPDATEMUX.RANK0UPDATE"
+     ]
+    },
+    "RANK1UPDATE": {
+     "pin": "RANK1UPDATE",
+     "settings": [
+      "RANK1UPDATEMUX.RANK1UPDATE"
+     ]
+    },
+    "EDETERR": {
+     "pin": "EDETERR"
+    },
+    "CFLAG": {
+     "pin": "COUT"
+    }
+   },
+   "settings": [
+    "INMUX.DELAY"
+   ],
+   "parameters": {
+    "DEL_VALUE": {
+     "default": "0",
+     "word": "DELAY.DEL_VALUE",
+     "bits": 7
+    },
+    "COARSE_DELAY_MODE": {
+     "default": "STATIC",
+     "values": {
+      "STATIC": [],
+      "DYNAMIC": [
+       "DELAY.COARSE_DELAY_MODE.DYNAMIC"
+      ]
+     }
+    },
+    "DEL_MODE": {
+     "default": "USER_DEFINED",
+     "values": {
+      "USER_DEFINED": []
+     }
+    }
+   }
+  },
+  "DELAYB": {
+   "site": "IOLOGIC",
+   "pad": {
+    "port": "Z",
+    "role": "output_delay"
+   },
+   "pins": {},
+   "settings": [
+    "OUTMUX.DELAY",
+    "DELAY.EDGE_MONITOR.ENABLED",
+    "DELAY.WAIT_FOR_EDGE.ENABLED"
+   ],
+   "parameters": {
+    "DEL_VALUE": {
+     "default": "0",
+     "word": "DELAY.DEL_VALUE",
+     "bits": 7
+    },
+    "DEL_MODE": {
+     "default": "USER_DEFINED",
+     "values": {
+      "USER_DEFINED": []
+     }
+    }
+   }
+  },
+  "DQSBUF": {
+   "site": "DQSBUF",
+   "pad": {
+    "port": "DQSI",
+    "role": "strobe"
+   },
+   "pins": {
+    "ECLKIN": {
+     "pin": "ECLKIN"
+    },
+    "SCLK": {
+     "pin": "SCLK"
+    },
+    "RST": {
+     "pin": "RST",
+     "settings": [
+      "RSTMUX.RST"
+     ]
+    },
+    "PAUSE": {
+     "pin": "PAUSE",
+     "settings": [
+      "PAUSEMUX.PAUSE"
+     ]
+    },
+    "RSTSMCNT": {
+     "pin": "RSTSMCNT",
+     "settings": [
+      "RSTSMCNTMUX.RSTSMCNT"
+     ]
+    },
+    "RDCLKSEL0": {
+     "pin": "RDCLKSEL0"
+    },
+    "RDCLKSEL1": {
+     "pin": "RDCLKSEL1"
+    },
+    "RDCLKSEL2": {
+     "pin": "RDCLKSEL2"
+    },
+    "RDCLKSEL3": {
+     "pin": "RDCLKSEL3"
+    },
+    "READ0": {
+     "pin": "READ0"
+    },
+    "READ1": {
+     "pin": "READ1"
+    },
+    "READ2": {
+     "pin": "READ2"
+    },
+    "READ3": {
+     "pin": "READ3"
+    },
+    "RDDIR": {
+     "pin": "RDDIR"
+    },
+    "RDLOADN": {
+     "pin": "RDLOADN"
+    },
+    "READMOVE": {
+     "pin": "READMOVE"
+    },
+    "SELCLK": {
+     "pin": "SELCLK"
+    },
+    "WRDIR": {
+     "pin": "WRDIR"
+    },
+    "WRLOAD_N": {
+     "pin": "WRLOAD_N"
+    },
+    "WRLVDIR": {
+     "pin": "WRLVDIR"
+    },
+    "WRLVLOAD_N": {
+     "pin": "WRLVLOAD_N"
+    },
+    "WRLVMOVE": {
+     "pin": "WRLVMOVE"
+    },
+    "WRMOVE": {
+     "pin": "WRMOVE"
+    },
+    "BTDETECT": {
+     "pin": "BTDETECT"
+    },
+    "BURSTDETECT": {
+     "pin": "BURSTDETECT"
+    },
+    "DATAVALID": {
+     "pin": "DATAVALID"
+    },
+    "READCOUT": {
+     "pin": "READCOUT"
+    },
+    "WRCOUT": {
+     "pin": "WRCOUT"
+    },
+    "WRLVCOUT": {
+     "pin": "WRLVCOUT"
+    },
+    "DQSWRD": {
+     "pin": "DQSWRD"
+    },
+    "DLLCODE0": {
+     "pin": "DLLCODE0",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE1": {
+     "pin": "DLLCODE1",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE2": {
+     "pin": "DLLCODE2",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE3": {
+     "pin": "DLLCODE3",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE4": {
+     "pin": "DLLCODE4",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE5": {
+     "pin": "DLLCODE5",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE6": {
+     "pin": "DLLCODE6",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE7": {
+     "pin": "DLLCODE7",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DLLCODE8": {
+     "pin": "DLLCODE8",
+     "dedicated": "DDRDLL.CODE"
+    },
+    "DQSR90": {
+     "pin": "DQSR90",
+     "group": true
+    },
+    "DQSW": {
+     "pin": "DQSW",
+     "group": true
+    },
+    "DQSW270": {
+     "pin": "DQSW270",
+     "group": true
+    },
+    "RDPNTR0": {
+     "pin": "RDPNTR0",
+     "group": true
+    },
+    "RDPNTR1": {
+     "pin": "RDPNTR1",
+     "group": true
+    },
+    "RDPNTR2": {
+     "pin": "RDPNTR2",
+     "group": true
+    },
+    "WRPNTR0": {
+     "pin": "WRPNTR0",
+     "group": true
+    },
+    "WRPNTR1": {
+     "pin": "WRPNTR1",
+     "group": true
+    },
+    "WRPNTR2": {
+     "pin": "WRPNTR2",
+     "group": true
+    }
+   },
+   "settings": [
+    "UPDATE_QU.UP1_AND_UP0_SAME"
+   ],
+   "connection_settings": {
+    "DLLCODE": {
+     "from_right_ddrdll": [
+      "DLLCODE.DDRDLL"
+     ]
+    }
+   },
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    },
+    "ENABLE_FIFO": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "ENABLE_FIFO.ENABLED"
+      ]
+     }
+    },
+    "MODX": {
+     "default": "NOT_USED",
+     "values": {
+      "NOT_USED": [],
+      "MDDRX4": [
+       "MODX.MDDRX4"
+      ]
+     }
+    },
+    "READ_ENABLE": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "READ_ENABLE.ENABLED"
+      ]
+     }
+    },
+    "WRITE_ENABLE": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "WRITE_ENABLE.ENABLED"
+      ]
+     }
+    }
+   }
+  },
+  "DDRDLL": {
+   "site": "DDRDLL",
+   "pins": {
+    "CLKIN": {
+     "pin": "CLKIN"
+    },
+    "RST": {
+     "pin": "RST",
+     "settings": [
+      "RSTMUX.RST"
+     ]
+    },
+    "FREEZE": {
+     "pin": "FREEZE"
+    },
+    "UDDCNTL_N": {
+     "pin": "UDDCNTL_N"
+    },
+    "LOCK": {
+     "pin": "LOCK"
+    },
+    "CODE0": {
+     "pin": "CODE0"
+    },
+    "CODE1": {
+     "pin": "CODE1"
+    },
+    "CODE2": {
+     "pin": "CODE2"
+    },
+    "CODE3": {
+     "pin": "CODE3"
+    },
+    "CODE4": {
+     "pin": "CODE4"
+    },
+    "CODE5": {
+     "pin": "CODE5"
+    },
+    "CODE6": {
+     "pin": "CODE6"
+    },
+    "CODE7": {
+     "pin": "CODE7"
+    },
+    "CODE8": {
+     "pin": "CODE8"
+    },
+    "DCNTL0": {
+     "pin": "DCNTL0"
+    },
+    "DCNTL1": {
+     "pin": "DCNTL1"
+    },
+    "DCNTL2": {
+     "pin": "DCNTL2"
+    },
+    "DCNTL3": {
+     "pin": "DCNTL3"
+    },
+    "DCNTL4": {
+     "pin": "DCNTL4"
+    },
+    "DCNTL5": {
+     "pin": "DCNTL5"
+    },
+    "DCNTL6": {
+     "pin": "DCNTL6"
+    },
+    "DCNTL7": {
+     "pin": "DCNTL7"
+    },
+    "DCNTL8": {
+     "pin": "DCNTL8"
+    }
+   },
+   "settings": [
+    "ENA_OSC.ENABLED",
+    "ENA_ROUNDOFF.ENABLED"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "ECLKSYNC": {
+   "site": "ECLKSYNC",
+   "pins": {
+    "ECLKIN": {
+     "pin": "ECLKIN"
+    },
+    "STOP": {
+     "pin": "STOP"
+    },
+    "ECLKOUT": {
+     "pin": "ECLKOUT"
+    }
+   },
+   "settings": [],
+   "parameters": {
+    "STOP_EN": {
+     "default": "DISABLE",
+     "values": {
+      "DISABLE": []
+     }
+    }
+   }
+  },
+  "ECLKDIV": {
+   "site": "ECLKDIV",
+   "pins": {
+    "ECLKIN": {
+     "pin": "ECLKIN"
+    },
+    "DIVRST": {
+     "pin": "DIVRST"
+    },
+    "SLIP": {
+     "pin": "SLIP"
+    },
+    "DIVOUT": {
+     "pin": "DIVOUT"
+    }
+   },
+   "settings": [],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    },
+    "ECLK_DIV": {
+     "default": "DISABLE",
+     "values": {
+      "4": [
+       "ECLK_DIV.4"
+      ],
+      "2": [
+       "ECLK_DIV.2"
+      ]
+     }
+    }
+   }
+  }
+ }
+}
