@@ -1,11 +1,13 @@
 {
- "_comment": "Lattice DDR primitives on LFCPNX: where each is placed, what its ports connect to on the device, and the settings it implies. From the Radiant phy_ref decode (karythra rtl/radiant/lpddr4_phy_ref, Radiant 2026.1.1) and fuzzers 070, 151-156. Status: DRAFT, only the x4 modes the phy_ref design uses are checked.",
+ "_comment": "Lattice DDR primitives on LFCPNX: where each is placed, what its ports connect to on the device, and the settings it implies. From the Radiant phy_ref decode (karythra rtl/radiant/lpddr4_phy_ref, Radiant 2026.1.1) and fuzzers 070, 151-156. Status: DRAFT, only the x4 modes the phy_ref design uses are checked. Per primitive: site = the block it occupies (IOLOGIC: the I/O logic of its pad; DQSBUF: the DQS buffer of its strobe pad's DQS group; DDRDLL, ECLKSYNC, ECLKDIV: one of the device's blocks of that name); pad = the ports that connect to the pad (or to another primitive at the same pad) inside the I/O, never through the fabric, and the role in that chain; pins = port -> the block's pin (wire J<pin>_<core>), with settings the connection implies, clock = the pin is on the dedicated clock network (edge clocks, SCLK, the DQS group's strobes and FIFO pointers), dedicated = a fixed connection between blocks that is not routed; unrouted = the value the pin reads when nothing is routed to it, so a port tied to that value is left unrouted (Radiant leaves ECLKSYNC STOP and ECLKDIV DIVRST/SLIP tied 0 unrouted in phy_ref); settings = set whenever the primitive is used; parameters = the primitive's parameters: an enum value's settings, or a word (bits wide); pins_from = settings to make when a pin bus is driven by the named block (DQSBUF DLLCODE from the right-side DDRDLL; from the left one, or tied 0, no bit is set).",
  "primitives": {
   "ODDRX4": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Q",
-    "role": "output"
+    "role": "output",
+    "ports": [
+     "Q"
+    ]
    },
    "pins": {
     "D0": {
@@ -33,13 +35,15 @@
      "pin": "TXDATA7"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKOUT",
      "settings": [
       "SCLKOUTMUX.SCLKOUT"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSROUT",
@@ -70,8 +74,10 @@
   "ODDRX4DQ": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Q",
-    "role": "output"
+    "role": "output",
+    "ports": [
+     "Q"
+    ]
    },
    "group_clocks": {
     "DQSW270": "DQSW270"
@@ -102,16 +108,19 @@
      "pin": "TXDATA7"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "DQSW270": {
-     "pin": "DQSW270"
+     "pin": "DQSW270",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKOUT",
      "settings": [
       "SCLKOUTMUX.SCLKOUT"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSROUT",
@@ -145,8 +154,10 @@
   "ODDRX4DQS": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Q",
-    "role": "output"
+    "role": "output",
+    "ports": [
+     "Q"
+    ]
    },
    "pins": {
     "D0": {
@@ -174,16 +185,19 @@
      "pin": "TXDATA7"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "DQSW": {
-     "pin": "DQSW"
+     "pin": "DQSW",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKOUT",
      "settings": [
       "SCLKOUTMUX.SCLKOUT"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSROUT",
@@ -216,8 +230,10 @@
   "TSHX4DQ": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Q",
-    "role": "tristate"
+    "role": "tristate",
+    "ports": [
+     "Q"
+    ]
    },
    "pins": {
     "T0": {
@@ -233,16 +249,19 @@
      "pin": "TSDATA3"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "DQSW270": {
-     "pin": "DQSW270"
+     "pin": "DQSW270",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKOUT",
      "settings": [
       "SCLKOUTMUX.SCLKOUT"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSROUT",
@@ -274,8 +293,10 @@
   "TSHX4DQS": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Q",
-    "role": "tristate"
+    "role": "tristate",
+    "ports": [
+     "Q"
+    ]
    },
    "pins": {
     "T0": {
@@ -291,16 +312,19 @@
      "pin": "TSDATA3"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "DQSW": {
-     "pin": "DQSW"
+     "pin": "DQSW",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKOUT",
      "settings": [
       "SCLKOUTMUX.SCLKOUT"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSROUT",
@@ -332,8 +356,10 @@
   "IDDRX4DQ": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "D",
-    "role": "input"
+    "role": "input",
+    "ports": [
+     "D"
+    ]
    },
    "pins": {
     "Q0": {
@@ -361,34 +387,43 @@
      "pin": "RXDATA7"
     },
     "ECLK": {
-     "pin": "ECLK"
+     "pin": "ECLK",
+     "clock": true
     },
     "DQSR90": {
-     "pin": "DQSR90"
+     "pin": "DQSR90",
+     "clock": true
     },
     "RDPNTR0": {
-     "pin": "RDPNTR0"
+     "pin": "RDPNTR0",
+     "clock": true
     },
     "RDPNTR1": {
-     "pin": "RDPNTR1"
+     "pin": "RDPNTR1",
+     "clock": true
     },
     "RDPNTR2": {
-     "pin": "RDPNTR2"
+     "pin": "RDPNTR2",
+     "clock": true
     },
     "WRPNTR0": {
-     "pin": "WRPNTR0"
+     "pin": "WRPNTR0",
+     "clock": true
     },
     "WRPNTR1": {
-     "pin": "WRPNTR1"
+     "pin": "WRPNTR1",
+     "clock": true
     },
     "WRPNTR2": {
-     "pin": "WRPNTR2"
+     "pin": "WRPNTR2",
+     "clock": true
     },
     "SCLK": {
      "pin": "SCLKIN",
      "settings": [
       "SCLKINMUX.SCLKIN"
-     ]
+     ],
+     "clock": true
     },
     "RST": {
      "pin": "LSRIN",
@@ -419,8 +454,11 @@
   "DELAYA": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "A",
-    "role": "input_delay"
+    "role": "input_delay",
+    "ports": [
+     "A",
+     "Z"
+    ]
    },
    "pins": {
     "LOAD_N": {
@@ -507,8 +545,11 @@
   "DELAYB": {
    "site": "IOLOGIC",
    "pad": {
-    "port": "Z",
-    "role": "output_delay"
+    "role": "output_delay",
+    "ports": [
+     "A",
+     "Z"
+    ]
    },
    "pins": {},
    "settings": [
@@ -533,15 +574,19 @@
   "DQSBUF": {
    "site": "DQSBUF",
    "pad": {
-    "port": "DQSI",
-    "role": "strobe"
+    "role": "strobe",
+    "ports": [
+     "DQSI"
+    ]
    },
    "pins": {
     "ECLKIN": {
-     "pin": "ECLKIN"
+     "pin": "ECLKIN",
+     "clock": true
     },
     "SCLK": {
-     "pin": "SCLK"
+     "pin": "SCLK",
+     "clock": true
     },
     "RST": {
      "pin": "RST",
@@ -674,51 +719,44 @@
     },
     "DQSR90": {
      "pin": "DQSR90",
-     "group": true
+     "clock": true
     },
     "DQSW": {
      "pin": "DQSW",
-     "group": true
+     "clock": true
     },
     "DQSW270": {
      "pin": "DQSW270",
-     "group": true
+     "clock": true
     },
     "RDPNTR0": {
      "pin": "RDPNTR0",
-     "group": true
+     "clock": true
     },
     "RDPNTR1": {
      "pin": "RDPNTR1",
-     "group": true
+     "clock": true
     },
     "RDPNTR2": {
      "pin": "RDPNTR2",
-     "group": true
+     "clock": true
     },
     "WRPNTR0": {
      "pin": "WRPNTR0",
-     "group": true
+     "clock": true
     },
     "WRPNTR1": {
      "pin": "WRPNTR1",
-     "group": true
+     "clock": true
     },
     "WRPNTR2": {
      "pin": "WRPNTR2",
-     "group": true
+     "clock": true
     }
    },
    "settings": [
     "UPDATE_QU.UP1_AND_UP0_SAME"
    ],
-   "connection_settings": {
-    "DLLCODE": {
-     "from_right_ddrdll": [
-      "DLLCODE.DDRDLL"
-     ]
-    }
-   },
    "parameters": {
     "GSR": {
      "default": "ENABLED",
@@ -767,13 +805,21 @@
       ]
      }
     }
+   },
+   "pins_from": {
+    "DLLCODE": {
+     "DDRDLL_CORE_R72C158": [
+      "DLLCODE.DDRDLL"
+     ]
+    }
    }
   },
   "DDRDLL": {
    "site": "DDRDLL",
    "pins": {
     "CLKIN": {
-     "pin": "CLKIN"
+     "pin": "CLKIN",
+     "clock": true
     },
     "RST": {
      "pin": "RST",
@@ -867,13 +913,16 @@
    "site": "ECLKSYNC",
    "pins": {
     "ECLKIN": {
-     "pin": "ECLKIN"
+     "pin": "ECLKIN",
+     "clock": true
     },
     "STOP": {
-     "pin": "STOP"
+     "pin": "STOP",
+     "unrouted": 0
     },
     "ECLKOUT": {
-     "pin": "ECLKOUT"
+     "pin": "ECLKOUT",
+     "clock": true
     }
    },
    "settings": [],
@@ -890,16 +939,20 @@
    "site": "ECLKDIV",
    "pins": {
     "ECLKIN": {
-     "pin": "ECLKIN"
+     "pin": "ECLKIN",
+     "clock": true
     },
     "DIVRST": {
-     "pin": "DIVRST"
+     "pin": "DIVRST",
+     "unrouted": 0
     },
     "SLIP": {
-     "pin": "SLIP"
+     "pin": "SLIP",
+     "unrouted": 0
     },
     "DIVOUT": {
-     "pin": "DIVOUT"
+     "pin": "DIVOUT",
+     "clock": true
     }
    },
    "settings": [],
