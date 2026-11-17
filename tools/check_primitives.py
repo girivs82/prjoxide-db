@@ -16,7 +16,7 @@ for name,p in P.items():
     E=cache.setdefault(p["site"],enums(files,prefix))
     allset=list(p["settings"])
     for pin in p["pins"].values(): allset+=pin.get("settings",[])
-    for c in p.get("connection_settings",{}).values():
+    for c in p.get("pins_from",{}).values():
         for v in c.values(): allset+=v
     for par in p.get("parameters",{}).values():
         if "values" in par:
