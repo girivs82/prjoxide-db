@@ -160,7 +160,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -171,7 +171,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -182,7 +182,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -193,7 +193,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -204,7 +204,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -215,7 +215,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -226,7 +226,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -237,7 +237,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -266,7 +266,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "LSROUT",
        "clock": "SCLKOUT"
       }
@@ -309,7 +309,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -320,7 +320,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -331,7 +331,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -342,7 +342,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -353,7 +353,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -364,7 +364,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -375,7 +375,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -386,7 +386,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "TXDATA",
        "clock": "SCLKOUT"
       }
@@ -415,7 +415,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "LSROUT",
        "clock": "SCLKOUT"
       }
@@ -455,25 +455,45 @@
     "T0": {
      "pin": "TSDATA0",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQ",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T1": {
      "pin": "TSDATA1",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQ",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T2": {
      "pin": "TSDATA2",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQ",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T3": {
      "pin": "TSDATA3",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQ",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "ECLK": {
@@ -499,7 +519,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQ",
        "pin": "LSROUT",
        "clock": "SCLKOUT"
       }
@@ -538,25 +558,45 @@
     "T0": {
      "pin": "TSDATA0",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQS",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T1": {
      "pin": "TSDATA1",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQS",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T2": {
      "pin": "TSDATA2",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQS",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "T3": {
      "pin": "TSDATA3",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:TSHX4DQS",
+       "pin": "TSDATA",
+       "clock": "SCLKOUT"
+      }
      }
     },
     "ECLK": {
@@ -582,7 +622,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:ODDRXN",
+       "cell": "IOLOGIC:ODDRX4DQS",
        "pin": "LSROUT",
        "clock": "SCLKOUT"
       }
@@ -623,7 +663,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -634,7 +674,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -645,7 +685,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -656,7 +696,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -667,7 +707,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -678,7 +718,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -689,7 +729,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -700,7 +740,7 @@
      "timing": {
       "clock": "SCLK",
       "launch": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "from": "SCLKIN",
        "to": "RXDATA"
       }
@@ -753,7 +793,7 @@
      "timing": {
       "clock": "SCLK",
       "setup": {
-       "cell": "IOLOGIC:IDDRXN",
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
        "pin": "LSRIN",
        "clock": "SCLKIN"
       }
@@ -939,7 +979,15 @@
      "pin": "RST",
      "settings": [
       "RSTMUX.RST"
-     ]
+     ],
+     "timing": {
+      "clock": "SCLK",
+      "setup": {
+       "cell": "DQSBUF",
+       "pin": "RST",
+       "clock": "SCLK"
+      }
+     }
     },
     "PAUSE": {
      "pin": "PAUSE",
@@ -1082,25 +1130,51 @@
     "DATAVALID": {
      "pin": "DATAVALID",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "launch": {
+       "cell": "DQSBUF",
+       "from": "SCLK",
+       "to": "DATAVALID"
+      }
      }
     },
     "READCOUT": {
      "pin": "READCOUT",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "from": {
+       "RDDIR": {
+        "cell": "DQSBUF",
+        "from": "RDDIR",
+        "to": "READCOUT"
+       }
+      }
      }
     },
     "WRCOUT": {
      "pin": "WRCOUT",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "from": {
+       "WRDIR": {
+        "cell": "DQSBUF",
+        "from": "WRDIR",
+        "to": "WRCOUT"
+       }
+      }
      }
     },
     "WRLVCOUT": {
      "pin": "WRLVCOUT",
      "timing": {
-      "clock": "SCLK"
+      "clock": "SCLK",
+      "from": {
+       "WRLVDIR": {
+        "cell": "DQSBUF",
+        "from": "WRLVDIR",
+        "to": "WRLVCOUT"
+       }
+      }
      }
     },
     "DQSWRD": {
