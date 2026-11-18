@@ -3156,6 +3156,23 @@
                 }
             ]
         },
+        "DDRDLL": {
+            "iopaths": [
+                {
+                    "from_pin": "CLKIN",
+                    "maxv": 543,
+                    "minv": 543,
+                    "to_pin": "LOCK"
+                },
+                {
+                    "from_pin": "RST",
+                    "maxv": 317,
+                    "minv": 317,
+                    "to_pin": "LOCK"
+                }
+            ],
+            "setupholds": []
+        },
         "DP16K_MODE": {
             "iopaths": [
                 {
@@ -3285,6 +3302,93 @@
                     "pin": "WEB"
                 }
             ]
+        },
+        "DQSBUF": {
+            "iopaths": [
+                {
+                    "from_pin": "ECLKIN",
+                    "maxv": 897,
+                    "minv": 897,
+                    "to_pin": "READCOUT"
+                },
+                {
+                    "from_pin": "ECLKIN",
+                    "maxv": 878,
+                    "minv": 878,
+                    "to_pin": "WRCOUT"
+                },
+                {
+                    "from_pin": "ECLKIN",
+                    "maxv": 901,
+                    "minv": 901,
+                    "to_pin": "WRLVCOUT"
+                },
+                {
+                    "from_pin": "RDDIR",
+                    "maxv": 3868,
+                    "minv": 3868,
+                    "to_pin": "READCOUT"
+                },
+                {
+                    "from_pin": "SCLK",
+                    "maxv": 615,
+                    "minv": 594,
+                    "to_pin": "DATAVALID"
+                },
+                {
+                    "from_pin": "WRDIR",
+                    "maxv": 3673,
+                    "minv": 3673,
+                    "to_pin": "WRCOUT"
+                },
+                {
+                    "from_pin": "WRLVDIR",
+                    "maxv": 864,
+                    "minv": 864,
+                    "to_pin": "WRLVCOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "SCLK",
+                    "max_hold": 0,
+                    "max_setup": 239,
+                    "min_hold": 0,
+                    "min_setup": 238,
+                    "pin": "RST"
+                }
+            ]
+        },
+        "ECLKDIV": {
+            "iopaths": [
+                {
+                    "from_pin": "ECLKIN",
+                    "maxv": 391,
+                    "minv": 369,
+                    "to_pin": "DIVOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "ECLKIN",
+                    "max_hold": 0,
+                    "max_setup": 54,
+                    "min_hold": 0,
+                    "min_setup": 54,
+                    "pin": "DIVRST"
+                }
+            ]
+        },
+        "ECLKSYNC": {
+            "iopaths": [
+                {
+                    "from_pin": "ECLKIN",
+                    "maxv": 0,
+                    "minv": 0,
+                    "to_pin": "ECLKOUT"
+                }
+            ],
+            "setupholds": []
         },
         "FIFO16K_MODE": {
             "iopaths": [
@@ -3500,6 +3604,80 @@
                     "min_hold": 148,
                     "min_setup": 0,
                     "pin": "RANK1UPDATE"
+                }
+            ]
+        },
+        "IOLOGIC:IDDRX4DQ:DELAYED": {
+            "iopaths": [
+                {
+                    "from_pin": "LSRIN",
+                    "maxv": 1433,
+                    "minv": 1410,
+                    "to_pin": "RXDATA"
+                },
+                {
+                    "from_pin": "SCLKIN",
+                    "maxv": 588,
+                    "minv": 542,
+                    "to_pin": "RXDATA"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "DQSR90",
+                    "max_hold": 0,
+                    "max_setup": 886,
+                    "min_hold": 0,
+                    "min_setup": 885,
+                    "pin": "DI"
+                },
+                {
+                    "clock": "SCLKIN",
+                    "max_hold": 0,
+                    "max_setup": 0,
+                    "min_hold": 0,
+                    "min_setup": 0,
+                    "pin": "ECLK"
+                },
+                {
+                    "clock": "SCLKIN",
+                    "max_hold": 0,
+                    "max_setup": 828,
+                    "min_hold": 0,
+                    "min_setup": 827,
+                    "pin": "LSRIN"
+                },
+                {
+                    "clock": "SCLKIN",
+                    "max_hold": 143,
+                    "max_setup": 0,
+                    "min_hold": 134,
+                    "min_setup": 0,
+                    "pin": "RANK0UPDATE"
+                },
+                {
+                    "clock": "SCLKIN",
+                    "max_hold": 164,
+                    "max_setup": 0,
+                    "min_hold": 148,
+                    "min_setup": 0,
+                    "pin": "RANK1UPDATE"
+                },
+                {
+                    "clock": "DQSR90",
+                    "max_hold": 0,
+                    "max_setup": 340,
+                    "min_hold": 0,
+                    "min_setup": 308,
+                    "pin": "RDPNTR"
+                },
+                {
+                    "clock": "DQSR90",
+                    "max_hold": 0,
+                    "max_setup": 332,
+                    "min_hold": 0,
+                    "min_setup": 317,
+                    "pin": "WRPNTR"
                 }
             ]
         },
@@ -3729,6 +3907,90 @@
                     "max_setup": 800,
                     "min_hold": 0,
                     "min_setup": 760,
+                    "pin": "TXDATA"
+                }
+            ]
+        },
+        "IOLOGIC:ODDRX4DQ": {
+            "iopaths": [
+                {
+                    "from_pin": "DQSW270",
+                    "maxv": 722,
+                    "minv": 709,
+                    "to_pin": "DOUT"
+                },
+                {
+                    "from_pin": "LSROUT",
+                    "maxv": 1402,
+                    "minv": 1402,
+                    "to_pin": "DOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 882,
+                    "min_hold": 0,
+                    "min_setup": 857,
+                    "pin": "LSROUT"
+                },
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 150,
+                    "max_setup": 0,
+                    "min_hold": 138,
+                    "min_setup": 0,
+                    "pin": "RANK0UPDATE"
+                },
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 168,
+                    "max_setup": 0,
+                    "min_hold": 149,
+                    "min_setup": 0,
+                    "pin": "RANK1UPDATE"
+                },
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 485,
+                    "min_hold": 0,
+                    "min_setup": 423,
+                    "pin": "TXDATA"
+                }
+            ]
+        },
+        "IOLOGIC:ODDRX4DQS": {
+            "iopaths": [
+                {
+                    "from_pin": "DQSW",
+                    "maxv": 696,
+                    "minv": 678,
+                    "to_pin": "DOUT"
+                },
+                {
+                    "from_pin": "LSROUT",
+                    "maxv": 1402,
+                    "minv": 1402,
+                    "to_pin": "DOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 882,
+                    "min_hold": 0,
+                    "min_setup": 857,
+                    "pin": "LSROUT"
+                },
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 485,
+                    "min_hold": 0,
+                    "min_setup": 423,
                     "pin": "TXDATA"
                 }
             ]
@@ -3998,6 +4260,46 @@
                     "min_hold": 0,
                     "min_setup": 512,
                     "pin": "TXDATA0"
+                }
+            ]
+        },
+        "IOLOGIC:TSHX4DQ": {
+            "iopaths": [
+                {
+                    "from_pin": "DQSW270",
+                    "maxv": 842,
+                    "minv": 822,
+                    "to_pin": "TOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 449,
+                    "min_hold": 0,
+                    "min_setup": 398,
+                    "pin": "TSDATA"
+                }
+            ]
+        },
+        "IOLOGIC:TSHX4DQS": {
+            "iopaths": [
+                {
+                    "from_pin": "DQSW",
+                    "maxv": 830,
+                    "minv": 818,
+                    "to_pin": "TOUT"
+                }
+            ],
+            "setupholds": [
+                {
+                    "clock": "SCLKOUT",
+                    "max_hold": 0,
+                    "max_setup": 449,
+                    "min_hold": 0,
+                    "min_setup": 398,
+                    "pin": "TSDATA"
                 }
             ]
         },
