@@ -659,28 +659,6 @@
    },
    "pins": {
     "Q0": {
-     "pin": "RXDATA0",
-     "timing": {
-      "clock": "SCLK",
-      "launch": {
-       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
-       "from": "SCLKIN",
-       "to": "RXDATA"
-      }
-     }
-    },
-    "Q1": {
-     "pin": "RXDATA1",
-     "timing": {
-      "clock": "SCLK",
-      "launch": {
-       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
-       "from": "SCLKIN",
-       "to": "RXDATA"
-      }
-     }
-    },
-    "Q2": {
      "pin": "RXDATA2",
      "timing": {
       "clock": "SCLK",
@@ -691,7 +669,7 @@
       }
      }
     },
-    "Q3": {
+    "Q1": {
      "pin": "RXDATA3",
      "timing": {
       "clock": "SCLK",
@@ -702,7 +680,7 @@
       }
      }
     },
-    "Q4": {
+    "Q2": {
      "pin": "RXDATA4",
      "timing": {
       "clock": "SCLK",
@@ -713,7 +691,7 @@
       }
      }
     },
-    "Q5": {
+    "Q3": {
      "pin": "RXDATA5",
      "timing": {
       "clock": "SCLK",
@@ -724,7 +702,7 @@
       }
      }
     },
-    "Q6": {
+    "Q4": {
      "pin": "RXDATA6",
      "timing": {
       "clock": "SCLK",
@@ -735,8 +713,30 @@
       }
      }
     },
-    "Q7": {
+    "Q5": {
      "pin": "RXDATA7",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q6": {
+     "pin": "RXDATA8",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRX4DQ:DELAYED",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q7": {
+     "pin": "RXDATA9",
      "timing": {
       "clock": "SCLK",
       "launch": {
