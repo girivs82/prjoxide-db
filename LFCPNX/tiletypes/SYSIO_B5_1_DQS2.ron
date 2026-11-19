@@ -270,6 +270,20 @@
         "ODDRX5": [(frame:21,bit:0,invert:false,),(frame:21,bit:1,invert:false,),(frame:23,bit:0,invert:false,),(frame:24,bit:0,invert:false,),(frame:64,bit:0,invert:false,),],
       },
     ),
+    "IOLOGICB.OUTDELAYA": (
+      options: {
+        "NONE": [],
+        "USED": [(frame:37,bit:1,invert:false,),(frame:38,bit:1,invert:false,),(frame:39,bit:1,invert:false,),],
+      },
+      desc: "OUTDELAYA on this pad: its output and tristate pass through the output delay line (LPDDR4 write training; map accepts it only after ODDRX4DQ / ODDRX4DQS)",
+    ),
+    "IOLOGICB.OUTDELAYA.MARGIN_TEST_ENABLE": (
+      options: {
+        "DISABLED": [],
+        "ENABLED": [(frame:33,bit:1,invert:false,),(frame:35,bit:1,invert:false,),(frame:36,bit:1,invert:false,),],
+      },
+      desc: "OUTDELAYA MARGIN_TEST_ENABLE: the delay is adjustable through LOAD_N / MOVE / DIRECTION_LPDDR4_WT (set only with OUTDELAYA.USED)",
+    ),
     "IOLOGICB.OUTMUX": (
       options: {
         "BYPASS": [],
