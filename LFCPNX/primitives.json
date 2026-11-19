@@ -1312,6 +1312,51 @@
        "WRITE_ENABLE.ENABLED"
       ]
      }
+    },
+    "FORCE_READ": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "FORCE_READ.ENABLED"
+      ]
+     }
+    },
+    "MT_EN_READ": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "MT_EN_READ.ENABLED"
+      ]
+     }
+    },
+    "MT_EN_WRITE": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "MT_EN_WRITE.ENABLED"
+      ]
+     }
+    },
+    "MT_EN_WRITE_LEVELING": {
+     "default": "DISABLED",
+     "values": {
+      "DISABLED": [],
+      "ENABLED": [
+       "MT_EN_WRITE_LEVELING.ENABLED"
+      ]
+     }
+    },
+    "FREE_WHEEL": {
+     "default": "DDR",
+     "values": {
+      "DDR": [],
+      "GDDR": [
+       "FREE_WHEEL.GDDR"
+      ]
+     }
     }
    },
    "pins_from": {
@@ -1441,7 +1486,10 @@
     "STOP_EN": {
      "default": "DISABLE",
      "values": {
-      "DISABLE": []
+      "DISABLE": [],
+      "ENABLE": [
+       "STOP_EN.ENABLE"
+      ]
      }
     }
    }
