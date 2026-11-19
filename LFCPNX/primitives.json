@@ -1,5 +1,5 @@
 {
- "_comment": "Lattice DDR primitives on LFCPNX: where each is placed, what its ports connect to on the device, and the settings it implies. From the Radiant phy_ref decode (karythra rtl/radiant/lpddr4_phy_ref, Radiant 2026.1.1) and fuzzers 070, 151-156. Status: DRAFT, only the x4 modes the phy_ref design uses are checked. Per primitive: site = the block it occupies (IOLOGIC: the I/O logic of its pad; DQSBUF: the DQS buffer of its strobe pad's DQS group; DDRDLL, ECLKSYNC, ECLKDIV: one of the device's blocks of that name); pad = the ports that connect to the pad (or to another primitive at the same pad) inside the I/O, never through the fabric, and the role in that chain; pins = port -> the block's pin (wire J<pin>_<core>), with settings the connection implies, clock = the pin is on the dedicated clock network (edge clocks, SCLK, the DQS group's strobes and FIFO pointers), dedicated = a fixed connection between blocks that is not routed; unrouted = the value the pin reads when nothing is routed to it, so a port tied to that value is left unrouted (Radiant leaves ECLKSYNC STOP and ECLKDIV DIVRST/SLIP tied 0 unrouted in phy_ref); settings = set whenever the primitive is used; parameters = the primitive's parameters: an enum value's settings, or a word (bits wide); pins_from = settings to make when a pin bus is driven by the named block (DQSBUF DLLCODE from the right-side DDRDLL; from the left one, or tied 0, no bit is set). timing = how a fabric-side pin is timed: clock = the primitive's port whose clock samples or launches it; setup = the cells_<grade>.json setup/hold entry for an input (cell, pin, clock); launch = the clock-to-output arc for an output (cell, from, to); from = for an output with combinational arcs, input port -> its arc (cell, from, to). A pin with a clock but no numbers is synchronous to that clock but not yet characterised (TSHX4 TSDATA, DQSBUF fabric pins: no entries in the tables yet). A routed pin without timing has no timed path through the block (DDRDLL, ECLKSYNC STOP, ECLKDIV DIVRST/SLIP, DQSBUF RST: asynchronous or internally synchronised). clock_from = a clock output's source: the input port it follows, and divide_by = the parameter whose value is the division ratio (absent: the same frequency).",
+ "_comment": "Lattice DDR primitives on LFCPNX: where each is placed, what its ports connect to on the device, and the settings it implies. From the Radiant phy_ref decode (karythra rtl/radiant/lpddr4_phy_ref, Radiant 2026.1.1) and fuzzers 070, 151-156. Status: DRAFT, only the x4 modes the phy_ref design uses are checked. Per primitive: site = the block it occupies (IOLOGIC: the I/O logic of its pad; DQSBUF: the DQS buffer of its strobe pad's DQS group; DDRDLL, ECLKSYNC, ECLKDIV: one of the device's blocks of that name); pad = the ports that connect to the pad (or to another primitive at the same pad) inside the I/O, never through the fabric, and the role in that chain; pins = port -> the block's pin (wire J<pin>_<core>), with settings the connection implies, clock = the pin is on the dedicated clock network (edge clocks, SCLK, the DQS group's strobes and FIFO pointers), dedicated = a fixed connection between blocks that is not routed; unrouted = the value the pin reads when nothing is routed to it, so a port tied to that value is left unrouted, and a port tied to the other value is driven from a constant LUT (ECLKSYNC STOP and ECLKDIV DIVRST/SLIP read 1 unrouted, like any CIB input: Radiant routes a constant 0 to each through the CIB in phy_ref, R73C74 JCIBMUXOUTD2, R73C75 JCIBMUXOUTC2, R73C77 JLSR0 for ECLKSYNC3_0/ECLKDIVB3_0; left unrouted on the board the edge clock stops and the divider is held in reset); settings = set whenever the primitive is used; parameters = the primitive's parameters: an enum value's settings, or a word (bits wide); pins_from = settings to make when a pin bus is driven by the named block (DQSBUF DLLCODE from the right-side DDRDLL; from the left one, or tied 0, no bit is set). timing = how a fabric-side pin is timed: clock = the primitive's port whose clock samples or launches it; setup = the cells_<grade>.json setup/hold entry for an input (cell, pin, clock); launch = the clock-to-output arc for an output (cell, from, to); from = for an output with combinational arcs, input port -> its arc (cell, from, to). A pin with a clock but no numbers is synchronous to that clock but not yet characterised (TSHX4 TSDATA, DQSBUF fabric pins: no entries in the tables yet). A routed pin without timing has no timed path through the block (DDRDLL, ECLKSYNC STOP, ECLKDIV DIVRST/SLIP, DQSBUF RST: asynchronous or internally synchronised). clock_from = a clock output's source: the input port it follows, and divide_by = the parameter whose value is the division ratio (absent: the same frequency).",
  "primitives": {
   "ODDRX4": {
    "site": "IOLOGIC",
@@ -1426,7 +1426,7 @@
     },
     "STOP": {
      "pin": "STOP",
-     "unrouted": 0
+     "unrouted": 1
     },
     "ECLKOUT": {
      "pin": "ECLKOUT",
@@ -1455,11 +1455,11 @@
     },
     "DIVRST": {
      "pin": "DIVRST",
-     "unrouted": 0
+     "unrouted": 1
     },
     "SLIP": {
      "pin": "SLIP",
-     "unrouted": 0
+     "unrouted": 1
     },
     "DIVOUT": {
      "pin": "DIVOUT",
