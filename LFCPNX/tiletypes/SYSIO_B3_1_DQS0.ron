@@ -862,7 +862,7 @@
     ],
     "N1W5:JSCLK_DQSBUFA_CORE_I_DQS_TOP": [
       (
-        from_wire: "N1E2:JCLK1",
+        from_wire: "N1W2:JCLK1",
       ),
     ],
     "N1W5:JSELCLK_DQSBUFA_CORE_I_DQS_TOP": [
