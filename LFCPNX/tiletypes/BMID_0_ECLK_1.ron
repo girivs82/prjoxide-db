@@ -619,6 +619,13 @@
   },
   words: {},
   enums: {
+    "BMID.LLC_PLL_FBK": (
+      options: {
+        "OFF": [],
+        "CLKOP": [(frame:79,bit:1,invert:false,),(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      },
+      desc: "PLL_LLC dedicated feedback: CLKOP to the PLL's FBKMUX input JFBKCLK10 (GPLL_LLC JFBKCK <- JFBKCLK10), when FBKCK = CLKOP and CLKOP is not on a primary clock",
+    ),
     "DCC_B0.DCCEN": (
       options: {
         "0": [],
