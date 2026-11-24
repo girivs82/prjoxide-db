@@ -1254,6 +1254,66 @@
                 0
             ]
         },
+        "jpclkcibl4 -> jhpf_mid": {
+            "base": [
+                0,
+                10
+            ]
+        },
+        "jpclkcibl4_mid_entry": {
+            "base": [
+                0,
+                10
+            ]
+        },
+        "jpclkcibl5 -> jhpf_mid": {
+            "base": [
+                0,
+                13
+            ]
+        },
+        "jpclkcibl5_mid_entry": {
+            "base": [
+                0,
+                13
+            ]
+        },
+        "jpclkcibl6 -> jhpf_mid": {
+            "base": [
+                0,
+                11
+            ]
+        },
+        "jpclkcibl6_mid_entry": {
+            "base": [
+                0,
+                11
+            ]
+        },
+        "jpclkcibl7 -> jhpf_mid": {
+            "base": [
+                0,
+                9
+            ]
+        },
+        "jpclkcibl7_mid_entry": {
+            "base": [
+                0,
+                9
+            ]
+        },
+        "jpclkcibl8 -> jhpf_mid": {
+            "base": [
+                0,
+                11
+            ]
+        },
+        "jpclkcibl8_mid_entry": {
+            "base": [
+                0,
+                11
+            ]
+        },
         "jpclkcibr0 -> jhpf_mid": {
             "base": [
                 0,
@@ -1300,6 +1360,66 @@
             "base": [
                 4,
                 9
+            ]
+        },
+        "jpclkcibr4 -> jhpf_mid": {
+            "base": [
+                59,
+                101
+            ]
+        },
+        "jpclkcibr4_mid_entry": {
+            "base": [
+                59,
+                101
+            ]
+        },
+        "jpclkcibr5 -> jhpf_mid": {
+            "base": [
+                57,
+                103
+            ]
+        },
+        "jpclkcibr5_mid_entry": {
+            "base": [
+                57,
+                103
+            ]
+        },
+        "jpclkcibr6 -> jhpf_mid": {
+            "base": [
+                56,
+                102
+            ]
+        },
+        "jpclkcibr6_mid_entry": {
+            "base": [
+                56,
+                102
+            ]
+        },
+        "jpclkcibr7 -> jhpf_mid": {
+            "base": [
+                57,
+                100
+            ]
+        },
+        "jpclkcibr7_mid_entry": {
+            "base": [
+                57,
+                100
+            ]
+        },
+        "jpclkcibr8 -> jhpf_mid": {
+            "base": [
+                59,
+                104
+            ]
+        },
+        "jpclkcibr8_mid_entry": {
+            "base": [
+                59,
+                104
             ]
         },
         "jpclkcibt0 -> jvpf_mid": {
