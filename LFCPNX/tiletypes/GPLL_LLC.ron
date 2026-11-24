@@ -562,6 +562,41 @@
     ),
   },
   conns: {
+    "S1E1:JREFCLK13_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "N30:JPADDI_SEIO33_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK14_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S2E2:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK15_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S2E52:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK16_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S2E4:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK23_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "N28:JPADDI_SEIO33_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK25_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S2E58:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "S1E1:JREFCLK26_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S2E10:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
     "S1E1:JBINACT0_PLL_CORE_PLL_LMMI": [
       (
         from_wire: "E1:JCIBMUXOUTB0",
@@ -972,34 +1007,9 @@
         from_wire: "S1E1:JCLK0",
       ),
     ],
-    "S1E1:JREFCLK13_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "N30:JPADDI_SEIO33_CORE_IOA",
-      ),
-    ],
-    "S1E1:JREFCLK14_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S2E2:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "S1E1:JREFCLK16_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S2E4:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
     "S1E1:JREFCLK21_REFMUX_CORE_REFMUX": [
       (
         from_wire: "E1:JCLK0",
-      ),
-    ],
-    "S1E1:JREFCLK23_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "N28:JPADDI_SEIO33_CORE_IOA",
-      ),
-    ],
-    "S1E1:JREFCLK26_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S2E10:JPADDI_DIFFIO18_CORE_IOA",
       ),
     ],
     "S1E1:JREFDETRESET_PLL_CORE_PLL_LMMI": [

@@ -160,6 +160,41 @@
     ),
   },
   conns: {
+    "W1:JREFCLK13_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S3W47:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK14_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S3W3:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK15_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S3W107:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK16_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "N29:JPADDI_SEIO33_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK23_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S3W41:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK25_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "S3W101:JPADDI_DIFFIO18A_CORE_IOA",
+      ),
+    ],
+    "W1:JREFCLK26_REFMUX_CORE_REFMUX": [
+      (
+        from_wire: "N27:JPADDI_SEIO33_CORE_IOA",
+      ),
+    ],
     "G:JLRCLKOP_BMID_CORE_BMIDMUX": [
       (
         from_wire: "W1:JCLKOP_PLL_CORE_PLL_LMMI",
@@ -830,65 +865,9 @@
         from_wire: "W1:JCLK0",
       ),
     ],
-    "W1:JREFCLK13_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S3W33:JINCK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
-      ),
-      (
-        from_wire: "S3W33:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "W1:JREFCLK14_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S3W3:JINCK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
-      ),
-      (
-        from_wire: "S3W3:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "W1:JREFCLK15_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S3W43:JINCK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
-      ),
-      (
-        from_wire: "S3W43:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "W1:JREFCLK16_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "N23:JINCK_SIOLOGIC_CORE_IBASE_PIC_A",
-      ),
-      (
-        from_wire: "N23:JPADDI_SEIO33_CORE_IOA",
-      ),
-    ],
     "W1:JREFCLK21_REFMUX_CORE_REFMUX": [
       (
         from_wire: "N1W1:JCLK0",
-      ),
-    ],
-    "W1:JREFCLK23_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S3W29:JINCK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
-      ),
-      (
-        from_wire: "S3W29:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "W1:JREFCLK25_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "S3W47:JINCK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
-      ),
-      (
-        from_wire: "S3W47:JPADDI_DIFFIO18_CORE_IOA",
-      ),
-    ],
-    "W1:JREFCLK26_REFMUX_CORE_REFMUX": [
-      (
-        from_wire: "N21:JINCK_SIOLOGIC_CORE_IBASE_PIC_A",
-      ),
-      (
-        from_wire: "N21:JPADDI_SEIO33_CORE_IOA",
       ),
     ],
     "W1:JREFDETRESET_PLL_CORE_PLL_LMMI": [

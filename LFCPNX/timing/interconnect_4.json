@@ -138,6 +138,24 @@
                 385
             ]
         },
+        "cibmuxo -> eclkbank": {
+            "base": [
+                66,
+                66
+            ]
+        },
+        "cibmuxo -> eclkdiv": {
+            "base": [
+                59,
+                186
+            ]
+        },
+        "cibmuxo -> eclksync": {
+            "base": [
+                86,
+                235
+            ]
+        },
         "cibmuxo -> io18": {
             "base": [
                 0,
@@ -182,8 +200,8 @@
         },
         "cibmuxo -> pll": {
             "base": [
-                173,
-                274
+                181,
+                321
             ]
         },
         "cibmuxo -> preadd9": {
@@ -216,6 +234,12 @@
                 110
             ]
         },
+        "clk -> fbkmux": {
+            "base": [
+                195,
+                229
+            ]
+        },
         "clk -> iologic": {
             "base": [
                 74,
@@ -236,14 +260,20 @@
         },
         "clk -> pll": {
             "base": [
-                156,
-                173
+                31,
+                63
             ]
         },
         "clk -> preadd9": {
             "base": [
                 76,
                 106
+            ]
+        },
+        "clk -> refmux": {
+            "base": [
+                0,
+                0
             ]
         },
         "clk -> reg18": {
@@ -750,6 +780,36 @@
                 232
             ]
         },
+        "eclkbank -> eclksync": {
+            "base": [
+                66,
+                66
+            ]
+        },
+        "eclkbank_internal": {
+            "base": [
+                66,
+                66
+            ]
+        },
+        "eclkcasmux -> eclkdiv": {
+            "base": [
+                84,
+                88
+            ]
+        },
+        "eclkcasmux_internal": {
+            "base": [
+                84,
+                88
+            ]
+        },
+        "eclksync -> eclkcasmux": {
+            "base": [
+                84,
+                88
+            ]
+        },
         "f -> a": {
             "base": [
                 0,
@@ -822,6 +882,18 @@
                 183
             ]
         },
+        "fbkmux -> pll": {
+            "base": [
+                0,
+                0
+            ]
+        },
+        "fbkmux_internal": {
+            "base": [
+                195,
+                229
+            ]
+        },
         "hpbx -> ce": {
             "base": [
                 31,
@@ -882,6 +954,12 @@
                 24
             ]
         },
+        "io18 -> refmux": {
+            "base": [
+                152,
+                300
+            ]
+        },
         "io33 -> dlldel": {
             "base": [
                 228,
@@ -898,6 +976,12 @@
             "base": [
                 73,
                 166
+            ]
+        },
+        "io33 -> refmux": {
+            "base": [
+                141,
+                102
             ]
         },
         "io33 -> siologic": {
@@ -946,6 +1030,66 @@
             "base": [
                 0,
                 0
+            ]
+        },
+        "jeclkdiv1 -> jvpf_mid": {
+            "base": [
+                20,
+                23
+            ]
+        },
+        "jeclkdiv11 -> jvpf_mid": {
+            "base": [
+                20,
+                24
+            ]
+        },
+        "jeclkdiv11_mid_entry": {
+            "base": [
+                20,
+                24
+            ]
+        },
+        "jeclkdiv1_mid_entry": {
+            "base": [
+                20,
+                23
+            ]
+        },
+        "jeclkdiv2 -> jvpf_mid": {
+            "base": [
+                11,
+                14
+            ]
+        },
+        "jeclkdiv2_mid_entry": {
+            "base": [
+                11,
+                14
+            ]
+        },
+        "jeclkdiv7 -> jvpf_mid": {
+            "base": [
+                0,
+                0
+            ]
+        },
+        "jeclkdiv7_mid_entry": {
+            "base": [
+                0,
+                0
+            ]
+        },
+        "jeclkdiv8 -> jvpf_mid": {
+            "base": [
+                5,
+                7
+            ]
+        },
+        "jeclkdiv8_mid_entry": {
+            "base": [
+                5,
+                7
             ]
         },
         "jhpfe_cmux -> hprx_cmux": {
@@ -1956,6 +2100,12 @@
                 194
             ]
         },
+        "lsr -> eclkdiv": {
+            "base": [
+                237,
+                217
+            ]
+        },
         "lsr -> iologic": {
             "base": [
                 42,
@@ -1982,8 +2132,8 @@
         },
         "lsr -> pll": {
             "base": [
-                134,
-                154
+                62,
+                100
             ]
         },
         "lsr -> preadd9": {
@@ -2992,6 +3142,18 @@
             "base": [
                 93,
                 168
+            ]
+        },
+        "refmux -> pll": {
+            "base": [
+                0,
+                0
+            ]
+        },
+        "refmux_internal": {
+            "base": [
+                221,
+                290
             ]
         },
         "reg18 -> acc54": {
