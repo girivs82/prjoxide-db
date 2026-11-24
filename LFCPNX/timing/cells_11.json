@@ -3173,6 +3173,17 @@
             ],
             "setupholds": []
         },
+        "DLLDEL": {
+            "iopaths": [
+                {
+                    "from_pin": "CLKIN",
+                    "maxv": 460,
+                    "minv": 428,
+                    "to_pin": "CLKOUT"
+                }
+            ],
+            "setupholds": []
+        },
         "DP16K_MODE": {
             "iopaths": [
                 {
