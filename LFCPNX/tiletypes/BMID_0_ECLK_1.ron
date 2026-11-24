@@ -616,16 +616,59 @@
         bits: [(frame:60,bit:0,invert:false,),(frame:61,bit:0,invert:false,),(frame:62,bit:0,invert:true,),(frame:63,bit:0,invert:false,),],
       ),
     ],
+    "N1W2:JECLKOUT_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL": [
+      (
+        from_wire: "G:JLLCLKOP_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLLCLKOS2_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLLCLKOS3_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLLCLKOS4_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:80,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLLCLKOS5_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLLCLKOS_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOP_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:80,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOS2_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOS3_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:79,bit:1,invert:false,),(frame:81,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOS4_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOS5_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:81,bit:1,invert:false,),],
+      ),
+      (
+        from_wire: "G:JLRCLKOS_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+        bits: [(frame:82,bit:1,invert:false,),],
+      ),
+    ],
   },
   words: {},
   enums: {
-    "BMID.LLC_PLL_FBK": (
-      options: {
-        "OFF": [],
-        "CLKOP": [(frame:79,bit:1,invert:false,),(frame:80,bit:1,invert:false,),(frame:81,bit:1,invert:false,),(frame:82,bit:1,invert:false,),],
-      },
-      desc: "PLL_LLC dedicated feedback: CLKOP to the PLL's FBKMUX input JFBKCLK10 (GPLL_LLC JFBKCK <- JFBKCLK10), when FBKCK = CLKOP and CLKOP is not on a primary clock",
-    ),
     "DCC_B0.DCCEN": (
       options: {
         "0": [],

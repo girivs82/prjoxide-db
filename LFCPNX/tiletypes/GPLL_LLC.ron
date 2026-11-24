@@ -707,6 +707,11 @@
         from_wire: "S1E1:JINTFBK0_PLL_CORE_PLL_LMMI",
       ),
     ],
+    "S1E1:JFBKCLK10_FBMUX_CORE_FBKMUX": [
+      (
+        from_wire: "S1E71:JECLKOUT_ECLKLOGICMUXPLLFB_CORE_ECLKPLLFBL",
+      ),
+    ],
     "S1E1:JFBKCLK11_FBMUX_CORE_FBKMUX": [
       (
         from_wire: "S1E1:JCLK1",
