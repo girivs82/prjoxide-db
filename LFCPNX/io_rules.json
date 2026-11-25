@@ -1,0 +1,29 @@
+{
+ "_comment": "IO setting rules that Radiant's map DRC enforces on LFCPNX pads, so a tool can apply them before writing a bitstream. Each rule: when = the pad usage and IO types it applies to (verified = where it was observed; it may hold more widely), forbid = attribute -> the values not allowed (the pad must use one of allowed), and evidence = Radiant's message. A pad has no input path when nothing uses its input buffer (an output, or an output with tristate, whose PADDI drives no logic). Radiant 2026.1, LFCPNX-100.",
+ "rules": [
+  {
+   "id": "termination-needs-input",
+   "when": {
+    "pad_usage": "output or output+tristate, no input path",
+    "io_types": ["LVSTL_I"],
+    "verified": "bank 3 (HP bank), LVSTL_I pads with ODDRX4DQ + TSHX4DQ gearing"
+   },
+   "forbid": {"TERMINATION": "any value other than OFF"},
+   "allowed": {"TERMINATION": ["OFF"]},
+   "bits": "TERMINATION_1V1 OFF (SEIO18 / DIFFIO18 PIO setting)",
+   "evidence": "map ERROR 71003016: the port has an invalid combination of IO settings according to the device specifications; suggested legalization: change TERMINATION to OFF. The same pad with an input path (DELAYA + IDDRX4DQ on its input) is accepted with TERMINATION=60."
+  },
+  {
+   "id": "vref-needs-input",
+   "when": {
+    "pad_usage": "output or output+tristate, no input path",
+    "io_types": ["LVSTL_I"],
+    "verified": "bank 3 (HP bank), LVSTL_I pads with ODDRX4DQS + TSHX4DQS gearing and TERMINATION=OFF"
+   },
+   "forbid": {"VREF": "VREF_INT (any reference selection)"},
+   "allowed": {"VREF": ["none"]},
+   "bits": "VREF_LVSTL not set",
+   "evidence": "map ERROR 71003018: the port cannot be placed in bank [3] based on its IO settings. Without VREF the same pad is accepted; a pad with an input path is accepted with VREF=VREF_INT."
+  }
+ ]
+}
