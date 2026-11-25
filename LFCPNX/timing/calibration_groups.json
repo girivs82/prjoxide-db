@@ -1,0 +1,95 @@
+{
+  "comment": "Which delays share one factor when fitting silicon_delays.json from ring oscillators (SKALP examples/delay_calibration/fit_calibration.py --groups). Each [pattern, group]: the first matching pattern wins, as in silicon_delays.json. Patterns are prjoxide switch delay classes and SKALP's Nexus cell types (OXIDE_*).",
+  "groups": {
+    "stage": "The LUT's own delay and the switches into and out of it. Every latch ring passes these three equally often, so they cannot be fitted apart.",
+    "span0": "span0 routing wires (and switches onto them)",
+    "span1": "span1 routing wires",
+    "span2": "span2 routing wires",
+    "span6": "span6 routing wires",
+    "carry": "CCU2 carry cells' own delays",
+    "mult": "MULT18X18 multipliers' own delays",
+    "dram": "DPR16X4 distributed RAM's own delays",
+    "clocked": "The clock network's wires and the flip-flops' own delays. Only the clock ring passes either, so they share a factor."
+  },
+  "wires": [
+    [
+      "f_lut*",
+      "stage"
+    ],
+    [
+      "abcd ->*",
+      "stage"
+    ],
+    [
+      "span0*",
+      "span0"
+    ],
+    [
+      "*:span0*",
+      "span0"
+    ],
+    [
+      "*-> span0*",
+      "span0"
+    ],
+    [
+      "span1*",
+      "span1"
+    ],
+    [
+      "*:span1*",
+      "span1"
+    ],
+    [
+      "*-> span1*",
+      "span1"
+    ],
+    [
+      "span2*",
+      "span2"
+    ],
+    [
+      "*:span2*",
+      "span2"
+    ],
+    [
+      "*-> span2*",
+      "span2"
+    ],
+    [
+      "*span6*",
+      "span6"
+    ],
+    [
+      "*",
+      "stage"
+    ]
+  ],
+  "cells": [
+    [
+      "CCU2",
+      "carry"
+    ],
+    [
+      "MULT18X18",
+      "mult"
+    ],
+    [
+      "DPR16X4",
+      "dram"
+    ],
+    [
+      "OXIDE_COMB*",
+      "stage"
+    ],
+    [
+      "OXIDE_LUT*",
+      "stage"
+    ],
+    [
+      "*",
+      "clocked"
+    ]
+  ],
+  "clock": "clocked"
+}
