@@ -1,0 +1,36 @@
+{
+  "comment": "Delays of LFCPNX silicon as factors of the slow-corner (grade 9) tables, by routing switch class and cell type, for timed simulation of routed designs. Hand-maintained from board measurements, not generated from Radiant timing data, so regenerating cells_*.json and interconnect_*.json leaves it alone. A wire's switches take the factor of the first class pattern matching their delay class (`*` wildcards); a cell type's own delays (arcs, clock to out, setup, hold) take the first matching cell rule, as a factor of the slow corner or (between) a fraction of the way from the fast (M) corner to it; the clock wires take the clock rule. Fitted to one chip: other parts sit elsewhere between the corners. Under load a die runs slower still (supply droop): a timed simulation adds that as a derate.",
+  "corner": "slow",
+  "from": "fast",
+  "wires": [
+    { "class": "f_lut*", "factor": 0.54 },
+    { "class": "abcd ->*", "factor": 0.54 },
+    { "class": "span0*", "factor": 0.803 },
+    { "class": "*:span0*", "factor": 0.803 },
+    { "class": "*-> span0*", "factor": 0.803 },
+    { "class": "span1*", "factor": 0.662 },
+    { "class": "*:span1*", "factor": 0.662 },
+    { "class": "*-> span1*", "factor": 0.662 },
+    { "class": "span2*", "factor": 0.977 },
+    { "class": "*:span2*", "factor": 0.977 },
+    { "class": "*-> span2*", "factor": 0.977 },
+    { "class": "*span6*", "factor": 0.758 },
+    { "class": "*", "factor": 0.54 }
+  ],
+  "cells": [
+    { "cell": "CCU2", "between": 0.492 },
+    { "cell": "MULT18X18", "between": 0.401 },
+    { "cell": "DPR16X4", "between": 0.280 },
+    { "cell": "OXIDE_COMB*", "factor": 0.54 },
+    { "cell": "OXIDE_LUT*", "factor": 0.54 },
+    { "cell": "*", "between": 0.265 }
+  ],
+  "clock": { "between": 0.953 },
+  "measured": {
+    "device": "LFCPNX-100-9 (Versa board, one chip), room temperature, nominal core supply",
+    "date": "2026-11-25",
+    "method": "Ring oscillators measured on the chip against a 125 MHz count: 22 rings of 63 single-LUT latches (and one of 8 stages pinned to opposite die corners, all long wires) at several places, in six builds, with and without a large design around them; plus rings through the clock network, CCU2 carry chains, MULT18X18 and DPR16X4. Each ring loop traced through its routed switches; factors fitted by least squares with the logic stage (LUT input switch, arc, output switch) as one factor. Cell types SKALP's Nexus netlists use (OXIDE_*).",
+    "results": "The 22 latch rings match within 1.4% rms (worst 3.6%); hard-block and clock rings within 0.3% (one carry ring 4.8%). A design of about 50 thousand cells simulates within 0.1% of its measured throughput with a 1.85% derate, the whole-die slowdown measured while it runs.",
+    "notes": "Ring placement did not matter, nor dense idle logic around a ring, nor heat; the earlier single-fraction model was off for rings whose routes used more medium (span2) wires. Some latch rings come up in a faster mode on some loads (12-28%); the fit used stable loads."
+  }
+}
