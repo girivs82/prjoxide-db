@@ -819,6 +819,264 @@
     }
    }
   },
+  "IDDRX4": {
+   "site": "IOLOGIC",
+   "pad": {
+    "role": "input",
+    "ports": [
+     "D"
+    ]
+   },
+   "pins": {
+    "Q0": {
+     "pin": "RXDATA0",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q1": {
+     "pin": "RXDATA1",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q2": {
+     "pin": "RXDATA2",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q3": {
+     "pin": "RXDATA3",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q4": {
+     "pin": "RXDATA4",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q5": {
+     "pin": "RXDATA5",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q6": {
+     "pin": "RXDATA6",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q7": {
+     "pin": "RXDATA7",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "ECLK": {
+     "pin": "ECLK",
+     "clock": true
+    },
+    "SCLK": {
+     "pin": "SCLKIN",
+     "settings": [
+      "SCLKINMUX.SCLKIN"
+     ],
+     "clock": true
+    },
+    "RST": {
+     "pin": "LSRIN",
+     "settings": [
+      "LSRINMUX.LSRIN"
+     ],
+     "timing": {
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:IDDRXN",
+       "pin": "LSRIN",
+       "clock": "SCLKIN"
+      }
+     }
+    },
+    "ALIGNWD": {
+     "pin": "WORDALIGN",
+     "timing": {
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:IDDRXN",
+       "pin": "WORDALIGN",
+       "clock": "ECLK"
+      }
+     }
+    }
+   },
+   "settings": [
+    "IDDRXN.DDRMODE.IDDRX4"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
+  "IDDRX2": {
+   "site": "IOLOGIC",
+   "pad": {
+    "role": "input",
+    "ports": [
+     "D"
+    ]
+   },
+   "pins": {
+    "Q0": {
+     "pin": "RXDATA0",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q1": {
+     "pin": "RXDATA1",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q2": {
+     "pin": "RXDATA2",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "Q3": {
+     "pin": "RXDATA3",
+     "timing": {
+      "clock": "SCLK",
+      "launch": {
+       "cell": "IOLOGIC:IDDRXN",
+       "from": "SCLKIN",
+       "to": "RXDATA"
+      }
+     }
+    },
+    "ECLK": {
+     "pin": "ECLK",
+     "clock": true
+    },
+    "SCLK": {
+     "pin": "SCLKIN",
+     "settings": [
+      "SCLKINMUX.SCLKIN"
+     ],
+     "clock": true
+    },
+    "RST": {
+     "pin": "LSRIN",
+     "settings": [
+      "LSRINMUX.LSRIN"
+     ],
+     "timing": {
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:IDDRXN",
+       "pin": "LSRIN",
+       "clock": "SCLKIN"
+      }
+     }
+    },
+    "ALIGNWD": {
+     "pin": "WORDALIGN",
+     "timing": {
+      "clock": "SCLK",
+      "setup": {
+       "cell": "IOLOGIC:IDDRXN",
+       "pin": "WORDALIGN",
+       "clock": "ECLK"
+      }
+     }
+    }
+   },
+   "settings": [
+    "IDDRXN.DDRMODE.IDDRX2"
+   ],
+   "parameters": {
+    "GSR": {
+     "default": "ENABLED",
+     "values": {
+      "ENABLED": [
+       "GSR.ENABLED"
+      ],
+      "DISABLED": [
+       "GSR.DISABLED"
+      ]
+     }
+    }
+   }
+  },
   "DELAYA": {
    "site": "IOLOGIC",
    "pad": {
