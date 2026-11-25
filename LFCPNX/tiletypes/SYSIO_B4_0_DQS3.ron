@@ -704,6 +704,16 @@
         from_wire: "N1E1:JCIBMUXOUTB6",
       ),
     ],
+    "JDIRECTION_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A": [
+      (
+        from_wire: "N1:JCIBMUXOUTD2",
+      ),
+    ],
+    "JDIRECTION_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTD2",
+      ),
+    ],
     "JDIR_IOLOGIC_CORE_I_GEARING_PIC_TOP_A": [
       (
         from_wire: "N1:JCIBMUXOUTA2",
@@ -864,6 +874,16 @@
         from_wire: "N1E1:JCIBMUXOUTC2",
       ),
     ],
+    "JLOAD_N_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A": [
+      (
+        from_wire: "N1:JCIBMUXOUTD1",
+      ),
+    ],
+    "JLOAD_N_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTD1",
+      ),
+    ],
     "JLSRIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_A": [
       (
         from_wire: "N1:JLSR0",
@@ -892,6 +912,16 @@
     "JMOVE_IOLOGIC_CORE_I_GEARING_PIC_TOP_B": [
       (
         from_wire: "N1E1:JCIBMUXOUTB2",
+      ),
+    ],
+    "JMOVE_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A": [
+      (
+        from_wire: "N1:JCIBMUXOUTC7",
+      ),
+    ],
+    "JMOVE_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B": [
+      (
+        from_wire: "N1E1:JCIBMUXOUTC7",
       ),
     ],
     "JPADDO_DIFFIO18A_CORE_IOA": [
@@ -1274,6 +1304,11 @@
         from_wire: "JRXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
       ),
     ],
+    "N1:JQ6": [
+      (
+        from_wire: "JCOUT_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A",
+      ),
+    ],
     "N1E1:JF0": [
       (
         from_wire: "JRXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B",
@@ -1342,6 +1377,11 @@
     "N1E1:JQ5": [
       (
         from_wire: "JRXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_B",
+      ),
+    ],
+    "N1E1:JQ6": [
+      (
+        from_wire: "JCOUT_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B",
       ),
     ],
   },
